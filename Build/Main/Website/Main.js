@@ -4,44 +4,20 @@ const RUN=()=>{
 
         <header>
 
-        <p>?</p>
-        
-        </header>
+            <p class="LeftText">Erandix</p>
 
-        <footer>
+            <div class="HeaderDiv">
 
-            <p>Home</p>
+                <p class="LeftText">About</p>
 
-            <p>News</p>
+                <p class="LeftText">Services</p>
 
-            <p id="User">Login</p>
-        
-        </footer>
-
-    `);
-
-    PASSDATA("#User",!CONNECTED,"User");
-
-    CLICKED("#User",HELLO);
-
-};
-
-const HELLO=()=>{
-
-    DISPLAY("",`
-
-        <Header>
-
-            <p class="LeftText">Back</p>
-
-            <p class="RightText">Login</p>
+                <p class="LeftText">Contact Us</p>
+            
+            </div>
         
         </header>
 
     `);
-
-    PASSDATA(".RightText",!CONNECTED,"User");
-
-    CLICKED(".LeftText",RUN);
 
 };

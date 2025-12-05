@@ -11,3 +11,10 @@ header{
     background: transparent;
     border-bottom: 1px solid #cdcdcd50;
 }
+
+.HeaderDiv{
+    width: 75%;
+    right: 0;
+    background: transparent;
+    display: inline-flex;
+}
