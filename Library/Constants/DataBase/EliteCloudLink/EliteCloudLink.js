@@ -1,1 +1,0 @@
-export const ELITECLOUDLINK="https://docs.google.com/spreadsheets/d/1QrPMVra0WEB1L_JWpZyvm1WRoVaSlJk7KFiJiCOgYOQ/edit?usp=sharing";

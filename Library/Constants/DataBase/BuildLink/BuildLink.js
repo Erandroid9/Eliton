@@ -1,1 +1,1 @@
-export const BUILDLINK="https://eliterobustontology.github.io/Elite/Build/";
+export const BUILDLINK="https://erandroid9.github.io/Eliton/Build/";

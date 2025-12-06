@@ -1,1 +1,1 @@
-export const AUTORUNLINK="https://eliterobustontology.github.io/Elite/Start/Start.js";
+export const AUTORUNLINK="https://erandroid9.github.io/Eliton/Start/Start.js";
