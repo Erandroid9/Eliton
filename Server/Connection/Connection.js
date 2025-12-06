@@ -4,7 +4,11 @@ export const SERVER=()=>{
     localStorage.setItem('SERVER',DATA);
 };
 
+/*
+
 `
 const ELITECONTACTUS=${ELITECONTACTUS};
 
 `
+
+*/
