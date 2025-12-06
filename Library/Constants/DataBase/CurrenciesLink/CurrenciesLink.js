@@ -1,1 +1,1 @@
-export  const CURRENCIESLINK="https://docs.google.com/spreadsheets/d/1tZfJr2m7kQsgEcOJeGeMJ0qRwobQTJi2ADwLW3Ghz_U/edit?usp=sharing";
+export  const CURRENCIESLINK="https://docs.google.com/spreadsheets/d/1PP-bsio02iir_lpUjfUFf481Ctir1I3vAUK5jtxeClE/edit?usp=sharing";

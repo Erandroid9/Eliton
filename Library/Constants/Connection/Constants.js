@@ -10,20 +10,17 @@ import { CREATEDATABASELINK } from "../DataBase/CrerateDataBaseLink/CreateDataBa
 import { CURRENCIESLINK } from "../DataBase/CurrenciesLink/CurrenciesLink.js";
 import { EMAILSENDERLINK } from "../DataBase/EmailSenderLink/EmailSenderLink.js";
 import { GETDATALINK } from "../DataBase/GetDataLink/GetDataLink.js";
-import { GETDRIVELINK } from "../DataBase/GetDriveLink/GetDriveLink.js";
 import { GLOBALDATA } from "../DataBase/GlobalData/GlobalData.js";
 import { HOSTINGUPDATERLINK } from "../DataBase/HostingUpdaterLink/HostingUpdaterLink.js";
 import { INSERTDATALINK } from "../DataBase/InsertDataLink/InsertDataLink.js";
 import { MONTHSLINK } from "../DataBase/MonthsLink/MonthsLink.js";
 import { ONLINECHECKERLINK } from "../DataBase/OnlineCheckerLink/OnlineCheckerLink.js";
-import { POSTDRIVEFILELINK } from "../DataBase/PostDriveLink/PostDriveLink.js";
 import { UGANDANDISTRICITLINK } from "../DataBase/UgandanDistricitLink/UgandanDistricitLink.js";
 import { UPDATEDATALINK } from "../DataBase/UpdateDataLink/UpdateDataLink.js";
 export const CONSTANTS=()=>{
 const DATA=`var GLOBALDATA="${GLOBALDATA}";
 const BUILDLINK="${BUILDLINK}";
 const GETDATALINK="${GETDATALINK}";
-const GETDRIVELINK="${GETDRIVELINK}";
 const AUTORUNLINK="${AUTORUNLINK}";
 const COLORLINK="${COLORLINK}";
 const COUNTRYLINK="${COUNTRYLINK}";
@@ -35,7 +32,6 @@ const HOSTINGUPDATERLINK="${HOSTINGUPDATERLINK}";
 const INSERTDATALINK="${INSERTDATALINK}";
 const MONTHSLINK="${MONTHSLINK}";
 const ONLINECHECKERLINK="${ONLINECHECKERLINK}";
-const POSTDRIVEFILELINK="${POSTDRIVEFILELINK}";
 const COMPANYNAME="${COMPANYNAME}";
 const UGANDANDISTRICITLINK="${UGANDANDISTRICITLINK}";
 const UPDATEDATALINK="${UPDATEDATALINK}";
