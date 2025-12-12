@@ -5,8 +5,8 @@ export const CONNECTIONS=()=>{
 
     const ELITONCONFIG=(t,e)=>{fetch(t).then((t=>t.text())).then((t=>{localStorage.setItem(e,t)})).catch((t=>console.log(t)))};
 
-    CLOUDCONNECTION();
-
+    const CALLELITONCONFIG=(t,e,c)=>{fetch(t).then((t=>t.text())).then((t=>{localStorage.setItem(e,t),c()})).catch((t=>console.log(t)))};
+    
     if (!localStorage.getItem("Packaged")) {
 
         LOADERPAGE();
@@ -26,6 +26,8 @@ export const CONNECTIONS=()=>{
         ELITONCONFIG("../Library/Services/ElitonTemps.js","ERANDTEMP");
 
         ELITONCONFIG("../Library/Server/CloudSync.js","ERANDCONFIG");
+
+        CLOUDCONNECTION();
  
     } else {
 
@@ -35,11 +37,14 @@ export const CONNECTIONS=()=>{
         ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Services/ElitonElements.css","ERANDISELEMS");
 
         ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Services/Eliton.js","ERANDS");
-        ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Services/ElitonIcons.js","ERANDIA");
         ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Services/ElitonPlugs.js","ERANDIN");
         ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Services/ElitonTemps.js","ERANDTEMP");
 
         ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Server/CloudSync.js","ERANDCONFIG");
+
+        CALLELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Services/ElitonIcons.js","ERANDIA",()=>{
+            CLOUDCONNECTION();
+        });
 
     };
 
