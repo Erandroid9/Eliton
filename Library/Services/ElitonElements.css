@@ -9,3 +9,10 @@ p{
     position: relative;
     margin: auto;
 }
+
+img{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
