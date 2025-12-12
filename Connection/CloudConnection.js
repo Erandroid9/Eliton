@@ -18,6 +18,49 @@ export const CLOUDCONNECTION=()=>{
         };
 
     } else {
+
+        const BUILDPATH="https://erandroid9.github.io/Eliton/Build/";
+
+        fetch("https://erandroid9.github.io/Eliton/Library/DataBase/Config.json")
+        .then(res =>res.json())
+        .then(data =>{
+            data.forEach(element => {
+                if (element.ID === localStorage.getItem("Config") ) {
+
+                ELITONCONFIG(BUILDPATH+element.WebSiteCSS,"ERANDCPRO");
+                ELITONCONFIG(BUILDPATH+element.WebSiteJS,"ERANDPRO");
+
+                if (!localStorage.getItem("Packaged")) {
+
+                    localStorage.setItem("Packaged","Verified");
+
+                    setTimeout((()=>{location.reload()}),500);
+
+                    return;
+                    
+                };
+
+                     console.log(element)
+                    
+                } else {
+
+                    const BODY=document.querySelector("body");
+
+                    BODY.innerHTML=`
+
+                    <p>SERVICE DOESNOT EXIST</p>
+                    
+                    `;
+                    
+                };
+               
+            });
+        })
+        .catch(err =>{
+
+            console.log();
+
+        })
         
     };
    
