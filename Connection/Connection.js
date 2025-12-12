@@ -1,3 +1,4 @@
+import { LOADERPAGE } from "../Library/Pages/Loader.js";
 import { CLOUDCONNECTION } from "./CloudConnection.js";
 
 export const CONNECTIONS=()=>{
@@ -17,5 +18,11 @@ export const CONNECTIONS=()=>{
     ELITONCONFIG("../Library/Server/CloudSync.js","ERANDCONFIG");
 
     CLOUDCONNECTION();
+
+    if (!localStorage.getItem("Packaged")) {
+
+        LOADERPAGE();
+        
+    };
 
 };
