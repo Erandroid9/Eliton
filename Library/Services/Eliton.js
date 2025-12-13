@@ -1,3 +1,4 @@
 const CONDITION=(I,N,O)=>{I?N():O()};const CHECKER=(C,E)=>{C&&E()};
 const AUTORUN=()=>{CONDITION("Dev"===localStorage.getItem("Env"),(()=>{import("./Connection/Connection.js").then((o=>"function"==typeof o.CONNECTIONS&&o.CONNECTIONS())).catch(console.error)}),(()=>{import("https://erandroid9.github.io/Eliton/Connection/Connection.js").then((o=>"function"==typeof o.CONNECTIONS&&o.CONNECTIONS())).catch(console.error)}))};
 const DISPLAY=(n,e)=>{const o=document.querySelector("body");CONDITION(n,(()=>{n.innerHTML=e}),(()=>{o.innerHTML=e}))};
+const CLICKED=(e,c)=>{document.querySelector(e).addEventListener("click",(()=>{c()}))};

@@ -23,8 +23,9 @@ const ERANDES=()=>{
 
     `);
 
-    CLICK("#Test",()=>{
-        alert("")
+    CLICKED("#Test",()=>{
+        alert("dd")
     })
-   
+
+
 };
