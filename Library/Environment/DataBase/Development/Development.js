@@ -1,8 +1,9 @@
 import { START } from "../../../../Connection/Start.js";
+import { DISPLAYLOADER } from "../../../Pages/DataBase/DisplayLoader/DisplayLoader.js";
 
 export const DEVELOPMENTENVIRONMENT=()=>{
 
-   
+   DISPLAYLOADER("80%");
 
     fetch("../../../Development/Development.js")
 
@@ -10,9 +11,19 @@ export const DEVELOPMENTENVIRONMENT=()=>{
 
     .then(data =>{
 
+        DISPLAYLOADER("100%");
+
         localStorage.setItem("PROJECT",data);
 
-        START();
+        if (!localStorage.getItem("Packaged")) {
+
+            localStorage.setItem("Packaged",new Date())
+
+            location.reload();
+
+            return;
+
+        };
 
     })
 

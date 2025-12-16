@@ -1,13 +1,10 @@
-import { CONSTANTSCONNECTION } from "../Library/Constants/Connections/Connections.js";
-import { CONFIGENVIRONMENT } from "../Library/Environment/Connection/Connection.js";
-import { FUNCTIONSCONNECTION } from "../Library/Functions/Connection/Connection.js";
+import { DATALOADER } from "../Library/Pages/DataBase/DataLoader/DataLoader.js";
+import { DISPLAYLOADER } from "../Library/Pages/DataBase/DisplayLoader/DisplayLoader.js";
 
 export const CONNECTIONS=()=>{
 
-    CONSTANTSCONNECTION();
+    DISPLAYLOADER("10%");
 
-    FUNCTIONSCONNECTION();
-
-   CONFIGENVIRONMENT();
+    DATALOADER();
 
 };

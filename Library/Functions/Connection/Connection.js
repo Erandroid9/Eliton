@@ -3,7 +3,9 @@ import { AUTORUN } from "../DataBase/AutoRun/AutoRun.js";
 import { BODIED } from "../DataBase/Body/Body.js";
 import { CHECKER } from "../DataBase/Checker/Checker.js";
 import { CONDITION } from "../DataBase/Condition/Condition.js";
-import { DISPLAY } from "../DataBase/Display/Display.js";
+import { DISPLAY } from "../DataBase/Displayed/Display.js";
+import { ELEMENTED } from "../DataBase/Elemented/ELemented.js";
+import { ROUTE } from "../DataBase/Route/Route.js";
 import { STYLED } from "../DataBase/Styled/Styled.js";
 
 export const FUNCTIONSCONNECTION=()=>{
@@ -15,6 +17,8 @@ const DISPLAY=${DISPLAY};
 const CHECKER=${CHECKER};
 const BODIED=${BODIED};
 const STYLED=${STYLED};
+const ELEMENTED=${ELEMENTED};
+const ROUTE=${ROUTE};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -22,5 +26,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const STYLED=${STYLED};
+const ROUTE=${ROUTE};
 `

@@ -11,4 +11,6 @@ export const BODIED=()=>{
     STYLED(BODY,"border","none");
     STYLED(BODY,"outline","none");
     STYLED(BODY,"text-decoration","none");
+    STYLED(BODY,"font-size","20px");
+    STYLED(BODY,"font-family","sans-serif");
 };
