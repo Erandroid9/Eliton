@@ -1,3 +1,4 @@
+import { CHECKER } from "../../../Functions/DataBase/Checker/Checker.js";
 import { DISPLAYLOADER } from "../../../Pages/DataBase/DisplayLoader/DisplayLoader.js";
 
 export const WEBENVIRONMENT=()=>{
@@ -21,13 +22,43 @@ export const WEBENVIRONMENT=()=>{
 
         DISPLAYLOADER("85%");
 
-        const user = data.find(u => u.ID === localStorage.getItem("Config"));
+        FINDER(data,"ID",localStorage.getItem("Config"),(UserData)=>{
 
-        console.log(user)
+            CHECKER(UserData !== false,()=>{
+
+                DISPLAYLOADER("95%");
+                
+                fetch(CLOUD+UserData.Web)
+                
+                .then(res =>res.text())
+                
+                .then(data =>{
+                
+                    DISPLAYLOADER("100%");
+                
+                    localStorage.setItem("PROJECT",data);
+
+                    CHECKER(!localStorage.getItem("Packaged"),()=>{
+
+                        localStorage.setItem("Packaged",new Date())
+
+                        location.reload();
+                
+                    });
+            
+                })
+                
+                .catch(error=>{console.log(error)})
+
+            });
+
+        });
 
     })
     .catch(error =>{
-        console.log(error)
+
+        console.log(error);
+
     });
 
 };

@@ -1,3 +1,4 @@
+import { CHECKER } from "../../../Functions/DataBase/Checker/Checker.js";
 import { DISPLAYLOADER } from "../../../Pages/DataBase/DisplayLoader/DisplayLoader.js";
 
 export const DEVELOPMENTENVIRONMENT=()=>{
@@ -14,15 +15,13 @@ export const DEVELOPMENTENVIRONMENT=()=>{
 
         localStorage.setItem("PROJECT",data);
 
-        if (!localStorage.getItem("Packaged")) {
+        CHECKER(!localStorage.getItem("Packaged"),()=>{
 
             localStorage.setItem("Packaged",new Date())
 
             location.reload();
-
-            return;
-
-        };
+            
+        });
 
     })
 

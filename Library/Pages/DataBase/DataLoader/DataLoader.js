@@ -68,7 +68,7 @@ export const DATALOADER=()=>{
 
                                         CONFIGENVIRONMENT();
 
-                                        RERUN();
+                                        //RERUN();
                                                 
                                     };
                                     

@@ -1,15 +1,17 @@
-import { GETDATALINK } from "../../../Constants/DataBase/GetDataLink/GetDataLink.js";
+import { CHECKER } from "../../../Functions/DataBase/Checker/Checker.js";
+import { DATASTORE } from "../../../Functions/DataBase/DataStore/DataStore.js";
+import { RELOAD } from "../../../Functions/DataBase/Reload/Reload.js";
 import { DISPLAYLOADER } from "../../../Pages/DataBase/DisplayLoader/DisplayLoader.js";
 
 export const ANDROIDENVIRONMENT=()=>{
 
-    DISPLAYLOADER("75%");
+       DISPLAYLOADER("75%");
 
     const MAIN="https://docs.google.com/spreadsheets/d/1V_m4KRo--FQkD0fNKfRZ1EWDRCSqTvwGkM7lEFGWldA/edit?usp=sharing";
 
     const CLOUD="https://erandroid9.github.io/Eliton/";
 
-    fetch(GETDATALINK,{
+    fetch("https://script.google.com/macros/s/AKfycbxi4dQQfm5u5Pd4Id3JCpmBbRhXv_y4XZZnwET4MHYoWfqKaXhqMXtc2T1gklUuocVy3A/exec",{
         method:"POST",
         mode:"cors",
         body:JSON.stringify({
@@ -22,13 +24,13 @@ export const ANDROIDENVIRONMENT=()=>{
 
         DISPLAYLOADER("85%");
 
-        data.forEach(element => {
+        FINDER(data,"ID",localStorage.getItem("Config"),(UserData)=>{
 
-            if (localStorage.getItem("Config") === element.ID ) {
+            CHECKER(UserData !== false,()=>{
 
                 DISPLAYLOADER("95%");
                 
-                fetch(CLOUD+Android)
+                fetch(CLOUD+UserData.Android)
                 
                 .then(res =>res.text())
                 
@@ -37,30 +39,28 @@ export const ANDROIDENVIRONMENT=()=>{
                     DISPLAYLOADER("100%");
                 
                     localStorage.setItem("PROJECT",data);
-                
-                    if (!localStorage.getItem("Packaged")) {
-                
+
+                    CHECKER(!localStorage.getItem("Packaged"),()=>{
+
                         localStorage.setItem("Packaged",new Date())
-                
+
                         location.reload();
                 
-                        return;
-                
-                    };
-                
+                    });
+                    
                 })
                 
                 .catch(error=>{console.log(error)})
-                
-            } else {
-                
-            }
-   
+
+            });
+
         });
-        
+
     })
     .catch(error =>{
-        console.log(error)
+
+        console.log(error);
+
     });
 
 };
