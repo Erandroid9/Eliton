@@ -1,4 +1,3 @@
-import { CHECKER } from "../../../Functions/DataBase/Checker/Checker.js";
 import { DISPLAYLOADER } from "../../../Pages/DataBase/DisplayLoader/DisplayLoader.js";
 
 export const WEBENVIRONMENT=()=>{
@@ -22,38 +21,40 @@ export const WEBENVIRONMENT=()=>{
 
         DISPLAYLOADER("85%");
 
-        FINDER(data,"ID",localStorage.getItem("Config"),(UserData)=>{
+        const user = data.find((item) => item.ID === localStorage.getItem("Config"));
 
-            CHECKER(UserData !== false,()=>{
+        if (user) {
 
-                DISPLAYLOADER("95%");
-                
-                fetch(CLOUD+UserData.Web)
-                
-                .then(res =>res.text())
-                
-                .then(data =>{
-                
-                    DISPLAYLOADER("100%");
-                
-                    localStorage.setItem("PROJECT",data);
+            DISPLAYLOADER("95%");
+                            
+            fetch(CLOUD+user.Web)
+                            
+            .then(res =>res.text())
+                            
+            .then(data =>{
+                            
+                DISPLAYLOADER("100%");
+                            
+                localStorage.setItem("PROJECT",data);
 
-                    CHECKER(!localStorage.getItem("Packaged"),()=>{
+                if (!localStorage.getItem("Packaged")) {
 
-                        localStorage.setItem("Packaged",new Date())
-
-                        location.reload();
-                
-                    });
+                    localStorage.setItem("Packaged",new Date())
             
-                })
-                
-                .catch(error=>{console.log(error)})
+                    location.reload();
 
-            });
+                    return;
+                    
+                };
+            
+            })
+                            
+            .catch(error=>{console.log(error)})
 
-        });
-
+            return;
+  
+        };
+        
     })
     .catch(error =>{
 

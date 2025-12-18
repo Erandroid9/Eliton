@@ -1,12 +1,7 @@
-import { CHECKER } from "../../../Functions/DataBase/Checker/Checker.js";
-import { CONDITION } from "../../../Functions/DataBase/Condition/Condition.js";
-import { DATASTORE } from "../../../Functions/DataBase/DataStore/DataStore.js";
-import { RELOAD } from "../../../Functions/DataBase/Reload/Reload.js";
 import { DISPLAYLOADER } from "../../../Pages/DataBase/DisplayLoader/DisplayLoader.js";
 
 export const DESKTOPENVIRONMENT=()=>{
-
-        DISPLAYLOADER("75%");
+    DISPLAYLOADER("75%");
 
     const MAIN="https://docs.google.com/spreadsheets/d/1V_m4KRo--FQkD0fNKfRZ1EWDRCSqTvwGkM7lEFGWldA/edit?usp=sharing";
 
@@ -25,38 +20,40 @@ export const DESKTOPENVIRONMENT=()=>{
 
         DISPLAYLOADER("85%");
 
-        FINDER(data,"ID",localStorage.getItem("Config"),(UserData)=>{
+        const user = data.find((item) => item.ID === localStorage.getItem("Config"));
 
-            CHECKER(UserData !== false,()=>{
+        if (user) {
 
-                DISPLAYLOADER("95%");
-                
-                fetch(CLOUD+UserData.Desktop)
-                
-                .then(res =>res.text())
-                
-                .then(data =>{
-                
-                    DISPLAYLOADER("100%");
-                
-                    localStorage.setItem("PROJECT",data);
+            DISPLAYLOADER("95%");
+                            
+            fetch(CLOUD+user.Desktop)
+                            
+            .then(res =>res.text())
+                            
+            .then(data =>{
+                            
+                DISPLAYLOADER("100%");
+                            
+                localStorage.setItem("PROJECT",data);
 
-                    CHECKER(!localStorage.getItem("Packaged"),()=>{
+                if (!localStorage.getItem("Packaged")) {
 
-                        localStorage.setItem("Packaged",new Date())
-
-                        location.reload();
-                
-                    });
+                    localStorage.setItem("Packaged",new Date())
             
-                })
-                
-                .catch(error=>{console.log(error)})
+                    location.reload();
 
-            });
+                    return;
+                    
+                };
+            
+            })
+                            
+            .catch(error=>{console.log(error)})
 
-        });
-
+            return;
+  
+        };
+        
     })
     .catch(error =>{
 
