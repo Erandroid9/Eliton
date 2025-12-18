@@ -6,9 +6,11 @@ import { WEBENVIRONMENT } from "../DataBase/Web/Web.js";
 
 export const CONFIGENVIRONMENT=()=>{
 
+    DISPLAYLOADER("100%");
+
     sessionStorage.setItem("Final","Loaded");
 
-    DISPLAYLOADER("100%");
+    DISPLAYLOADER("10%");
 
     if (localStorage.getItem("Env") === "Dev" ) {
 
