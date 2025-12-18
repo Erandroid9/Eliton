@@ -1,9 +1,8 @@
-import { START } from "../../../../Connection/Start.js";
 import { DISPLAYLOADER } from "../../../Pages/DataBase/DisplayLoader/DisplayLoader.js";
 
 export const DEVELOPMENTENVIRONMENT=()=>{
 
-   DISPLAYLOADER("80%");
+   DISPLAYLOADER("75%");
 
     fetch("../../../Development/Development.js")
 

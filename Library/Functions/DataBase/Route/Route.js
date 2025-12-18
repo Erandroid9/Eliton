@@ -2,28 +2,28 @@ export const ROUTE = (NEWPAGE, FUNCTION, FUNCTIONBACK) => {
 
     sessionStorage.setItem("PreviousPage", FUNCTIONBACK);
 
-    if (NEWPAGE) {
+    CONDITION(NEWPAGE,()=>{
 
         history.pushState({ data: FUNCTION() }, "", "");
 
-    } else {
+    },()=>{
 
         history.replaceState({ data: FUNCTION() }, "", "");
 
-    }
+    });
 
-    window.addEventListener("popstate", function (event) {
+    FUNCTIONED(window,"popstate",()=>{
 
         const previousPageFunction = sessionStorage.getItem("PreviousPage");
 
-        if (previousPageFunction) {
+        CHECKER(previousPageFunction,()=>{
 
             const func = new Function("return " + previousPageFunction)();
 
             func();
 
-        }
+        });
 
     });
-    
+  
 };

@@ -6,7 +6,6 @@ export const TEXT=(HOLDER,TYPE,WORD,callBack)=>{
 
         STYLED(Data,"position","related");
         STYLED(Data,"margin","auto");
-        STYLED(Data,"margin","auto");
 
         callBack(Data);
 

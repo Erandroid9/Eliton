@@ -1,4 +1,3 @@
-import { GETDATALINK } from "../../../Constants/DataBase/GetDataLink/GetDataLink.js";
 import { DISPLAYLOADER } from "../../../Pages/DataBase/DisplayLoader/DisplayLoader.js";
 
 export const WEBENVIRONMENT=()=>{
@@ -9,7 +8,7 @@ export const WEBENVIRONMENT=()=>{
 
     const CLOUD="https://erandroid9.github.io/Eliton/";
 
-    fetch(GETDATALINK,{
+    fetch("https://script.google.com/macros/s/AKfycbxi4dQQfm5u5Pd4Id3JCpmBbRhXv_y4XZZnwET4MHYoWfqKaXhqMXtc2T1gklUuocVy3A/exec",{
         method:"POST",
         mode:"cors",
         body:JSON.stringify({
@@ -22,42 +21,10 @@ export const WEBENVIRONMENT=()=>{
 
         DISPLAYLOADER("85%");
 
-        data.forEach(element => {
+        const user = data.find(u => u.ID === localStorage.getItem("Config"));
 
-            if (localStorage.getItem("Config") === element.ID ) {
+        console.log(user)
 
-                DISPLAYLOADER("95%");
-                
-                fetch(CLOUD+Web)
-                
-                .then(res =>res.text())
-                
-                .then(data =>{
-                
-                    DISPLAYLOADER("100%");
-                
-                    localStorage.setItem("PROJECT",data);
-                
-                    if (!localStorage.getItem("Packaged")) {
-                
-                        localStorage.setItem("Packaged",new Date())
-                
-                        location.reload();
-                
-                        return;
-                
-                    };
-                
-                })
-                
-                .catch(error=>{console.log(error)})
-                
-            } else {
-                
-            }
-
-        });
-        
     })
     .catch(error =>{
         console.log(error)

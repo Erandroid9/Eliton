@@ -1,16 +1,36 @@
 export const BODIED=()=>{
-    STYLED(BODY,"position","fixed");
-    STYLED(BODY,"margin","0");
-    STYLED(BODY,"padding","0");
-    STYLED(BODY,"width","100%");
-    STYLED(BODY,"height","100%");
-    STYLED(BODY,"display","block");
-    STYLED(BODY,"overflow","hidden");
-    STYLED(BODY,"text-align","center");
-    STYLED(BODY,"color","#FFFFFF");
-    STYLED(BODY,"border","none");
-    STYLED(BODY,"outline","none");
-    STYLED(BODY,"text-decoration","none");
-    STYLED(BODY,"font-size","20px");
-    STYLED(BODY,"font-family","sans-serif");
+
+    SCREENWIDTH((Data)=>{
+
+        DATASTORE(" ","Width",Data);
+
+        POSITIONFIXED(BODY);
+        MARGIN(BODY,"0");
+        PADDING(BODY,"0");
+        WIDTH(BODY,"100%");
+        HEIGHT(BODY,"100%");
+        DISPLAYBLOCK(BODY);
+        OVERFLOWHIDDEN(BODY);
+        TEXTALIGN(BODY,"center");
+        COLOR(BODY,"#FFFFFF");
+        BORDER(BODY,"none");
+        OUTLINE(BODY);
+        TEXTDECORATION(BODY);
+        FONTFAMILY(BODY,"");
+        FONTSIZE(BODY,"");
+
+        CLICK(BODY,()=>{
+
+            CHECKER(Data != localStorage.getItem("Width"),()=>{
+
+                DATASTORE(" ","Width",Data);
+
+                RELOAD();
+
+            });
+
+        });
+
+    });
+
 };

@@ -1,8 +1,9 @@
 export const APPSTART=()=>{
 
-    const DATA=`AUTORUN();BODIED();
-    `;
+const DATA=`AUTORUN();
+BODIED();
+`;
     
-    localStorage.setItem("RUN",DATA);
+localStorage.setItem("RUN",DATA);
 
 };

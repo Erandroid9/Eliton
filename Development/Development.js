@@ -1,21 +1,16 @@
 const ERANDES=()=>{
 
-    HEADER("",(ELEMS)=>{
+    CLEAR("");
 
-        TEXT(ELEMS,"","Onion",(PP)=>{
+    HEADER("",(ELEMENT)=>{
 
-            STYLED(PP,"color","red")
-
-        });
 
     });
 
-    FOOTER("",(ELEMS)=>{
+    FOOTER("",(ELEMENT)=>{
 
-        TEXT(ELEMS,"","Onion",(PP)=>{
-
-        });
-
+        
     });
+
 
 };

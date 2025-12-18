@@ -1,16 +1,17 @@
 export const HEADER=(HOLDER,callBack)=>{
 
-    ELEMENTED(HOLDER,"header",(Data)=>{
+    ELEMENTED(HOLDER,"header",(ELEMENT)=>{
 
-        POSITIONFIXED(Data);
-        STYLED(Data,"background","#cdcdcd50");
-        STYLED(Data,"left","0");
-        STYLED(Data,"width","100%");
-        STYLED(Data,"height","50px");
-        STYLED(Data,"display","inline-flex");
-        STYLED(Data,"top","0px");
+        POSITIONABSOLUTE(ELEMENT);
+        WIDTH(ELEMENT,"100%");
+        HEIGHT(ELEMENT,"50px");
+        DISPLAYFLEX(ELEMENT);
+        TOP(ELEMENT,"0");
+        LEFT(ELEMENT,"0");
+        BACKGROUND(ELEMENT,"transparent");
+        BORDERBOTTOM(ELEMENT,"1px solid #cdcdcd50");
 
-        callBack(Data);
+        callBack(ELEMENT);
 
     });
 
