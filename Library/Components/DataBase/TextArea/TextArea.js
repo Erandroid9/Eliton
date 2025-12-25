@@ -1,0 +1,21 @@
+export const TEXTAREA=(HOLDER,MESSAGE,callBack)=>{
+
+    ELEMENTED(HOLDER,"textarea",(ELEMENT)=>{
+
+        PLACEHOLDER(ELEMENT,MESSAGE);
+
+        POSITIONRELATIVE(ELEMENT);
+        WIDTH(ELEMENT,"95%");
+        HEIGHT(ELEMENT,"150px");
+        MARGIN(ELEMENT,"");
+        DISPLAYBLOCK(ELEMENT);
+        BORDER(ELEMENT,WHITE);
+        OUTLINE(ELEMENT);
+        BACKGROUND(ELEMENT,TRANSPARENT);
+        COLOR(ELEMENT,WHITE);
+
+        callBack(ELEMENT);
+
+    });
+
+};

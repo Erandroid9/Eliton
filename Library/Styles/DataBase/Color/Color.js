@@ -1,5 +1,5 @@
 export const COLOR=(ELEMENT,AMOUNT)=>{
 
-    STYLED(ELEMENT,"color",AMOUNT||"#FFFFFF");
+    STYLED(ELEMENT,"color",AMOUNT||WHITE);
 
 };

@@ -1,0 +1,16 @@
+export const DIV=(HOLDER,WIDE,TALL,APPEARANCE,callBack)=>{
+
+    ELEMENTED(HOLDER,"div",(ELEMENT)=>{
+
+        POSITIONRELATIVE(ELEMENT);
+        MARGIN(ELEMENT,"");
+        WIDTH(ELEMENT,WIDE);
+        HEIGHT(ELEMENT,TALL);
+        DISPLAYBLOCK(ELEMENT);
+        BACKGROUND(ELEMENT,APPEARANCE);
+
+        callBack(ELEMENT);
+
+    });
+
+};

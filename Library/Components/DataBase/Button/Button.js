@@ -1,0 +1,20 @@
+export const BUTTON=(HOLDER,WORDS,APPEARANCE,COLORTEXT,callBack)=>{
+
+    ELEMENTED(HOLDER,"button",(ELEMENT)=>{
+
+        DISPLAY(ELEMENT,WORDS||"Click Me");
+
+        POSITIONRELATIVE(ELEMENT);
+        MARGIN(ELEMENT,"");
+        WIDTH(ELEMENT,"");
+        HEIGHT(ELEMENT,"50px");
+        DISPLAYBLOCK(ELEMENT);
+        BORDER(ELEMENT,TRANSPARENT);
+        COLOR(ELEMENT,COLORTEXT);
+        BACKGROUND(ELEMENT,APPEARANCE);
+
+        callBack(ELEMENT);
+
+    });
+
+};

@@ -1,5 +1,6 @@
 import { APPSTART } from "../../../../Connection/AutoRun.js";
 import { START } from "../../../../Connection/Start.js";
+import { COLORSCONNECTION } from "../../../Colors/Connection/Connection.js";
 import { COMPONENTSCONNECTION } from "../../../Components/Connection/Connection.js";
 import { CONSTANTSCONNECTION } from "../../../Constants/Connections/Connections.js";
 import { CONFIGENVIRONMENT } from "../../../Environment/Connection/Connection.js";
@@ -27,119 +28,133 @@ export const DATALOADER=()=>{
         APPSTART();
 
         START();
+
+        COLORSCONNECTION();
         
     } else {
 
-        if (localStorage.getItem("FUNCTIONS")) {
-
-            FUNCTIONSCONNECTION();
-
-            if (localStorage.getItem("COMPONENTS")) {
-
-                COMPONENTSCONNECTION();
-
-                if (localStorage.getItem("CONSTANTS")) {
-
-                    CONSTANTSCONNECTION();
-
-                    if (localStorage.getItem("STYLES")) {
-
-                        STYLESCONNECTIONS();
-
-                        if (localStorage.getItem("PAGES")) {
-
-                            PAGESCONNECTION();
-
-                            if (localStorage.getItem("RUN")) {
-
-                                APPSTART();
-
-                                if (localStorage.getItem("ERANDCONFIG")) {
-
-                                    START();
-
-                                    if (localStorage.getItem("PROJECT")) {
-
-                                        CONFIGENVIRONMENT();
+        if (localStorage.getItem("COLORS")) {
+            
+            if (localStorage.getItem("FUNCTIONS")) {
+    
+                FUNCTIONSCONNECTION();
+    
+                if (localStorage.getItem("COMPONENTS")) {
+    
+                    COMPONENTSCONNECTION();
+    
+                    if (localStorage.getItem("CONSTANTS")) {
+    
+                        CONSTANTSCONNECTION();
+    
+                        if (localStorage.getItem("STYLES")) {
+    
+                            STYLESCONNECTIONS();
+    
+                            if (localStorage.getItem("PAGES")) {
+    
+                                PAGESCONNECTION();
+    
+                                if (localStorage.getItem("RUN")) {
+    
+                                    APPSTART();
+    
+                                    if (localStorage.getItem("ERANDCONFIG")) {
+    
+                                        START();
+    
+                                        if (localStorage.getItem("PROJECT")) {
+    
+                                            CONFIGENVIRONMENT();
+                                            
+                                        } else {
+    
+                                            DISPLAYLOADER("90%");
+    
+                                            CONFIGENVIRONMENT();
+                                                               
+                                        };
                                         
                                     } else {
-
-                                        DISPLAYLOADER("90%");
-
-                                        CONFIGENVIRONMENT();
-                                                           
+    
+                                        DISPLAYLOADER("80%");
+    
+                                        START();
+    
+                                        RERUN();
+                                                
                                     };
                                     
                                 } else {
-
-                                    DISPLAYLOADER("80%");
-
-                                    START();
-
+    
+                                    DISPLAYLOADER("70%");
+    
+                                    APPSTART();
+    
                                     RERUN();
                                             
                                 };
-                                
+                            
                             } else {
-
-                                DISPLAYLOADER("70%");
-
-                                APPSTART();
-
+    
+                                DISPLAYLOADER("60%");
+    
+                                PAGESCONNECTION();
+    
                                 RERUN();
-                                        
+                                    
                             };
                         
                         } else {
-
-                            DISPLAYLOADER("60%");
-
-                            PAGESCONNECTION();
-
+    
+                            DISPLAYLOADER("50%");
+    
+                            STYLESCONNECTIONS();
+    
                             RERUN();
                                 
                         };
-                    
+                        
                     } else {
-
-                        DISPLAYLOADER("50%");
-
-                        STYLESCONNECTIONS();
-
+    
+                        DISPLAYLOADER("40%");
+    
+                        CONSTANTSCONNECTION();
+    
                         RERUN();
-                            
+                        
                     };
                     
                 } else {
-
-                    DISPLAYLOADER("40%");
-
-                    CONSTANTSCONNECTION();
-
+    
+                    DISPLAYLOADER("30%");
+    
+                    COMPONENTSCONNECTION();
+    
                     RERUN();
                     
                 };
-                
-            } else {
-
-                DISPLAYLOADER("30%");
-
-                COMPONENTSCONNECTION();
-
+    
+            }else{
+    
+                DISPLAYLOADER("20%");
+    
+                FUNCTIONSCONNECTION();
+    
                 RERUN();
-                
+    
             };
 
-        }else{
+        } else {
 
-            DISPLAYLOADER("20%");
-
-            FUNCTIONSCONNECTION();
+            DISPLAYLOADER("10%");
+            
+            COLORSCONNECTION();
 
             RERUN();
 
         };
-  
+
     };
 
 };

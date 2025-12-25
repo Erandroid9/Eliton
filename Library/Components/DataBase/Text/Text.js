@@ -1,13 +1,14 @@
-export const TEXT=(HOLDER,TYPE,WORD,callBack)=>{
+export const TEXT=(HOLDER,TYPE,WORD,APPEARANCE,callBack)=>{
 
-    ELEMENTED(HOLDER,TYPE||"p",(Data)=>{
+    ELEMENTED(HOLDER,TYPE||"p",(ELEMENT)=>{
 
-        DISPLAY(Data,WORD||"Your Text");
+        DISPLAY(ELEMENT,WORD||"Your Text");
 
-        STYLED(Data,"position","related");
-        STYLED(Data,"margin","auto");
+        POSITIONRELATIVE(ELEMENT);
+        MARGIN(ELEMENT,"");
+        COLOR(ELEMENT,APPEARANCE);
 
-        callBack(Data);
+        callBack(ELEMENT);
 
     });
 

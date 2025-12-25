@@ -38,6 +38,8 @@ import { RIGHT } from "../DataBase/Right/Right.js";
 import { TEXTDECORATION } from "../DataBase/TextDecoration/TextDecoration.js";
 import { TOP } from "../DataBase/Top/Top.js";
 import { WIDTH } from "../DataBase/Width/Width.js";
+import { LEFTTEXTALIGN } from "../DataBase/LeftTextAlign/LeftTextAlign.js";
+import { RIGHTTEXTALIGN } from "../DataBase/RightTextAlign/RightTextAlign.js";
 
 export const STYLESCONNECTIONS=()=>{
 const DATA=`const POSITIONFIXED=${POSITIONFIXED};
@@ -80,6 +82,8 @@ const OVERFLOWHIDDEN=${OVERFLOWHIDDEN};
 const OVERFLOWY=${OVERFLOWY};
 const OVERFLOWX=${OVERFLOWX};
 const OVERFLOW=${OVERFLOW};
+const LEFTTEXTALIGN=${LEFTTEXTALIGN};
+const RIGHTTEXTALIGN=${RIGHTTEXTALIGN};
 `;
 
 localStorage.setItem("STYLES",DATA);
@@ -87,5 +91,5 @@ localStorage.setItem("STYLES",DATA);
 };
 
 `
-const OVERFLOW=${OVERFLOW};
+const RIGHTTEXTALIGN=${RIGHTTEXTALIGN};
 `

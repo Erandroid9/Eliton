@@ -1,16 +1,9 @@
 const ERANDES=()=>{
 
-    CLEAR("");
+    BREAK("");
 
-    HEADER("",(ELEMENT)=>{
-
+    BUTTON("","Buy Now",FORESTGREEN,"",(ELEMENT)=>{
 
     });
-
-    FOOTER("",(ELEMENT)=>{
-
-        
-    });
-
 
 };

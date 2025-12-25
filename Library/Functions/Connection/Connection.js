@@ -21,6 +21,21 @@ import { SWITCHER } from "../DataBase/Switcher/Switcher.js";
 import { UPDATEDATA } from "../DataBase/UpdateData/UpdateData.js";
 import { SCREENWIDTH } from "../DataBase/ScreenWidth/ScreenWidth.js";
 import { CLOUDPOST } from "../DataBase/CloudPost/CloudPost.js";
+import { SCREENHEIGHT } from "../DataBase/ScreenHeight/ScreenHeight.js";
+import { SOURCED } from "../DataBase/Sourced/Sourced.js";
+import { CONTROLS } from "../DataBase/Controls/Controls.js";
+import { SOURCEREF } from "../DataBase/SourceRef/SourceRef.js";
+import { TYPE } from "../DataBase/Type/Type.js";
+import { PLACEHOLDER } from "../DataBase/PlaceHolder/PlaceHolder.js";
+import { HIDER } from "../DataBase/Hider/Hider.js";
+import { REPEATER } from "../DataBase/Repeater/Repeater.js";
+import { LOCATOR } from "../DataBase/Locator/Locator.js";
+import { STOREINDEX } from "../DataBase/StoreIndex/StoreIndex.js";
+import { UPDATEINDEX } from "../DataBase/UpdateIndex/UpdateIndex.js";
+import { WEBKIT } from "../DataBase/WebKit/WebKit.js";
+import { DEJSONDATA } from "../DataBase/DejsonData/DejsonData.js";
+import { ZOOM } from "../DataBase/Zoom/Zoom.js";
+import { INSPECTION } from "../DataBase/Inspect/Inspect.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -47,6 +62,21 @@ const RELOAD=${RELOAD};
 const FUNCTIONED=${FUNCTIONED};
 const SCREENWIDTH=${SCREENWIDTH};
 const CLOUDPOST=${CLOUDPOST};
+const SCREENHEIGHT=${SCREENHEIGHT};
+const SOURCED=${SOURCED};
+const CONTROLS=${CONTROLS};
+const SOURCEREF=${SOURCEREF};
+const TYPE=${TYPE};
+const PLACEHOLDER=${PLACEHOLDER};
+const HIDER=${HIDER};
+const REPEATER=${REPEATER};
+const LOCATOR=${LOCATOR};
+const STOREINDEX=${STOREINDEX};
+const UPDATEINDEX=${UPDATEINDEX};
+const WEBKIT=${WEBKIT};
+const DEJSONDATA=${DEJSONDATA};
+const ZOOM=${ZOOM};
+const INSPECTION=${INSPECTION};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -54,5 +84,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const CLOUDPOST=${CLOUDPOST};
+const INSPECTION=${INSPECTION};
 `

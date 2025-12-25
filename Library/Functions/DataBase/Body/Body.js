@@ -7,13 +7,13 @@ export const BODIED=()=>{
         POSITIONFIXED(BODY);
         MARGIN(BODY,"0");
         PADDING(BODY,"0");
-        WIDTH(BODY,"100%");
-        HEIGHT(BODY,"100%");
+        WIDTH(BODY,"");
+        HEIGHT(BODY,"");
         DISPLAYBLOCK(BODY);
         OVERFLOWHIDDEN(BODY);
-        TEXTALIGN(BODY,"center");
-        COLOR(BODY,"#FFFFFF");
-        BORDER(BODY,"none");
+        TEXTALIGN(BODY,"");
+        COLOR(BODY,WHITE);
+        BORDER(BODY,"");
         OUTLINE(BODY);
         TEXTDECORATION(BODY);
         FONTFAMILY(BODY,"");

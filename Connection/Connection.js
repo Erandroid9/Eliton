@@ -6,7 +6,7 @@ export const CONNECTIONS=()=>{
 
     ASSETSCONNECTION();
 
-    DISPLAYLOADER("10%");
+    DISPLAYLOADER("5%");
 
     DATALOADER();
 
