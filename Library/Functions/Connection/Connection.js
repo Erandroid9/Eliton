@@ -36,6 +36,7 @@ import { WEBKIT } from "../DataBase/WebKit/WebKit.js";
 import { DEJSONDATA } from "../DataBase/DejsonData/DejsonData.js";
 import { ZOOM } from "../DataBase/Zoom/Zoom.js";
 import { INSPECTION } from "../DataBase/Inspect/Inspect.js";
+import { GETINDEXDATA } from "../DataBase/GetIndexData/GetIndexData.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -77,6 +78,7 @@ const WEBKIT=${WEBKIT};
 const DEJSONDATA=${DEJSONDATA};
 const ZOOM=${ZOOM};
 const INSPECTION=${INSPECTION};
+const GETINDEXDATA=${GETINDEXDATA};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -84,5 +86,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const INSPECTION=${INSPECTION};
+const GETINDEXDATA=${GETINDEXDATA};
 `

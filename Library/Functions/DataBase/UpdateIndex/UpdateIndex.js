@@ -6,15 +6,13 @@ export const UPDATEINDEX = (dbName, storeName, data, callback) => {
 
         const db = event.target.result;
 
-        if (!db.objectStoreNames.contains(storeName)) {
+        CHECKER(!db.objectStoreNames.contains(storeName),()=>{
 
             console.error(`Object store "${storeName}" not found.`);
 
             db.close();
 
-            return;
-
-        }
+        });
 
         const transaction = db.transaction(storeName, "readwrite");
 
@@ -24,7 +22,7 @@ export const UPDATEINDEX = (dbName, storeName, data, callback) => {
 
         putRequest.onsuccess = function () {
             
-            callback();
+            callback(true);
 
         };
 

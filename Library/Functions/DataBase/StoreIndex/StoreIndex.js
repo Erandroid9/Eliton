@@ -4,13 +4,13 @@ export const STOREINDEX= (dbName, storeName, data, callback) => {
 
     const cb = (success) => {
 
-        if (!invoked && typeof callback === "function") {
+        CHECKER(!invoked && typeof callback === "function",()=>{
 
             invoked = true;
 
             callback(success);
 
-        }
+        });
 
     };
 
@@ -20,11 +20,11 @@ export const STOREINDEX= (dbName, storeName, data, callback) => {
 
         const db = e.target.result;
 
-        if (!db.objectStoreNames.contains(storeName)) {
+        CHECKER(!db.objectStoreNames.contains(storeName),()=>{
 
             db.createObjectStore(storeName, { keyPath: "Name" });
 
-        }
+        });
 
     };
 
@@ -32,7 +32,7 @@ export const STOREINDEX= (dbName, storeName, data, callback) => {
 
         const db = e.target.result;
 
-        if (!db.objectStoreNames.contains(storeName)) {
+        CONDITION(!db.objectStoreNames.contains(storeName),()=>{
 
             db.close();
 
@@ -72,7 +72,7 @@ export const STOREINDEX= (dbName, storeName, data, callback) => {
 
             upgradeRequest.onerror = (e) => cb(false);
 
-        } else {
+        },()=>{
 
             const tx = db.transaction(storeName, "readwrite");
 
@@ -90,7 +90,7 @@ export const STOREINDEX= (dbName, storeName, data, callback) => {
 
             tx.onerror = (e) => cb(false);
 
-        }
+        });
 
     };
 
