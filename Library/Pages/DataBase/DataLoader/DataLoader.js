@@ -7,6 +7,7 @@ import { CONFIGENVIRONMENT } from "../../../Environment/Connection/Connection.js
 import { FUNCTIONSCONNECTION } from "../../../Functions/Connection/Connection.js";
 import { SERVERCONNECTION } from "../../../Server/Connection/Connection.js";
 import { STYLESCONNECTIONS } from "../../../Styles/Connection/Connection.js";
+import { TEMPLATESCONNECTION } from "../../../Templates/Connection/Connection.js";
 import { PAGESCONNECTION } from "../../Connection/Connnection.js";
 import { DISPLAYLOADER } from "../DisplayLoader/DisplayLoader.js";
 
@@ -33,6 +34,8 @@ export const DATALOADER=()=>{
         COLORSCONNECTION();
 
         SERVERCONNECTION();
+
+        TEMPLATESCONNECTION();
         
     } else {
 
@@ -61,47 +64,61 @@ export const DATALOADER=()=>{
                                 if (localStorage.getItem("RUN")) {
     
                                     APPSTART();
-    
-                                    if (localStorage.getItem("ERANDCONFIG")) {
-    
-                                        START();
 
-                                        if (localStorage.getItem("SERVER")) {
-    
-                                            SERVERCONNECTION();
-                                            
-                                            if (localStorage.getItem("PROJECT")) {
+                                    if (localStorage.getItem("TEMPLATES")) {
+
+                                        TEMPLATESCONNECTION();
+
+                                        if (localStorage.getItem("ERANDCONFIG")) {
         
-                                                CONFIGENVIRONMENT();
+                                            START();
+    
+                                            if (localStorage.getItem("SERVER")) {
+        
+                                                SERVERCONNECTION();
                                                 
+                                                if (localStorage.getItem("PROJECT")) {
+            
+                                                    CONFIGENVIRONMENT();
+                                                    
+                                                } else {
+            
+                                                    DISPLAYLOADER("90%");
+            
+                                                    CONFIGENVIRONMENT();
+                                                                       
+                                                };
+    
                                             } else {
         
-                                                DISPLAYLOADER("90%");
+                                                DISPLAYLOADER("85%");
         
-                                                CONFIGENVIRONMENT();
+                                                SERVERCONNECTION();
+    
+                                                RERUN();
                                                                    
                                             };
-
+        
                                         } else {
-    
-                                            DISPLAYLOADER("85%");
-    
-                                            SERVERCONNECTION();
-
+        
+                                            DISPLAYLOADER("80%");
+        
+                                            START();
+        
                                             RERUN();
-                                                               
+                                                    
                                         };
-    
+                                        
                                     } else {
-    
-                                        DISPLAYLOADER("80%");
-    
-                                        START();
-    
+
+                                        DISPLAYLOADER("75%");
+        
+                                        TEMPLATESCONNECTION();
+        
                                         RERUN();
-                                                
+                                        
                                     };
-                                    
+    
                                 } else {
     
                                     DISPLAYLOADER("70%");
