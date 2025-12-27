@@ -7,6 +7,7 @@ export const TEXT=(HOLDER,TYPE,WORD,APPEARANCE,callBack)=>{
         POSITIONRELATIVE(ELEMENT);
         MARGIN(ELEMENT,"");
         COLOR(ELEMENT,APPEARANCE);
+        FONTSIZE(ELEMENT,""); 
 
         callBack(ELEMENT);
 

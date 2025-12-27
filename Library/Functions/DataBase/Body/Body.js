@@ -4,28 +4,36 @@ export const BODIED=()=>{
 
         DATASTORE(" ","Width",Data);
 
-        POSITIONFIXED(BODY);
-        MARGIN(BODY,"0");
-        PADDING(BODY,"0");
-        WIDTH(BODY,"");
-        HEIGHT(BODY,"");
-        DISPLAYBLOCK(BODY);
-        OVERFLOWHIDDEN(BODY);
-        TEXTALIGN(BODY,"");
-        COLOR(BODY,WHITE);
-        BORDER(BODY,"");
-        OUTLINE(BODY);
-        TEXTDECORATION(BODY);
-        FONTFAMILY(BODY,"");
-        FONTSIZE(BODY,"");
+    });
 
-        CLICK(BODY,()=>{
+    POSITIONFIXED(BODY);
+    MARGIN(BODY,"0");
+    PADDING(BODY,"0");
+    WIDTH(BODY,"");
+    HEIGHT(BODY,"");
+    DISPLAYBLOCK(BODY);
+    OVERFLOWHIDDEN(BODY);
+    TEXTALIGN(BODY,"");
+    COLOR(BODY,WHITE);
+    BORDER(BODY,"");
+    OUTLINE(BODY);
+    TEXTDECORATION(BODY);
+    FONTFAMILY(BODY,"");
+    FONTSIZE(BODY,"");
 
-            CHECKER(Data != localStorage.getItem("Width"),()=>{
+    CLICK(BODY,()=>{
 
-                DATASTORE(" ","Width",Data);
+        SCREENWIDTH((Data)=>{
 
-                RELOAD();
+            CONDITION(Data != localStorage.getItem("Width"),()=>{
+
+                DATASTORE("Local","Width",Data);
+
+                RELOAD();  
+
+            },()=>{
+
+                DATASTORE("Local","Width",Data);
 
             });
 
