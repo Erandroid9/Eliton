@@ -1,5 +1,7 @@
 export const HEADERVIEW=(callBack,callBackOne)=>{
 
+    CLEAR("");
+
     HEADER("",(ELEMENT)=>{
 
         callBack(ELEMENT);
