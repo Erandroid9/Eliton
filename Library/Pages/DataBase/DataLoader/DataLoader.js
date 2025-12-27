@@ -5,6 +5,7 @@ import { COMPONENTSCONNECTION } from "../../../Components/Connection/Connection.
 import { CONSTANTSCONNECTION } from "../../../Constants/Connections/Connections.js";
 import { CONFIGENVIRONMENT } from "../../../Environment/Connection/Connection.js";
 import { FUNCTIONSCONNECTION } from "../../../Functions/Connection/Connection.js";
+import { SERVERCONNECTION } from "../../../Server/Connection/Connection.js";
 import { STYLESCONNECTIONS } from "../../../Styles/Connection/Connection.js";
 import { PAGESCONNECTION } from "../../Connection/Connnection.js";
 import { DISPLAYLOADER } from "../DisplayLoader/DisplayLoader.js";
@@ -30,6 +31,8 @@ export const DATALOADER=()=>{
         START();
 
         COLORSCONNECTION();
+
+        SERVERCONNECTION();
         
     } else {
 
@@ -62,19 +65,33 @@ export const DATALOADER=()=>{
                                     if (localStorage.getItem("ERANDCONFIG")) {
     
                                         START();
+
+                                        if (localStorage.getItem("SERVER")) {
     
-                                        if (localStorage.getItem("PROJECT")) {
-    
-                                            CONFIGENVIRONMENT();
+                                            SERVERCONNECTION();
                                             
+                                            if (localStorage.getItem("PROJECT")) {
+        
+                                                CONFIGENVIRONMENT();
+                                                
+                                            } else {
+        
+                                                DISPLAYLOADER("90%");
+        
+                                                CONFIGENVIRONMENT();
+                                                                   
+                                            };
+
                                         } else {
     
-                                            DISPLAYLOADER("90%");
+                                            DISPLAYLOADER("85%");
     
-                                            CONFIGENVIRONMENT();
+                                            SERVERCONNECTION();
+
+                                            RERUN();
                                                                
                                         };
-                                        
+    
                                     } else {
     
                                         DISPLAYLOADER("80%");
