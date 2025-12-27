@@ -12,6 +12,10 @@ const MOBILEVIEW=()=>{
 
         });
 
+        RIGHTTEXTVIEW(ELEMENT,"Create",(ELEMENTS)=>{
+
+        });
+
     },(ELEMENT)=>{
 
     });
