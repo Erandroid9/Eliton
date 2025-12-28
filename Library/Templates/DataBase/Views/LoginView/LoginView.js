@@ -1,34 +1,75 @@
 export const LOGINVIEW=(WORD)=>{
 
-    CLEAR("");
+    SWITCHER("800px",()=>{
 
-    BREAK();
+        BREAK();
 
-    TEXT("","h1",WORD,"",(ELEMENT)=>{
+        BREAK();
 
-        FONTSIZE(ELEMENT,"30px");
+        DIVVIEW("","80%","80%",TRANSPARENT,(ELEMENT)=>{
 
-    });
+            TEXT(ELEMENT,"h1",WORD,"",(ELEMENT)=>{
 
-    BREAK();
+                FONTSIZE(ELEMENT,"30px");
 
-    INPUT("","email","Enter Your Email",()=>{
+            });
 
-    });
+            BREAK(ELEMENT);
 
-    BREAK();
+            INPUT(ELEMENT,"email","Enter Your Email",()=>{
 
-    INPUT("","password","Enter Your Password",()=>{
+            });
 
-    });
+            BREAK(ELEMENT);
 
-    BREAK();
+            INPUT(ELEMENT,"password","Enter Your Password",()=>{
 
-    BUTTON("","Sign In",FORESTGREEN,WHITE,(ELEMENT)=>{
+            });
 
-        WIDTH(ELEMENT,"95%");
-        RADIUS(ELEMENT,"10px");
+            BREAK(ELEMENT);
 
-    });
+            BUTTON(ELEMENT,"Sign In",FORESTGREEN,WHITE,(ELEMENT)=>{
+
+                WIDTH(ELEMENT,"95%");
+                RADIUS(ELEMENT,"10px");
+
+            });
+
+        });
+
+    },()=>{
+
+        CLEAR("");
+
+        BREAK();
+
+        TEXT("","h1",WORD,"",(ELEMENT)=>{
+
+            FONTSIZE(ELEMENT,"30px");
+
+        });
+
+        BREAK();
+
+        INPUT("","email","Enter Your Email",()=>{
+
+        });
+
+        BREAK();
+
+        INPUT("","password","Enter Your Password",()=>{
+
+        });
+
+        BREAK();
+
+        BUTTON("","Sign In",FORESTGREEN,WHITE,(ELEMENT)=>{
+
+            WIDTH(ELEMENT,"95%");
+            RADIUS(ELEMENT,"10px");
+
+        });
+
+    })
 
 };
