@@ -1,5 +1,9 @@
 const ERANDES=()=>{
 
+    EMAILSERVER("eroinnovations9@gmail.com","Test","Its Working",(Data)=>{
+        console.log(Data)
+    })
+
     SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();})
 
 };
