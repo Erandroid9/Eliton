@@ -1,6 +1,6 @@
 const ERANDES=()=>{
 
-    GETCOUNTRIESAPI((Daa)=>{
+    GETUGANDANDISTRICTSAPI((Daa)=>{
         console.log(Daa)
     })
 
