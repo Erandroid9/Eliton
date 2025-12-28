@@ -70,6 +70,6 @@ export const LOGINVIEW=(WORD)=>{
 
         });
 
-    })
+    });
 
 };
