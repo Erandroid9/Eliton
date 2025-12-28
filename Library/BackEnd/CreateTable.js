@@ -49,10 +49,9 @@ function doPost(e) {
     
     return ContentService.createTextOutput(JSON.stringify(response))
     .setMimeType(ContentService.MimeType.JSON);
-  }
-  
-  function extractSpreadsheetId(url) {
+}
+
+function extractSpreadsheetId(url) {
     var matches = url.match(/\/spreadsheets\/d\/([a-zA-Z0-9-_]+)\//);
     return matches ? matches[1] : null;
-  }
-  
+}

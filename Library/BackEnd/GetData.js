@@ -36,19 +36,18 @@ function doPost(e) {
       
       return createErrorResponse("An error occurred: " + error.message);
     }
-  }
+}
   
-  function extractSpreadsheetId(url) {
+function extractSpreadsheetId(url) {
     var matches = url.match(/\/spreadsheets\/d\/([a-zA-Z0-9-_]+)/);
     return matches ? matches[1] : null;
-  }
+}
   
-  function createErrorResponse(message) {
+function createErrorResponse(message) {
     var response = {
       message: message,
       error: true
     };
     return ContentService.createTextOutput(JSON.stringify(response))
     .setMimeType(ContentService.MimeType.JSON);
-  }
-  
+}

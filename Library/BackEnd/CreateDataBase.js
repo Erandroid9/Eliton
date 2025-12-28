@@ -30,4 +30,4 @@ function doPost(e) {
     
     return ContentService.createTextOutput(JSON.stringify(response))
     .setMimeType(ContentService.MimeType.JSON);
-  }
+}

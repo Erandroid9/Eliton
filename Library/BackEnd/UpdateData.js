@@ -64,26 +64,26 @@ function doPost(e) {
     }
   
     return createErrorResponse("Invalid action specified.");
-  }
+}
   
-  function generateUniqueId() {
+function generateUniqueId() {
     return Utilities.getUuid();
-  }
+}
   
-  function extractSpreadsheetId(url) {
+function extractSpreadsheetId(url) {
     var matches = url.match(/\/spreadsheets\/d\/([a-zA-Z0-9-_]+)/);
     return matches ? matches[1] : null;
-  }
+}
 
-  function arraysEqual(arr1, arr2) {
+function arraysEqual(arr1, arr2) {
     if (arr1.length !== arr2.length) return false;
     for (var i = 0; i < arr1.length; i++) {
       if (arr1[i] !== arr2[i]) return false;
     }
     return true;
-  }
+}
   
-  function createSuccessResponse(message, additionalData) {
+function createSuccessResponse(message, additionalData) {
     var response = {
       message: message,
       error: false
@@ -96,15 +96,14 @@ function doPost(e) {
       }
     }
     return ContentService.createTextOutput(JSON.stringify(response))
-                         .setMimeType(ContentService.MimeType.JSON);
-  }
+    .setMimeType(ContentService.MimeType.JSON);
+}
   
-  function createErrorResponse(message) {
+function createErrorResponse(message) {
     var response = {
       message: message,
       error: true
     };
     return ContentService.createTextOutput(JSON.stringify(response))
-                         .setMimeType(ContentService.MimeType.JSON);
-  }
-  
+    .setMimeType(ContentService.MimeType.JSON);
+}
