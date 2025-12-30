@@ -1,23 +1,27 @@
 export const  CLOUDPOST=(LINK,DATA,callBack)=>{
 
-    fetch(LINK,{
-        method:"POST",
-        mode:"cors",
-        body:JSON.stringify(DATA)
-    })
+    OFFLINECHECKER(()=>{
 
-    .then(res =>res.json())
+        fetch(LINK,{
+            method:"POST",
+            mode:"cors",
+            body:JSON.stringify(DATA)
+        })
 
-    .then(data=>{
+        .then(res =>res.json())
 
-        callBack(data);
+        .then(data=>{
 
-    })
+            callBack(data);
 
-    .catch(error =>{
+        })
 
-        console.log(error);
-        
+        .catch(error =>{
+
+            console.log(error);
+            
+        });
+
     });
-
+    
 };

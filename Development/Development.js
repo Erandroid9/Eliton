@@ -1,6 +1,6 @@
 const ERANDES=()=>{
 
-    LOGINVIEW("");
+    LOGINVIEW("Erandix");
 
     //SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();})
 

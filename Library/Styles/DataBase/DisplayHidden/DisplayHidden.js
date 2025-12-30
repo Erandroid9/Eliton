@@ -1,5 +1,5 @@
 export const DISPLAYHIDDEN=(ELEMENT)=>{
 
-    STYLED(ELEMENT,"display","hidden");
+    STYLED(ELEMENT,"display","none");
 
 };
