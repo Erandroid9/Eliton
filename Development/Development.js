@@ -33,10 +33,3 @@ const MOBILEVIEW=()=>{
     });
 
 };
-
-`
-https://musix-f65ecb.gitlab.io/Database/Ugandan/A%20Pass%20-%20Abantu%20(Official%20Music%20Video).mp3
-
-https://musix-f65ecb.gitlab.io//Ugandan/A%20Pass%20-%20Abantu%20(Official%20Music%20Video).mp3
-
-`
