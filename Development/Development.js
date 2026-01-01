@@ -6,22 +6,112 @@ const ERANDES=()=>{
 
 const MOBILEVIEW=()=>{
 
-    GETMUSICAPI((Data)=>{
+    HEADERVIEW((ELEMENT)=>{
 
-        REDUX(Data,(Elements)=>{
+        LEFTTEXTVIEW(ELEMENT,"Manager",()=>{
 
-            TABLEVIEW("","40%","200px",TEAL,"2%",(ELEMENTS)=>{
+        });
 
-                CLICK(ELEMENTS,()=>{
+        RIGHTTEXTVIEW(ELEMENT,"Log Out",()=>{
 
-                    CLEAR();
+        });
 
-                    const SRC=`${MUSICSERVERLINK}/${Elements.Location}/${Elements.Name}`;
+    },(ELEMENT)=>{
 
-                    AUDIO("",SRC,()=>{
+        BREAK(ELEMENT);
 
-                    });
+        INPUT(ELEMENT,"","Project Name",(ELEMENTS)=>{
 
+            INPUTTED(ELEMENTS,()=>{
+
+                DATASTORE("","Name",ELEMENTS.value);
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        TEXT(ELEMENT,"","Android Section","",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
+
+            INPUTTED(ELEMENTS,()=>{
+
+                PATHREVERSE(ELEMENTS.value,(Data)=>{
+
+                    DATASTORE("","Android",Data);
+
+                });
+             
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        TEXT(ELEMENT,"","Desktop Section","",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
+
+            INPUTTED(ELEMENTS,()=>{
+
+                PATHREVERSE(ELEMENTS.value,(Data)=>{
+
+                    DATASTORE("","Desktop",Data);
+
+                });
+             
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        TEXT(ELEMENT,"","Web Section","",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
+
+            INPUTTED(ELEMENTS,()=>{
+
+                PATHREVERSE(ELEMENTS.value,(Data)=>{
+
+                    DATASTORE("","Web",Data);
+
+                });
+             
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        BUTTON(ELEMENT,"Create Project",TEAL,"",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+
+            CLICK(ELEMENTS,()=>{
+
+                const HEADERS=["Name","Android","Desktop","Web","Date"];
+
+                const INFO=[sessionStorage.getItem("Name"),sessionStorage.getItem("Android"),sessionStorage.getItem("Desktop"),sessionStorage.getItem("Web"),new Date()];
+                    
+                INSERTDATA(ERANDIXMANAGERLINK,"Production",HEADERS,INFO,(DataS)=>{
+                    
+                    TOASTVIEW("Data Posted To Server");
+                    
                 });
 
             });
@@ -32,3 +122,7 @@ const MOBILEVIEW=()=>{
 
 };
 
+const DESKTOPVIEW=()=>{
+
+
+};
