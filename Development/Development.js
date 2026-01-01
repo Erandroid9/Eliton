@@ -134,7 +134,23 @@ const DESKTOPVIEW=()=>{
 
     },(ELEMENT)=>{
 
-        LEFTDIVVIEW(ELEMENT,"30%",(ELEMENT)=>{
+        LEFTDIVVIEW(ELEMENT,"30%",(ELEMENTS)=>{
+
+            BUTTON(ELEMENTS,"New Project",FORESTGREEN,"",(ELEMENTSS)=>{
+
+                WIDTH(ELEMENTSS,"95%");
+                MARGINTOP(ELEMENT,"2%");
+
+            });
+
+            BREAK(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Delted Project",FORESTGREEN,"",(ELEMENTSS)=>{
+
+                WIDTH(ELEMENTSS,"95%");
+                MARGINTOP(ELEMENT,"2%");
+
+            });
 
         });
 
