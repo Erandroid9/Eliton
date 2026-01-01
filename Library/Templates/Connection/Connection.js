@@ -7,6 +7,7 @@ import { LEFTICONVIEW } from "../DataBase/Components/LeftIconView/LeftIconView.j
 import { LEFTTEXTVIEW } from "../DataBase/Components/LeftTextView/LeftTextView.js";
 import { RIGHTICONVIEW } from "../DataBase/Components/RightIconView/RightIconView.js";
 import { RIGHTTEXTVIEW } from "../DataBase/Components/RightTextView/RighttextView.js";
+import { ROUNDINPUTVIEW } from "../DataBase/Components/RoundInputView/RoundInputView.js";
 import { TABLEVIEW } from "../DataBase/Components/TableView/TableView.js";
 import { TOASTVIEW } from "../DataBase/Components/ToastView/ToastView.js";
 import { DOWNLOADSAVEINDEX } from "../DataBase/Functions/DownloadSaveIndex/DownloadSaveIndex.js";
@@ -28,6 +29,7 @@ const OFFLINECHECKER=${OFFLINECHECKER};
 const TOASTVIEW=${TOASTVIEW};
 const TABLEVIEW=${TABLEVIEW};
 const HEADERFOOTERVIEW=${HEADERFOOTERVIEW};
+const ROUNDINPUTVIEW=${ROUNDINPUTVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -35,5 +37,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const HEADERFOOTERVIEW=${HEADERFOOTERVIEW};
+const ROUNDINPUTVIEW=${ROUNDINPUTVIEW};
 `

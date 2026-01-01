@@ -118,6 +118,20 @@ const DESKTOPVIEW=()=>{
 
     HEADERFOOTERVIEW((ELEMENT)=>{
 
+        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
+
+        });
+
+        ROUNDINPUTVIEW(ELEMENT,"search","Search Your Project",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"50%");
+
+        });
+
+        RIGHTICONVIEW(ELEMENT,WHITELOGOUTICON,()=>{
+
+        });
+
     },(ELEMENT)=>{
 
     },(ELEMENT)=>{
