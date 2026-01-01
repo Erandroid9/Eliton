@@ -1,79 +1,50 @@
 import { DISPLAYLOADER } from "../../../Pages/DataBase/DisplayLoader/DisplayLoader.js";
 
-export const WEBENVIRONMENT=()=>{
+export const WEBENVIRONMENT = () => {
 
     DISPLAYLOADER("75%");
 
-    const MAIN="https://docs.google.com/spreadsheets/d/1V_m4KRo--FQkD0fNKfRZ1EWDRCSqTvwGkM7lEFGWldA/edit?usp=sharing";
+    const MAIN = "https://docs.google.com/spreadsheets/d/1V_m4KRo--FQkD0fNKfRZ1EWDRCSqTvwGkM7lEFGWldA/edit?usp=sharing";
+    const CLOUD = "https://erandroid9.github.io/Eliton/";
 
-    const CLOUD="https://erandroid9.github.io/Eliton/";
-
-    fetch("https://script.google.com/macros/s/AKfycbxgaFqwexOOBXA5tn1n2Mp0k9-KlwZ8ZP4QUvWM_CigDocfx-nVR0xz2RyuwDBYgwMp/exec",{
-        method:"POST",
-        mode:"cors",
-        body:JSON.stringify({
-            "sheetName":"Production",
-            "spreadsheetUrl":MAIN
+    fetch("https://script.google.com/macros/s/AKfycbxgaFqwexOOBXA5tn1n2Mp0k9-KlwZ8ZP4QUvWM_CigDocfx-nVR0xz2RyuwDBYgwMp/exec", {
+        method: "POST",
+        mode: "cors",
+        body: JSON.stringify({
+            sheetName: "Production",
+            spreadsheetUrl: MAIN
         })
     })
-    .then(res =>res.json())
-    .then(data=>{
+    .then(res => res.json())
+    .then(data => {
 
         DISPLAYLOADER("85%");
 
-        const user = data.find((item) => item.ID === localStorage.getItem("Config"));
+        const user = data.find(item => item.ID === localStorage.getItem("Config"));
+        if (!user) return;
 
-        if (user) {
+        DISPLAYLOADER("95%");
 
-            DISPLAYLOADER("95%");
-                            
-            fetch(CLOUD+user.Web)
-                            
-            .then(res =>res.text())
-                            
-            .then(data =>{
-                            
-                DISPLAYLOADER("100%");
-                            
-                if (!localStorage.getItem("Packaged")) {
+        fetch(CLOUD + user.Web)
+        .then(res => res.text())
+        .then(projectData => {
 
-                    localStorage.setItem("PROJECT",data);
+            DISPLAYLOADER("100%");
 
-                    localStorage.setItem("Packaged",new Date())
-            
-                    location.reload();
-                    
-                }else{
+            const storedProject = localStorage.getItem("PROJECT");
 
-                    if (data === localStorage.getItem("PROJECT") ) {
+            // Always store the project
+            localStorage.setItem("PROJECT", projectData);
 
-                        localStorage.setItem("PROJECT",data);
-                        
-                    }else{
+            // First install OR update detected
+            if (!storedProject || storedProject !== projectData) {
+                localStorage.setItem("Packaged", new Date().toISOString());
+                location.reload();
+            }
 
-                        localStorage.setItem("PROJECT",data);
+        })
+        .catch(console.error);
 
-                        localStorage.setItem("Packaged",new Date())
-            
-                        location.reload();
-
-                    };
-
-                };
-            
-            })
-                            
-            .catch(error=>{console.log(error)})
-
-            return;
-  
-        };
-        
     })
-    .catch(error =>{
-
-        console.log(error);
-
-    });
-
+    .catch(console.error);
 };
