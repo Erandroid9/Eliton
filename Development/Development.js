@@ -8,7 +8,11 @@ const MOBILEVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        TEXT(ELEMENT,"h1","Image Convertor","",()=>{
+        LEFTTEXTVIEW(ELEMENT,"Manager",()=>{
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Log Out",()=>{
 
         });
 
@@ -16,57 +20,91 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        IMAGE(ELEMENT,"95%","50%",ERANDIXLOGO,TRANSPARENT,(ELEMENTERS)=>{
+        INPUT(ELEMENT,"","Project Name",(ELEMENTS)=>{
 
-            INLINEVIEW(ELEMENT,"95%","100px","","5% 0%",(ELEMENTS)=>{
+            INPUTTED(ELEMENTS,()=>{
 
-                TEXTAREA(ELEMENT,"",(ELEMS)=>{
+                DATASTORE("","Name",ELEMENTS.value);
 
-                    HEIGHT(ELEMS,"30%");
+            });
 
-                    BUTTON(ELEMENTS,"Change",TEAL,"",(ELEMSA)=>{
+        });
 
-                        WIDTH(ELEMSA,"20%");
+        BREAK(ELEMENT);
 
-                        FILEPICKER(ELEMSA,(Data)=>{
+        TEXT(ELEMENT,"","Android Section","",()=>{
 
-                            SOURCED(ELEMENTERS,Data.data);
+        });
 
-                            BASE64CONVERTOR(Data.data, (Datata)=>{
+        BREAK(ELEMENT);
 
-                                BUTTON(ELEMENTS,"Copy",ORANGE,"",(ELEMSA)=>{
+        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
 
-                                    WIDTH(ELEMSA,"20%");
+            INPUTTED(ELEMENTS,()=>{
 
-                                    CLICK(ELEMSA,()=>{
+                PATHREVERSE(ELEMENTS.value,(Data)=>{
 
-                                        COPY(Datata);
-
-                                    });
-
-                                });
-
-                                TEXTCHANGER(ELEMS,Datata);
-
-                            });
-
-                        });
-
-                    });
-
-                    BUTTON(ELEMENTS,"Delete",RED,"",(ELEMSA)=>{
-
-                        WIDTH(ELEMSA,"20%");
-
-                        CLICK(ELEMSA,()=>{
-
-                            RELOAD();
-
-                        });
-
-                    });
+                    DATASTORE("","Android",Data);
 
                 });
+             
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        TEXT(ELEMENT,"","Desktop Section","",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
+
+            INPUTTED(ELEMENTS,()=>{
+
+                PATHREVERSE(ELEMENTS.value,(Data)=>{
+
+                    DATASTORE("","Desktop",Data);
+
+                });
+             
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        TEXT(ELEMENT,"","Web Section","",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
+
+            INPUTTED(ELEMENTS,()=>{
+
+                PATHREVERSE(ELEMENTS.value,(Data)=>{
+
+                    DATASTORE("","Web",Data);
+
+                });
+             
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        BUTTON(ELEMENT,"Create Project",TEAL,"",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+
+            CLICK(ELEMENTS,()=>{
+
+                ERANDIXNEWPROJECT();
 
             });
 
@@ -78,63 +116,51 @@ const MOBILEVIEW=()=>{
 
 const DESKTOPVIEW=()=>{
 
-    HEADERVIEW((ELEMENT)=>{
+    HEADERFOOTERVIEW((ELEMENT)=>{
 
-        TEXT(ELEMENT,"h1","Image Convertor","",()=>{
+        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
+
+        });
+
+        ROUNDINPUTVIEW(ELEMENT,"search","Search Your Project",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"50%");
+
+        });
+
+        RIGHTICONVIEW(ELEMENT,WHITELOGOUTICON,()=>{
 
         });
 
     },(ELEMENT)=>{
 
-        BREAK(ELEMENT);
+        LEFTDIVVIEW(ELEMENT,"30%",(ELEMENTS)=>{
 
-        IMAGE(ELEMENT,"95%","50%",ERANDIXLOGO,TRANSPARENT,(ELEMENTERS)=>{
+            BUTTON(ELEMENTS,"New Project",FORESTGREEN,"",(ELEMENTSS)=>{
 
-            INLINEVIEW(ELEMENT,"95%","100px","","5% 0%",(ELEMENTS)=>{
+                WIDTH(ELEMENTSS,"95%");
+                MARGINTOP(ELEMENT,"2%");
 
-                TEXTAREA(ELEMENT,"",(ELEMS)=>{
+            });
 
-                    HEIGHT(ELEMS,"30%");
+            BREAK(ELEMENTS);
 
-                    BUTTON(ELEMENTS,"Change",TEAL,"",(ELEMSA)=>{
+            BUTTON(ELEMENTS,"Deleted Projects",FORESTGREEN,"",(ELEMENTSS)=>{
 
-                        WIDTH(ELEMSA,"20%");
+                WIDTH(ELEMENTSS,"95%");
+                MARGINTOP(ELEMENT,"2%");
 
-                        FILEPICKER(ELEMSA,(Data)=>{
+            });
 
-                            SOURCED(ELEMENTERS,Data.data);
+        });
 
-                            BASE64CONVERTOR(Data.data, (Datata)=>{
+        CENTREDIVVIEW(ELEMENT,"70%","30%","",(ELEMENTS)=>{
 
-                                BUTTON(ELEMENTS,"Copy",ORANGE,"",(ELEMSA)=>{
+            GETDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
 
-                                    WIDTH(ELEMSA,"20%");
+                REDUX(Data,(Element)=>{
 
-                                    CLICK(ELEMSA,()=>{
-
-                                        COPY(Datata);
-
-                                    });
-
-                                });
-
-                                TEXTCHANGER(ELEMS,Datata);
-
-                            });
-
-                        });
-
-                    });
-
-                    BUTTON(ELEMENTS,"Delete",RED,"",(ELEMSA)=>{
-
-                        WIDTH(ELEMSA,"20%");
-
-                        CLICK(ELEMSA,()=>{
-
-                            RELOAD();
-
-                        });
+                    TABLEVIEW(ELEMENTS,"40%","300px",RED,"2%",()=>{
 
                     });
 
@@ -144,6 +170,24 @@ const DESKTOPVIEW=()=>{
 
         });
 
-    });
+    },(ELEMENT)=>{
 
+        TEXT(ELEMENT,"h1","Version 1","",()=>{
+
+        });
+
+        TEXT(ELEMENT,"h1","Policies","",()=>{
+
+        });
+
+        TEXT(ELEMENT,"h1","Andriod App ","",()=>{
+
+        });
+
+        TEXT(ELEMENT,"h1","Contact Us ","",()=>{
+
+        });
+
+    });
+    
 };
