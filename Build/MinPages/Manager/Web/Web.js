@@ -116,5 +116,42 @@ const MOBILEVIEW=()=>{
 
 const DESKTOPVIEW=()=>{
 
+    HEADERFOOTERVIEW((ELEMENT)=>{
 
+        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
+
+        });
+
+        ROUNDINPUTVIEW(ELEMENT,"search","Search Your Project",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"50%");
+
+        });
+
+        RIGHTICONVIEW(ELEMENT,WHITELOGOUTICON,()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+    },(ELEMENT)=>{
+
+        TEXT(ELEMENT,"h1","Version 1","",()=>{
+
+        });
+
+        TEXT(ELEMENT,"h1","Policies","",()=>{
+
+        });
+
+        TEXT(ELEMENT,"h1","Andriod App ","",()=>{
+
+        });
+
+        TEXT(ELEMENT,"h1","Contact Us ","",()=>{
+
+        });
+
+    });
+    
 };

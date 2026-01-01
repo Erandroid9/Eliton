@@ -136,6 +136,22 @@ const DESKTOPVIEW=()=>{
 
     },(ELEMENT)=>{
 
+        TEXT(ELEMENT,"h1","Version 1","",()=>{
+
+        });
+
+        TEXT(ELEMENT,"h1","Policies","",()=>{
+
+        });
+
+        TEXT(ELEMENT,"h1","Andriod App ","",()=>{
+
+        });
+
+        TEXT(ELEMENT,"h1","Contact Us ","",()=>{
+
+        });
+
     });
     
 };
