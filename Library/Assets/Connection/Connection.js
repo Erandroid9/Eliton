@@ -4,6 +4,7 @@ import { BLACKHAMBURGICON } from "../DataBase/BlackIcons/Hamberg/Hamberg.js";
 import { BLACKLOCATIONICON } from "../DataBase/BlackIcons/Location/Location.js";
 import { BLACKSUNICON } from "../DataBase/BlackIcons/Sun/Sun.js";
 import { GREENMENUICON } from "../DataBase/GreenIcons/Menu/Menu.js";
+import { ERANDIXLOGO } from "../DataBase/Logos/Erandix/Erandix.js";
 import { MTNICON } from "../DataBase/Logos/Mtn/Mtn.js";
 import { WHITEADDICON } from "../DataBase/WhiteIcons/Add/Add.js";
 import { WHITEADDPERSONICON } from "../DataBase/WhiteIcons/AddPerson/AddPerson.js";
@@ -234,10 +235,11 @@ const BLACKSUNICON="${BLACKSUNICON}";
 const BLACKGRIDICON="${BLACKGRIDICON}";
 const BLACKHAMBURGICON="${BLACKHAMBURGICON}";
 const GREENMENUICON="${GREENMENUICON}";
+const ERANDIXLOGO="${ERANDIXLOGO}";
 `; 
 localStorage.setItem('ASSETS',DATA);
 };
 
 `
-const GREENMENUICON="${GREENMENUICON}";
+const ERANDIXLOGO="${ERANDIXLOGO}";
 `

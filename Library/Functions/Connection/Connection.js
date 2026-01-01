@@ -44,6 +44,7 @@ import { INPUTTED } from "../DataBase/Inputted/Inputted.js";
 import { PATHREVERSE } from "../DataBase/PathReverse/PathReverse.js";
 import { DOWNLOADFILE } from "../DataBase/DownloadFile/DownloadFile.js";
 import { COPY } from "../DataBase/Copy/Copy.js";
+import { TEXTCHANGER } from "../DataBase/TextChanger/TextChanger.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -93,6 +94,7 @@ const INPUTTED=${INPUTTED};
 const PATHREVERSE=${PATHREVERSE};
 const DOWNLOADFILE=${DOWNLOADFILE};
 const COPY=${COPY};
+const TEXTCHANGER=${TEXTCHANGER};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -100,5 +102,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const COPY=${COPY};
+const TEXTCHANGER=${TEXTCHANGER};
 `

@@ -4,6 +4,7 @@ import { FOOTERVIEW } from "../DataBase/Components/FooterView/FooterView.js";
 import { HEADERFOOTERVIEW } from "../DataBase/Components/HeaderFooterView/HeaderFooterView.js";
 import { HEADERVIEW } from "../DataBase/Components/HeaderView/HeaderView.js";
 import { ICONVIEW } from "../DataBase/Components/IconView/IconView.js";
+import { INLINEVIEW } from "../DataBase/Components/InlineView/InlineView.js";
 import { LEFTDIVVIEW } from "../DataBase/Components/LeftDivView/LeftDivView.js";
 import { LEFTICONVIEW } from "../DataBase/Components/LeftIconView/LeftIconView.js";
 import { LEFTTEXTVIEW } from "../DataBase/Components/LeftTextView/LeftTextView.js";
@@ -38,6 +39,7 @@ const LEFTDIVVIEW=${LEFTDIVVIEW};
 const RIGHTDIVVIEW=${RIGHTDIVVIEW};
 const CENTREDIVVIEW=${CENTREDIVVIEW};
 const BASE64CONVERTOR=${BASE64CONVERTOR};
+const INLINEVIEW=${INLINEVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -45,5 +47,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const BASE64CONVERTOR=${BASE64CONVERTOR};
+const INLINEVIEW=${INLINEVIEW};
 `
