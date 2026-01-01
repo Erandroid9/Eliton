@@ -18,12 +18,10 @@ export const HEADERFOOTERVIEW=(callBack,callBackOne,callBackTwo)=>{
 
     });
 
-    
     FOOTER("",(ELEMENT)=>{
 
         callBackTwo(ELEMENT);
 
     });
-
 
 };
