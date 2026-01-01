@@ -45,6 +45,7 @@ import { PATHREVERSE } from "../DataBase/PathReverse/PathReverse.js";
 import { DOWNLOADFILE } from "../DataBase/DownloadFile/DownloadFile.js";
 import { COPY } from "../DataBase/Copy/Copy.js";
 import { TEXTCHANGER } from "../DataBase/TextChanger/TextChanger.js";
+import { DESPACEDWORDS } from "../DataBase/DeSpaceWord/DeSpaceWord.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -95,6 +96,7 @@ const PATHREVERSE=${PATHREVERSE};
 const DOWNLOADFILE=${DOWNLOADFILE};
 const COPY=${COPY};
 const TEXTCHANGER=${TEXTCHANGER};
+const DESPACEDWORDS=${DESPACEDWORDS};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -102,5 +104,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const TEXTCHANGER=${TEXTCHANGER};
+const DESPACEDWORDS=${DESPACEDWORDS};
 `

@@ -6,111 +6,7 @@ const ERANDES=()=>{
 
 const MOBILEVIEW=()=>{
 
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTTEXTVIEW(ELEMENT,"Manager",()=>{
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Log Out",()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        BREAK(ELEMENT);
-
-        INPUT(ELEMENT,"","Project Name",(ELEMENTS)=>{
-
-            INPUTTED(ELEMENTS,()=>{
-
-                DATASTORE("","Name",ELEMENTS.value);
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        TEXT(ELEMENT,"","Android Section","",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
-
-            INPUTTED(ELEMENTS,()=>{
-
-                PATHREVERSE(ELEMENTS.value,(Data)=>{
-
-                    DATASTORE("","Android",Data);
-
-                });
-             
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        TEXT(ELEMENT,"","Desktop Section","",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
-
-            INPUTTED(ELEMENTS,()=>{
-
-                PATHREVERSE(ELEMENTS.value,(Data)=>{
-
-                    DATASTORE("","Desktop",Data);
-
-                });
-             
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        TEXT(ELEMENT,"","Web Section","",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
-
-            INPUTTED(ELEMENTS,()=>{
-
-                PATHREVERSE(ELEMENTS.value,(Data)=>{
-
-                    DATASTORE("","Web",Data);
-
-                });
-             
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        BUTTON(ELEMENT,"Create Project",TEAL,"",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"95%");
-
-            CLICK(ELEMENTS,()=>{
-
-                ERANDIXNEWPROJECT();
-
-            });
-
-        });
-
-    });
+    
 
 };
 
@@ -118,17 +14,17 @@ const DESKTOPVIEW=()=>{
 
     HEADERFOOTERVIEW((ELEMENT)=>{
 
-        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
+        LEFTTEXTVIEW(ELEMENT,"Erandix Music",()=>{
 
         });
 
-        ROUNDINPUTVIEW(ELEMENT,"search","Search Your Project",(ELEMENTS)=>{
+        ROUNDINPUTVIEW(ELEMENT,"search","Search Your Audio",(ELEMENTS)=>{
 
             WIDTH(ELEMENTS,"50%");
 
         });
 
-        RIGHTICONVIEW(ELEMENT,WHITELOGOUTICON,()=>{
+        RIGHTICONVIEW(ELEMENT,WHITEUSERICON,()=>{
 
         });
 
@@ -136,16 +32,22 @@ const DESKTOPVIEW=()=>{
 
         LEFTDIVVIEW(ELEMENT,"30%",(ELEMENTS)=>{
 
-            BUTTON(ELEMENTS,"New Project",FORESTGREEN,"",(ELEMENTSS)=>{
+            BUTTON(ELEMENTS,"Home",FORESTGREEN,"",(ELEMENTSS)=>{
 
                 WIDTH(ELEMENTSS,"95%");
                 MARGINTOP(ELEMENT,"2%");
+
+                CLICK(ELEMENTSS,()=>{
+
+                    RELOAD();
+
+                });
 
             });
 
             BREAK(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Deleted Projects",FORESTGREEN,"",(ELEMENTSS)=>{
+            BUTTON(ELEMENTS,"Playlists",FORESTGREEN,"",(ELEMENTSS)=>{
 
                 WIDTH(ELEMENTSS,"95%");
                 MARGINTOP(ELEMENT,"2%");
@@ -154,13 +56,37 @@ const DESKTOPVIEW=()=>{
 
         });
 
-        CENTREDIVVIEW(ELEMENT,"70%","30%","",(ELEMENTS)=>{
+        RIGHTDIVVIEW(ELEMENT,"70%",(ELEMENTS)=>{
 
-            GETDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
+            GETMUSICAPI((Data)=>{
 
-                REDUX(Data,(Element)=>{
+                REDUX(Data,(Elements)=>{
 
-                    TABLEVIEW(ELEMENTS,"40%","300px",RED,"2%",()=>{
+                    TABLEVIEW(ELEMENTS,"40%","300px",TEAL,"2%",(ELEMENTS)=>{
+
+                        IMAGE(ELEMENTS,"","",ERANDIXLOGO,TRANSPARENT,()=>{
+
+                        });
+
+                        HEADER(ELEMENTS,(ELEMS)=>{
+
+                            DESPACEDWORDS(Elements.Name,(Data)=>{
+
+                                TEXT(ELEMS,"h3",Data,"",(ELEMENTSS)=>{
+    
+                                    FONTSIZE(ELEMENTSS,"10px");
+    
+                                });
+
+                            });
+
+                        });
+
+                        const SRC=`${MUSICSERVERLINK}/${Elements.Location}/${Elements.Name}`;
+
+                        AUDIO(ELEMENTS,SRC,()=>{
+
+                        });
 
                     });
 
@@ -189,5 +115,5 @@ const DESKTOPVIEW=()=>{
         });
 
     });
-    
+
 };
