@@ -1,5 +1,6 @@
 import { DIVVIEW } from "../DataBase/Components/DivView/DivView.js";
 import { FOOTERVIEW } from "../DataBase/Components/FooterView/FooterView.js";
+import { HEADERFOOTERVIEW } from "../DataBase/Components/HeaderFooterView/HeaderFooterView.js";
 import { HEADERVIEW } from "../DataBase/Components/HeaderView/HeaderView.js";
 import { ICONVIEW } from "../DataBase/Components/IconView/IconView.js";
 import { LEFTICONVIEW } from "../DataBase/Components/LeftIconView/LeftIconView.js";
@@ -26,6 +27,7 @@ const DOWNLOADSAVEINDEX=${DOWNLOADSAVEINDEX};
 const OFFLINECHECKER=${OFFLINECHECKER};
 const TOASTVIEW=${TOASTVIEW};
 const TABLEVIEW=${TABLEVIEW};
+const HEADERFOOTERVIEW=${HEADERFOOTERVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -33,5 +35,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const TABLEVIEW=${TABLEVIEW};
+const HEADERFOOTERVIEW=${HEADERFOOTERVIEW};
 `

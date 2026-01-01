@@ -116,5 +116,12 @@ const MOBILEVIEW=()=>{
 
 const DESKTOPVIEW=()=>{
 
+    HEADERFOOTERVIEW((ELEMENT)=>{
 
+    },(ELEMENT)=>{
+
+    },(ELEMENT)=>{
+
+    });
+    
 };
