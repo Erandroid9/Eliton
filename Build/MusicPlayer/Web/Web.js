@@ -6,6 +6,8 @@ const ERANDES=()=>{
 
 const MOBILEVIEW=()=>{
 
+    
+
 };
 
 const DESKTOPVIEW=()=>{
@@ -82,9 +84,13 @@ const DESKTOPVIEW=()=>{
 
                         const SRC=`${MUSICSERVERLINK}/${Elements.Location}/${Elements.Name}`;
 
-                        AUDIO(ELEMENTS,SRC,()=>{
+                        FOOTER(ELEMENTS,(ELEMENTSS)=>{
 
-                        });
+                            AUDIO(ELEMENTSS,SRC,()=>{
+
+                            });
+
+                        })
 
                     });
 
