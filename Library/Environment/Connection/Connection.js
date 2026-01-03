@@ -37,7 +37,7 @@ export const CONFIGENVIRONMENT=()=>{
                 
             } else {
 
-                if (localStorage.getItem("Env") === "OFF") {
+                if (localStorage.getItem("Env") === "Web") {
 
                     DISPLAYLOADER("50%");
 
