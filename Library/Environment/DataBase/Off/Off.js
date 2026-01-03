@@ -68,11 +68,11 @@ export const OFFENVIRONMENT=()=>{
 
             localStorage.setItem("PROJECT",`const ERANDES=${ERANDES};`);
 
-            location.reload();
-
             localStorage.setItem("Packaged",new Date());
 
             localStorage.setItem("OffConfig",new Date());
+
+            location.reload();
 
         };
 
