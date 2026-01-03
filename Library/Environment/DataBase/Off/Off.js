@@ -70,8 +70,10 @@ export const OFFENVIRONMENT=()=>{
 
             location.reload();
 
-            localStorage.setItem("Packaged",new Date())
-            
+            localStorage.setItem("Packaged",new Date());
+
+            localStorage.setItem("OffConfig",new Date());
+
         };
 
     })
