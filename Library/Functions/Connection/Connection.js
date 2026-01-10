@@ -46,6 +46,26 @@ import { DOWNLOADFILE } from "../DataBase/DownloadFile/DownloadFile.js";
 import { COPY } from "../DataBase/Copy/Copy.js";
 import { TEXTCHANGER } from "../DataBase/TextChanger/TextChanger.js";
 import { DESPACEDWORDS } from "../DataBase/DeSpaceWord/DeSpaceWord.js";
+import { CALL } from "../DataBase/Call/Call.js";
+import { CAPITALIZED } from "../DataBase/Capitalize/Capitalize.js";
+import { DATENOW } from "../DataBase/DateNow/DateNow.js";
+import { DATETODAY } from "../DataBase/DateToday/DateToday.js";
+import { DEVICE } from "../DataBase/Device/Device.js";
+import { DOMAINNAMECHANGE } from "../DataBase/DomainChange/DomainChange.js";
+import { FACEBOOK } from "../DataBase/FaceBook/FaceBook.js";
+import { GROUP } from "../DataBase/Group/Group.js";
+import { HOVER } from "../DataBase/Hover/Hover.js";
+import { INSTAGRAM } from "../DataBase/Instagram/Instagram.js";
+import { JSONADDER } from "../DataBase/JsonAdder/JsonAdder.js";
+import { JSONIFICATION } from "../DataBase/Jsonification/Jsonification.js";
+import { JSONREMOVER } from "../DataBase/JsonRemover/JsonRemover.js";
+import { PARTISION } from "../DataBase/Partision/Partision.js";
+import { MONTHSTIME } from "../DataBase/MonthsTime/MonthsTime.js";
+import { OPERATINGSYSTEM } from "../DataBase/OperatingSystem/OperatingSystem.js";
+import { POWEREDBY } from "../DataBase/PoweredBy/PoweredBy.js";
+import { SCROLL } from "../DataBase/Scroll/Scroll.js";
+import { SMS } from "../DataBase/Sms/Sms.js";
+import { WEBSITE } from "../DataBase/WebSite/WebSite.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -97,6 +117,26 @@ const DOWNLOADFILE=${DOWNLOADFILE};
 const COPY=${COPY};
 const TEXTCHANGER=${TEXTCHANGER};
 const DESPACEDWORDS=${DESPACEDWORDS};
+const CALL=${CALL};
+const CAPITALIZED=${CAPITALIZED};
+const DATENOW=${DATENOW};
+const DATETODAY=${DATETODAY};
+const DEVICE=${DEVICE};
+const DOMAINNAMECHANGE=${DOMAINNAMECHANGE};
+const FACEBOOK=${FACEBOOK};
+const GROUP=${GROUP};
+const HOVER=${HOVER};
+const INSTAGRAM=${INSTAGRAM};
+const JSONADDER=${JSONADDER};
+const JSONIFICATION=${JSONIFICATION};
+const JSONREMOVER=${JSONREMOVER};
+const PARTISION=${PARTISION};
+const MONTHSTIME=${MONTHSTIME};
+const OPERATINGSYSTEM=${OPERATINGSYSTEM};
+const POWEREDBY=${POWEREDBY};
+const SCROLL=${SCROLL};
+const SMS=${SMS};
+const WEBSITE=${WEBSITE};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -104,5 +144,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const DESPACEDWORDS=${DESPACEDWORDS};
+const WEBSITE=${WEBSITE};
 `

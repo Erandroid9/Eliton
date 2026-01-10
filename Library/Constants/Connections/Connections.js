@@ -1,4 +1,6 @@
 import { BODY } from "../DataBase/Body/Body.js";
+import { COMPANYLINK } from "../DataBase/CompanyLink/CompanyLink.js";
+import { COMPANYNAME } from "../DataBase/CompanyName/CompanyName.js";
 import { CONNECTIONLINK } from "../DataBase/ConnectionLink/ConnectionLink.js";
 import { CREATEDATABASELINK } from "../DataBase/CreateDataBaseLink/CreateDataBase.js";
 import { CREATETABLELINK } from "../DataBase/CreateTableLink/CreateTableLink.js";
@@ -23,6 +25,8 @@ const EMAILLINK="${EMAILLINK}";
 const ERANDIXAPILINK="${ERANDIXAPILINK}";
 const ERANDIXMANAGERLINK="${ERANDIXMANAGERLINK}";
 const MUSICSERVERLINK="${MUSICSERVERLINK}";
+const COMPANYNAME="${COMPANYNAME}";
+const COMPANYLINK="${COMPANYLINK}";
 `;
 
 localStorage.setItem("CONSTANTS",DATA);
@@ -30,5 +34,5 @@ localStorage.setItem("CONSTANTS",DATA);
 };
 
 `
-const MUSICSERVERLINK="${MUSICSERVERLINK}";
+const COMPANYLINK="${COMPANYLINK}";
 `

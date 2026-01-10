@@ -6,8 +6,6 @@ const ERANDES=()=>{
 
 const MOBILEVIEW=()=>{
 
-    POWEREDBY("",WHITE);
-
 };
 
 const DESKTOPVIEW=()=>{
