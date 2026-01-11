@@ -6,9 +6,11 @@ const ERANDES=()=>{
 
 const MOBILEVIEW=()=>{
 
-    /*ERANDIXPAY("nVFedcBBCajwuw6qeIotnxbiGmkZtSl3","59QxDngTrjpQhF0FH0p8Dem54L8=",(data)=>{console.log(data)});
+    ERANDIXPAY(" nVFedcBBCajwuw6qeIotnxbiGmkZtSl3"," 59QxDngTrjpQhF0FH0p8Dem54L8=","https://qelmedistore.site",1000,"Test Pay","0768058124",(data)=>{
 
-    */
+        console.log(data);
+
+    });
 
 };
 

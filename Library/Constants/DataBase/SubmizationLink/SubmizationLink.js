@@ -1,1 +1,1 @@
-export const SUBMIZATIONLINK="https://script.google.com/macros/s/AKfycbxZIbq0Chh-aplxAI9N3pfwQoZp85-yJMmD5WnesYiLLopNuXz0Y1nCUd25MxnMvRA5/exec";
+export const SUBMIZATIONLINK="https://script.google.com/macros/s/AKfycbwqX3IqPY0C2wH_DHE4Y9wO010tiKvsjetijTtMA-cBIXfvJ8Y35xgmpu1a2EpmWojv/exec";
