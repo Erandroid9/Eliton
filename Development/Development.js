@@ -12,11 +12,19 @@ const HOMEPAGE=()=>{
 
             REDUX(data,(Data)=>{
 
-                DIVVIEW(ELEMENT,"95%","300px",ORANGE,(ELEMENTS0)=>{
+                DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS0)=>{
 
                     MARGIN(ELEMENTS0,"2%");
-                    
+
                     OVERFLOW(ELEMENTS0);
+
+                    HEADER(ELEMENTS0,(ELES)=>{
+
+                        LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
+
+                        });
+
+                    });
 
                 });
 
