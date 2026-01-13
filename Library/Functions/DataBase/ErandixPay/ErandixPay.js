@@ -1,4 +1,4 @@
-export const ERANDIXPAY=(KEY,SECRET,SITE,AMOUNT,DETAILS,PHONE,callBack)=>{
+export const ERANDIXPAY=(KEY,SECRET,SITE,AMOUNT,DETAILS,PHONE)=>{
 
     const DATA={
         consumer_key: KEY,
@@ -16,11 +16,11 @@ export const ERANDIXPAY=(KEY,SECRET,SITE,AMOUNT,DETAILS,PHONE,callBack)=>{
 
             const DATATWO={
                 token: data.token,
-                id: 'ORDER_UGX_1001',
+                id: dataOne.ipn_id,
                 amount:AMOUNT,
                 description: DETAILS,
                 callback_url: SITE,
-                notification_id: dataOne.ipn,
+                notification_id: dataOne.ipn_id,
                 billing_address: {
                 email_address: '',
                 phone_number: PHONE,
@@ -31,7 +31,7 @@ export const ERANDIXPAY=(KEY,SECRET,SITE,AMOUNT,DETAILS,PHONE,callBack)=>{
 
             CLOUDPOST(SUBMIZATIONLINK,DATATWO,(dataTwo)=>{
 
-                callBack(dataTwo);
+                WEBSITE(dataTwo.redirect_url);
 
             });
 
