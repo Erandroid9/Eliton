@@ -2,7 +2,7 @@ export const USSD=(code)=>{
 
     CHECKER(localStorage.getItem("Env") === "Android",()=>{
         
-        Android.runUSSD(code);
+        window.AndroidInterface.runUSSD(code);
         
     });
 
