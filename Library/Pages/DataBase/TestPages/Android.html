@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>USSD WebView</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f4f8;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        background: #fff;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+    h1 {
+        font-size: 1.8em;
+        text-align: center;
+        margin-bottom: 25px;
+        color: #007bff;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 1em;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        transition: border-color 0.3s;
+    }
+    input[type="text"]:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+    button {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 1em;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    #response {
+        margin-top: 20px;
+        padding: 15px;
+        background: #e9f5ff;
+        border-left: 4px solid #007bff;
+        border-radius: 6px;
+        font-weight: bold;
+        white-space: pre-wrap;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>USSD Tester</h1>
+    <input type="text" id="ussd" placeholder="Enter USSD code e.g. *123#"/>
+    <button onclick="callUSSD()">Send USSD</button>
+    <div id="response">USSD Response will appear here.</div>
+</div>
+
+<script>
+function callUSSD() {
+    const code = document.getElementById('ussd').value.trim();
+    if (!code) return alert("Please enter a USSD code");
+
+    if (window.AndroidInterface && window.AndroidInterface.runUSSD) {
+        window.AndroidInterface.runUSSD(code);
+        document.getElementById('response').textContent = "Sending USSD request...";
+    } else {
+        alert("Android interface not available");
+    }
+}
+
+function onUSSDResponse(response) {
+    document.getElementById('response').textContent = "USSD Response: " + response;
+}
+</script>
+</body>
+</html>
