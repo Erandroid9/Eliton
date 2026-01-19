@@ -1,8 +1,11 @@
-export const onUSSDResponse=(response)=>{
+export const USSDDISPLAY=(ELEMENT)=>{
 
-    const historyDiv = document.getElementById('history');
-    const time = new Date().toLocaleTimeString();
-    historyDiv.textContent += `[${time}] ${response}\n`;
-    historyDiv.scrollTop = historyDiv.scrollHeight;
+    function onUSSDResponse(response) {
+
+        DISPLAY(ELEMENT,response);
+
+    };
+
+    onUSSDResponse();
 
 };
