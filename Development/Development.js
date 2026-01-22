@@ -42,9 +42,23 @@ const HOMEPAGE=()=>{
     
                                     CHECKER(Data.ID === Datate.ProductCatergory && Datate.Approved,()=>{
     
-                                        INLINEVIEW(ELEMENTA,"150px","90%",RED,"2%",(ELEMENTA)=>{
+                                        INLINEVIEW(ELEMENTA,"150px","90%",TRANSPARENT,"2%",(ELEMENTA)=>{
 
                                             FLEXSHRINK(ELEMENTA);
+
+                                            IMAGE(ELEMENTA,"","",Datate.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+
+                                                COVEROBJECTFIT(ELEMENTSS);
+
+                                            });
+
+                                            FOOTER(ELEMENTA,(ELES)=>{
+    
+                                                LEFTTEXTVIEW(ELES,Datate.ProductName,(ELEMENTSA)=>{
+                        
+                                                });
+                        
+                                            });
     
                                         });
     
