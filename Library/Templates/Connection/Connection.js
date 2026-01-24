@@ -17,6 +17,7 @@ import { TOASTVIEW } from "../DataBase/Components/ToastView/ToastView.js";
 import { QELDATABASELINK } from "../DataBase/Constants/QelDataBaseLink/QelDataBaseLink.js";
 import { BASE64CONVERTOR } from "../DataBase/Functions/Base64Convertor/Base64Convertor.js";
 import { DOWNLOADSAVEINDEX } from "../DataBase/Functions/DownloadSaveIndex/DownloadSaveIndex.js";
+import { GETSAVEDINDEX } from "../DataBase/Functions/GetSavedIndex/GetSavedIndex.js";
 import { OFFLINECHECKER } from "../DataBase/Functions/OffLineChecker/OfflineChecker.js";
 import { QELPAY } from "../DataBase/Functions/QelPay/QelPay.js";
 import { LOGINVIEW } from "../DataBase/Views/LoginView/LoginView.js";
@@ -44,6 +45,7 @@ const BASE64CONVERTOR=${BASE64CONVERTOR};
 const INLINEVIEW=${INLINEVIEW};
 const QELPAY=${QELPAY};
 const QELDATABASELINK="${QELDATABASELINK}";
+const GETSAVEDINDEX=${GETSAVEDINDEX};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -51,5 +53,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const QELDATABASELINK=${QELDATABASELINK};
+const GETSAVEDINDEX=${GETSAVEDINDEX};
 `

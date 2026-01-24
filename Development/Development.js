@@ -1,6 +1,6 @@
 const ERANDES=()=>{
 
-      ROUTE("",HOMEPAGE,"HOMEPAGE");
+    ROUTE("",HOMEPAGE,"HOMEPAGE");
 
     DOWNLOADSAVEINDEX(QELDATABASELINK,"Catergory",(Data)=>{
 
@@ -28,78 +28,9 @@ const HOMEPAGE=()=>{
 
     FOOTERVIEW((ELEMENT)=>{
 
-        GETDATA(QELDATABASELINK,"Catergory",(data)=>{
+        GETSAVEDINDEX("Catergory",(Data)=>{
 
-            GETDATA(QELDATABASELINK,"products",(Datata)=>{
-
-                REDUX(data,(Data)=>{
-
-                    CHECKER(Data.Approved,()=>{
-
-                        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS0)=>{
-    
-                            MARGIN(ELEMENTS0,"2%");
-    
-                            OVERFLOW(ELEMENTS0);
-    
-                            HEADER(ELEMENTS0,(ELES)=>{
-    
-                                LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
-    
-                                });
-    
-                            });
-    
-                            INLINEVIEW(ELEMENTS0,"","auto",TRANSPARENT,"",(ELEMENTA)=>{
-    
-                                POSITIONABSOLUTE(ELEMENTA);
-                                BOTTOM(ELEMENTA,"");
-                                TOP(ELEMENTA,"50px");
-                                LEFT(ELEMENTA,"");
-                                OVERFLOWHIDDEN(ELEMENTA);
-                                OVERFLOWX(ELEMENTA);
-    
-                                REDUX(Datata,(Datate)=>{
-    
-                                    CHECKER(Data.ID === Datate.ProductCatergory && Datate.Approved,()=>{
-    
-                                        INLINEVIEW(ELEMENTA,"150px","100%",TRANSPARENT,"2%",(ELEMENTA)=>{
-
-                                            FLEXSHRINK(ELEMENTA);
-
-                                            IMAGE(ELEMENTA,"","",Datate.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
-
-                                                COVEROBJECTFIT(ELEMENTSS);
-
-                                            });
-
-                                            FOOTER(ELEMENTA,(ELES)=>{
-
-                                                BACKGROUND(ELES,BLACK);
-    
-                                                LEFTTEXTVIEW(ELES,Datate.ProductName,(ELEMENTSA)=>{
-
-                                                    FONTSIZE(ELEMENTSA,"15px");
-                        
-                                                });
-                        
-                                            });
-    
-                                        });
-    
-                                    });
-    
-                                });
-    
-                            });
-    
-                        });
-
-                    });
-
-                });
-
-            });
+            console.log(Data);
 
         });
 
