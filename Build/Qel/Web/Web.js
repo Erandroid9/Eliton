@@ -155,7 +155,9 @@ const HOMEPAGE=()=>{
         });
 
         TEXTVIEW(ELEMENT,"Policies",()=>{
-            
+
+            WEBSITE("https://qelmedistore.site/PrivacyPolicy.html");
+  
         });
 
     });
