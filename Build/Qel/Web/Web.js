@@ -67,6 +67,10 @@ const MOBILEVIEW=()=>{
 
         });
 
+        RIGHTICONVIEW(ELEMENT,WHITEUSERICON,()=>{
+
+        });
+
     },(ELEMENT)=>{
 
     },(ELEMENT)=>{
