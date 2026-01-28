@@ -265,7 +265,7 @@ const CREATEACCOUNTPAGE=(ELEMENT)=>{
 
     BREAK(ELEMENT);
 
-    ROUNDINPUTVIEW(ELEMENT,"password","Enter Your Email",()=>{
+    ROUNDINPUTVIEW(ELEMENT,"password","Create Your Password",()=>{
 
     });
 
