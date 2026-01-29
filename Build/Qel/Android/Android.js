@@ -71,6 +71,8 @@ const HOMEPAGE=()=>{
 
                                     HEADER(ELEMENTA,(ELES)=>{
 
+                                        NOBORDER(ELES);
+
                                         RIGHTTEXTVIEW(ELES,Datate.ProductNumber,(ELEMENTSA)=>{
 
                                             FONTSIZE(ELEMENTSA,"20px");
@@ -201,13 +203,19 @@ const LOGINPAGE=()=>{
 
         BREAK(ELEMENT);
 
-        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email",()=>{
+        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email",(ELSES)=>{
+
+            INPUTTED(ELSES,(DataUsre)=>{
+
+                DATASTORE("","UserEmail",DataUsre);
+
+            });
 
         });
 
         BREAK(ELEMENT);
 
-        ROUNDINPUTVIEW(ELEMENT,"password","Enter Your Email",()=>{
+        ROUNDINPUTVIEW(ELEMENT,"password","Enter Your Password",(ELSES)=>{
 
         });
 
@@ -220,6 +228,12 @@ const LOGINPAGE=()=>{
             RADIUS(ELEMENTSS,"10px");
 
             CLICK(ELEMENTSS,()=>{
+
+                LOGINSERVER(QELDATABASELINK,"Users",(User)=>{
+
+                    console.log(User);
+
+                });
 
             });
 
@@ -290,6 +304,16 @@ const CREATEACCOUNTPAGE=(ELEMENT)=>{
         RADIUS(ELEMENTSS,"10px");
 
         CLICK(ELEMENTSS,()=>{
+
+            const HEADERS=[];
+
+            const DATA=[];
+
+            CREATEACCOUNTSERVER(QELDATABASELINK,"Users",HEADERS,DATA,(UserData)=>{
+
+                console.log(UserData);
+
+            });
 
         });
 

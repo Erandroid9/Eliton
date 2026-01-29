@@ -42,6 +42,7 @@ import { LEFTTEXTALIGN } from "../DataBase/LeftTextAlign/LeftTextAlign.js";
 import { RIGHTTEXTALIGN } from "../DataBase/RightTextAlign/RightTextAlign.js";
 import { FLEXSHRINK } from "../DataBase/FlexShrink/FlexShrink.js";
 import { COVEROBJECTFIT } from "../DataBase/CoverObjectFit/CoverObjectFit.js";
+import { NOBORDER } from "../DataBase/NoBorder/NoBorder.js";
 
 export const STYLESCONNECTIONS=()=>{
 const DATA=`const POSITIONFIXED=${POSITIONFIXED};
@@ -88,6 +89,7 @@ const LEFTTEXTALIGN=${LEFTTEXTALIGN};
 const RIGHTTEXTALIGN=${RIGHTTEXTALIGN};
 const FLEXSHRINK=${FLEXSHRINK};
 const COVEROBJECTFIT=${COVEROBJECTFIT};
+const NOBORDER=${NOBORDER};
 `;
 
 localStorage.setItem("STYLES",DATA);
@@ -95,5 +97,5 @@ localStorage.setItem("STYLES",DATA);
 };
 
 `
-const COVEROBJECTFIT=${COVEROBJECTFIT};
+const NOBORDER=${NOBORDER};
 `

@@ -1,6 +1,6 @@
 export const LOGINCHECKER=(CALLBACK)=>{
 
-    CONDITION(localStorage.getItem(""),()=>{
+    CONDITION(localStorage.getItem("User"),()=>{
 
         CALLBACK();
 
