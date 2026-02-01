@@ -576,6 +576,8 @@ const HEADERPAGES=()=>{
 
             REDUX(Data,(element)=>{
 
+                BREAK(ELEMENT);
+
                 DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
                     IMAGE(ELEMENTS,"","",element.Image,TRANSPARENT,(ELEMENTS)=>{
