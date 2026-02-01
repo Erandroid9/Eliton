@@ -394,6 +394,54 @@ const MOBILEVIEW=()=>{
         
         BREAK(ELEMENT);
 
+        TEXTVIEW(ELEMENT,"All Problems Below",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
+
+            TEXTVIEW(ELEMENTS,"Marriage",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Jobs",()=>{
+
+            });
+
+        });
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
+
+            TEXTVIEW(ELEMENTS,"Family",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Witch Craft",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Business",()=>{
+
+            });
+
+        });
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
+
+            TEXTVIEW(ELEMENTS,"Demon Attacks",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Health",()=>{
+
+            });
+
+        });
+        
+        BREAK(ELEMENT);
+
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
 
             TEXTVIEW(ELEMENTS,"Email",()=>{
@@ -409,6 +457,8 @@ const MOBILEVIEW=()=>{
             });
 
         });
+
+        BREAK(ELEMENT);
 
     });
 
@@ -442,7 +492,11 @@ const HEADERPAGES=()=>{
 
             CLEAR(ELEMENT);
 
-            console.log(Data);
+            REDUX(Data,(element)=>{
+
+                console.log(element);
+
+            });
 
         });
 
