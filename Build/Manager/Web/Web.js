@@ -4,163 +4,114 @@ const ERANDES=()=>{
 
 };
 
+const DESKTOPVIEW=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+    },(ELEMENT)=>{
+
+    });
+    
+};
+
 const MOBILEVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTTEXTVIEW(ELEMENT,"Manager",()=>{
+        LEFTTEXTVIEW(ELEMENT,"Doctor Mjomba Ali",()=>{
 
         });
 
-        RIGHTTEXTVIEW(ELEMENT,"Log Out",()=>{
+        RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                WHATSAPP("+254748352113");
+
+            });
 
         });
 
     },(ELEMENT)=>{
 
-        BREAK(ELEMENT);
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
-        INPUT(ELEMENT,"","Project Name",(ELEMENTS)=>{
+            TEXTVIEW(ELEMENTS,"Family",()=>{
 
-            INPUTTED(ELEMENTS,()=>{
+            });
 
-                DATASTORE("","Name",ELEMENTS.value);
+            TEXTVIEW(ELEMENTS,"Business",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Health",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Jobs",()=>{
 
             });
 
         });
 
-        BREAK(ELEMENT);
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-        TEXT(ELEMENT,"","Android Section","",()=>{
+            SERVERCOMPONENTS("DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
 
-        });
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
-        BREAK(ELEMENT);
-
-        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
-
-            INPUTTED(ELEMENTS,()=>{
-
-                PATHREVERSE(ELEMENTS.value,(Data)=>{
-
-                    DATASTORE("","Android",Data);
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
 
                 });
-             
+                
             });
 
-        });
+            BREAK(ELEMENTS);
 
-        BREAK(ELEMENT);
+            TEXTVIEW(ELEMENTS,"FAMILY PROBLEMS",(ELEMENTSIS)=>{
 
-        TEXT(ELEMENT,"","Desktop Section","",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
-
-            INPUTTED(ELEMENTS,()=>{
-
-                PATHREVERSE(ELEMENTS.value,(Data)=>{
-
-                    DATASTORE("","Desktop",Data);
-
-                });
-             
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        TEXT(ELEMENT,"","Web Section","",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        INPUT(ELEMENT,"","Project Path",(ELEMENTS)=>{
-
-            INPUTTED(ELEMENTS,()=>{
-
-                PATHREVERSE(ELEMENTS.value,(Data)=>{
-
-                    DATASTORE("","Web",Data);
-
-                });
-             
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        BUTTON(ELEMENT,"Create Project",TEAL,"",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"95%");
-
-            CLICK(ELEMENTS,()=>{
-
-                ERANDIXNEWPROJECT();
-
-            });
-
-        });
-
-    });
-
-};
-
-const DESKTOPVIEW=()=>{
-
-    HEADERFOOTERVIEW((ELEMENT)=>{
-
-        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
-
-        });
-
-        ROUNDINPUTVIEW(ELEMENT,"search","Search Your Project",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"50%");
-
-        });
-
-        RIGHTICONVIEW(ELEMENT,WHITELOGOUTICON,()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        LEFTDIVVIEW(ELEMENT,"30%",(ELEMENTS)=>{
-
-            BUTTON(ELEMENTS,"New Project",FORESTGREEN,"",(ELEMENTSS)=>{
-
-                WIDTH(ELEMENTSS,"95%");
-                MARGINTOP(ELEMENT,"2%");
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
 
             });
 
             BREAK(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Deleted Projects",FORESTGREEN,"",(ELEMENTSS)=>{
+            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
 
-                WIDTH(ELEMENTSS,"95%");
-                MARGINTOP(ELEMENT,"2%");
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
 
             });
 
-        });
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
 
-        CENTREDIVVIEW(ELEMENT,"70%","30%","",(ELEMENTS)=>{
+                BACKGROUND(ELEMENTSS,BLACK);
 
-            GETDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
 
-                REDUX(Data,(Element)=>{
+                    CLICK(ELEMENTSS,()=>{
 
-                    TABLEVIEW(ELEMENTS,"40%","300px",RED,"2%",()=>{
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
 
                     });
 
@@ -170,24 +121,6 @@ const DESKTOPVIEW=()=>{
 
         });
 
-    },(ELEMENT)=>{
-
-        TEXT(ELEMENT,"h1","Version 1","",()=>{
-
-        });
-
-        TEXT(ELEMENT,"h1","Policies","",()=>{
-
-        });
-
-        TEXT(ELEMENT,"h1","Andriod App ","",()=>{
-
-        });
-
-        TEXT(ELEMENT,"h1","Contact Us ","",()=>{
-
-        });
-
     });
-    
+
 };
