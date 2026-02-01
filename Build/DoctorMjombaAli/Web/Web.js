@@ -28,7 +28,7 @@ const MOBILEVIEW=()=>{
 
                 WHATSAPP("+254748352113");
 
-            })
+            });
 
         });
 
@@ -54,7 +54,298 @@ const MOBILEVIEW=()=>{
 
         });
 
- 
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+
+                });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"FAMILY PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                BACKGROUND(ELEMENTSS,BLACK);
+
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+
+                });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"BUSINESS PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                BACKGROUND(ELEMENTSS,BLACK);
+
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+
+                });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"MARRIAGE PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                BACKGROUND(ELEMENTSS,BLACK);
+
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+
+                });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"HEALTH PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                BACKGROUND(ELEMENTSS,BLACK);
+
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
+
+                });
+
+            });
+
+        });
+        
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"Email",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"App",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Policies",()=>{
+
+            });
+
+        });
+
     });
 
 };
