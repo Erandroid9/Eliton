@@ -287,7 +287,7 @@ const MOBILEVIEW=()=>{
 
             BREAK(ELEMENTS);
 
-            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
+            TEXTVIEW(ELEMENTS,"Are You Well Known In the Hospitals,Month In and Month Out Your Never Leaving The Hospital ,Either YourSelf Or A Loved One<br>Let Doctor Mjomba Ali Solve That issue For You ,You Will Never Visit a Hospital Again.",(ELEMENTSIS)=>{
 
                 COLOR(ELEMENTSIS,WHITE);
                 BACKGROUND(ELEMENTSIS,BLACK);
@@ -330,7 +330,7 @@ const MOBILEVIEW=()=>{
         
         BREAK(ELEMENT);
 
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
 
             TEXTVIEW(ELEMENTS,"Email",()=>{
 
