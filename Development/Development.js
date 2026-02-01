@@ -442,6 +442,8 @@ const HEADERPAGES=()=>{
 
             CLEAR(ELEMENT);
 
+            console.log(Data);
+
         });
 
     });
