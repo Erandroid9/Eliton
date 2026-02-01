@@ -48,6 +48,10 @@ const MOBILEVIEW=()=>{
 
             });
 
+            TEXTVIEW(ELEMENTS,"Jobs",()=>{
+
+            });
+
         });
 
     });
