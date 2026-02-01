@@ -26,6 +26,16 @@ const MOBILEVIEW=()=>{
 
         });
 
+        RIGHTICONVIEW(ELEMENT,WHITEYOUTUBEICON,(ELEMENTSS)=>{
+
+            CLICK(ELEMENTSS,()=>{
+
+                ROUTE(" ",VIDEOPAGES,MOBILEVIEW);
+
+            });
+
+        });
+
         RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,(ELEMENT)=>{
 
             CLICK(ELEMENT,()=>{
@@ -752,6 +762,38 @@ const POLICIESPAGES=()=>{
     },(ELEMENT)=>{
 
         TEXTVIEW(ELEMENT,"Under Development",()=>{
+
+        });
+
+    });
+
+};
+
+const VIDEOPAGES=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"About Us",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        SERVERCOMPONENTS("",(PATH)=>{
+
+            VIDEO(ELEMENT,PATH,()=>{
+
+            });
 
         });
 
