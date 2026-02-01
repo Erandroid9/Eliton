@@ -522,6 +522,16 @@ const MOBILEVIEW=()=>{
 
             TEXTVIEW(ELEMENTS,"App",()=>{
 
+                CLICK(ELEMENTSS,()=>{
+
+                    SERVERCOMPONENTS("",(Data)=>{
+                        
+                        WEBSITE(Data);
+
+                    })
+
+                });
+
             });
 
             TEXTVIEW(ELEMENTS,"Policies",()=>{
