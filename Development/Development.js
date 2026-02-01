@@ -54,6 +54,10 @@ const MOBILEVIEW=()=>{
 
         });
 
+        DIVVIEW(ELEMENT,"95%","300px",RED,(ELEMENTS)=>{
+
+        });
+
     });
 
 };
