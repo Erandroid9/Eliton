@@ -149,7 +149,7 @@ const MOBILEVIEW=()=>{
 
             BREAK(ELEMENTS);
 
-            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
+            TEXTVIEW(ELEMENTS,"Always Failing In Business,let Doctor Mjomba Ali get you the solution so as you never get stack in making money.lets make it rain even in dry season as your neighbours husttle.Work Smart not Hard with Doctor Mjomba Ali",(ELEMENTSIS)=>{
 
                 COLOR(ELEMENTSIS,WHITE);
                 BACKGROUND(ELEMENTSIS,BLACK);
@@ -218,7 +218,7 @@ const MOBILEVIEW=()=>{
 
             BREAK(ELEMENTS);
 
-            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
+            TEXTVIEW(ELEMENTS,"Are You Known in the neighbour hood for Fights with Your Loved Ones,Parthner and Kids.<br>Come Let Us Make Your Marriage a living example of peace and success without chaores in the community.Contact Us Via Our Resources.",(ELEMENTSIS)=>{
 
                 COLOR(ELEMENTSIS,WHITE);
                 BACKGROUND(ELEMENTSIS,BLACK);
