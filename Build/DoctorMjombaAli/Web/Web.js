@@ -394,7 +394,9 @@ const MOBILEVIEW=()=>{
         
         BREAK(ELEMENT);
 
-        TEXTVIEW(ELEMENT,"All Problems Below",()=>{
+        TEXTVIEW(ELEMENT,"All Problems Below",(ELEMENTS)=>{
+
+            COLOR(ELEMENTS,ORANGE);
 
         });
 
