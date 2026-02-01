@@ -36,19 +36,59 @@ const MOBILEVIEW=()=>{
 
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
-            TEXTVIEW(ELEMENTS,"Family",()=>{
+            TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Family Problems");
+
+                    DATASTORE("","SectorID","Family");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
-            TEXTVIEW(ELEMENTS,"Business",()=>{
+            TEXTVIEW(ELEMENTS,"Business",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Business Problems");
+
+                    DATASTORE("","SectorID","Business");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
-            TEXTVIEW(ELEMENTS,"Health",()=>{
+            TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Health Problems");
+
+                    DATASTORE("","SectorID","Health");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
-            TEXTVIEW(ELEMENTS,"Jobs",()=>{
+            TEXTVIEW(ELEMENTS,"Jobs",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Jobs Problems");
+
+                    DATASTORE("","SectorID","Jobs");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
@@ -367,6 +407,40 @@ const MOBILEVIEW=()=>{
             TEXTVIEW(ELEMENTS,"Policies",()=>{
 
             });
+
+        });
+
+    });
+
+};
+
+const HEADERPAGES=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,sessionStorage.getItem("Sector"),()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        TEXTVIEW(ELEMENT,"...Please Wait..",()=>{
+
+        });
+
+        GETDATA(DOCTORMJOMBAALICONNECTIONLINK,sessionStorage.getItem("SectorID"),(Data)=>{
+
+            CLEAR(ELEMENT);
 
         });
 
