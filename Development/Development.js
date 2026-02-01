@@ -19,7 +19,11 @@ const MOBILEVIEW=()=>{
     HEADERVIEW((ELEMENT)=>{
 
         LEFTTEXTVIEW(ELEMENT,"Doctor Mjomba Ali",()=>{
-            
+
+        });
+
+        RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,(ELEMENT)=>{
+
         });
 
     },(ELEMENT)=>{
