@@ -10,6 +10,10 @@ const DESKTOPVIEW=()=>{
 
     },(ELEMENT)=>{
 
+        TEXTVIEW(ELEMENT,"Available Soon By 6th/02/2026.",()=>{
+
+        });
+
     });
     
 };
