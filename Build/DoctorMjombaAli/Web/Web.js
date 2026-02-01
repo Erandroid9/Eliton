@@ -404,11 +404,31 @@ const MOBILEVIEW=()=>{
 
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
 
-            TEXTVIEW(ELEMENTS,"Marriage",()=>{
+            TEXTVIEW(ELEMENTS,"Marriage",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Family Problems");
+
+                    DATASTORE("","SectorID","Family");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
-            TEXTVIEW(ELEMENTS,"Jobs",()=>{
+            TEXTVIEW(ELEMENTS,"Jobs",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Family Problems");
+
+                    DATASTORE("","SectorID","Family");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
@@ -416,15 +436,45 @@ const MOBILEVIEW=()=>{
 
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
 
-            TEXTVIEW(ELEMENTS,"Family",()=>{
+            TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Family Problems");
+
+                    DATASTORE("","SectorID","Family");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
-            TEXTVIEW(ELEMENTS,"Witch Craft",()=>{
+            TEXTVIEW(ELEMENTS,"Witch Craft",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Family Problems");
+
+                    DATASTORE("","SectorID","Family");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
-            TEXTVIEW(ELEMENTS,"Business",()=>{
+            TEXTVIEW(ELEMENTS,"Business",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Family Problems");
+
+                    DATASTORE("","SectorID","Family");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
@@ -432,11 +482,31 @@ const MOBILEVIEW=()=>{
 
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
 
-            TEXTVIEW(ELEMENTS,"Demon Attacks",()=>{
+            TEXTVIEW(ELEMENTS,"Demon Attacks",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Family Problems");
+
+                    DATASTORE("","SectorID","Family");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
-            TEXTVIEW(ELEMENTS,"Health",()=>{
+            TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Family Problems");
+
+                    DATASTORE("","SectorID","Family");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
