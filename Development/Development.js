@@ -26,7 +26,7 @@ const MOBILEVIEW=()=>{
 
             CLICK(ELEMENT,()=>{
 
-                WHATSAPP("+245748352113");
+                WHATSAPP("+254748352113");
 
             })
 
