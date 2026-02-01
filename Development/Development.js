@@ -520,7 +520,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            TEXTVIEW(ELEMENTS,"App",()=>{
+            TEXTVIEW(ELEMENTS,"App",(ELEMENTSS)=>{
 
                 CLICK(ELEMENTSS,()=>{
 
