@@ -408,9 +408,23 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTSS,()=>{
 
-                    DATASTORE("","Sector","Family Problems");
+                    DATASTORE("","Sector","Marriage Problems");
 
-                    DATASTORE("","SectorID","Family");
+                    DATASTORE("","SectorID","Marriage");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Lost Items",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Lost Items Problems");
+
+                    DATASTORE("","SectorID","ItemLoss");
 
                     ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
@@ -422,9 +436,9 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTSS,()=>{
 
-                    DATASTORE("","Sector","Family Problems");
+                    DATASTORE("","Sector","Jobs Problems");
 
-                    DATASTORE("","SectorID","Family");
+                    DATASTORE("","SectorID","Jobs");
 
                     ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
@@ -454,9 +468,9 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTSS,()=>{
 
-                    DATASTORE("","Sector","Family Problems");
+                    DATASTORE("","Sector","Witch Craft Problems");
 
-                    DATASTORE("","SectorID","Family");
+                    DATASTORE("","SectorID","WitchCraft");
 
                     ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
@@ -468,9 +482,9 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTSS,()=>{
 
-                    DATASTORE("","Sector","Family Problems");
+                    DATASTORE("","Sector","Business Problems");
 
-                    DATASTORE("","SectorID","Family");
+                    DATASTORE("","SectorID","Business");
 
                     ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
@@ -486,9 +500,9 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTSS,()=>{
 
-                    DATASTORE("","Sector","Family Problems");
+                    DATASTORE("","Sector","Demon Attacks Problems");
 
-                    DATASTORE("","SectorID","Family");
+                    DATASTORE("","SectorID","DemonAttacks");
 
                     ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
@@ -500,9 +514,9 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTSS,()=>{
 
-                    DATASTORE("","Sector","Family Problems");
+                    DATASTORE("","Sector","Health Problems");
 
-                    DATASTORE("","SectorID","Family");
+                    DATASTORE("","SectorID","Health");
 
                     ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
