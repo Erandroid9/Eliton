@@ -2,7 +2,7 @@ export const SERVERCOMPONENTS=(PATH,CALLBACK)=>{
 
     CONDITION(localStorage.getItem("Env") === "Dev",()=>{
 
-        CALLBACK("../../Assets/DataBase/Raw/"+PATH);
+        CALLBACK("../Library/Assets/DataBase/Raw/"+PATH);
 
     },()=>{
 
