@@ -22,6 +22,7 @@ import { GETSAVEDINDEX } from "../DataBase/Functions/GetSavedIndex/GetSavedIndex
 import { LOGINCHECKER } from "../DataBase/Functions/LoginChecker/LoginChecker.js";
 import { OFFLINECHECKER } from "../DataBase/Functions/OffLineChecker/OfflineChecker.js";
 import { QELPAY } from "../DataBase/Functions/QelPay/QelPay.js";
+import { VISITORS } from "../DataBase/Functions/Visitors/Visitors.js";
 import { LOGINVIEW } from "../DataBase/Views/LoginView/LoginView.js";
 
 export const TEMPLATESCONNECTION=()=>{
@@ -50,6 +51,7 @@ const QELDATABASELINK="${QELDATABASELINK}";
 const GETSAVEDINDEX=${GETSAVEDINDEX};
 const LOGINCHECKER=${LOGINCHECKER};
 const TEXTVIEW=${TEXTVIEW};
+const VISITORS=${VISITORS};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -57,5 +59,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const TEXTVIEW=${TEXTVIEW};
+const VISITORS=${VISITORS};
 `
