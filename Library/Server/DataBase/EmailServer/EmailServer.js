@@ -16,7 +16,7 @@ export const EMAILSERVER=(EMAIL,SUBJECT,MESSAGE,callBack)=>{
 
         },()=>{
 
-            TOASTVIEW("Something Went Wrong Sending Code to Email");
+            TOASTVIEW("Invalid Email Provided");
 
         });
 
