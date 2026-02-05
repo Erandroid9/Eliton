@@ -8,9 +8,13 @@ export const EMAILSERVER=(EMAIL,SUBJECT,MESSAGE,callBack)=>{
 
     CLOUDPOST(EMAILLINK,DATA,(Data)=>{
 
-        CHECKER(Data.status === "success",()=>{
+        CONDITION(Data.status === "success",()=>{
 
             callBack(Data);
+
+        },()=>{
+
+            TOASTVIEW("Something Went Wrong Sending Code to Email");
 
         });
 
