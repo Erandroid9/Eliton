@@ -10,9 +10,17 @@ export const LOGINSERVER=(LINK)=>{
 
                 CONDITION(User.UserPassword === sessionStorage.getItem("UserPassword"),()=>{
 
-                    DATASTORE(" ","User",User.ID);
+                    CONDITION(User.Approved,()=>{
 
-                    RELOAD();
+                        DATASTORE(" ","User",User.ID);
+
+                        RELOAD();
+
+                    },()=>{
+
+                        TOASTVIEW("Something Went Wrong,Try Again Later!");
+
+                    });
 
                 },()=>{
 
