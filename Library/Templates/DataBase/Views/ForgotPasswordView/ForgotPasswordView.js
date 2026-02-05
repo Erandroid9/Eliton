@@ -20,7 +20,7 @@ export const FORGOTPASSWORDVIEW=(ELEMENTS,WORD,LINK)=>{
 
             BREAK(ELEMENT);
 
-            INPUT(ELEMENT,"email","Enter User Email","UserPassword",()=>{
+            INPUT(ELEMENT,"email","Enter User Email","UserEmail",()=>{
 
             });
 
@@ -30,23 +30,15 @@ export const FORGOTPASSWORDVIEW=(ELEMENTS,WORD,LINK)=>{
 
                 CLICK(ELEMENT,()=>{
 
-                    CONDITION(sessionStorage.getItem("UserCode"),()=>{
+                    CONDITION(sessionStorage.getItem("UserEmail"),()=>{
 
-                        CONDITION(sessionStorage.getItem("UserCode") === localStorage.getItem("UserCodes") ,()=>{
-        
-                            TOASTVIEW("Please Wait...");
+                        TOASTVIEW("Please Wait...");
 
-                            EMAILVERIFICATIONSERVER(LINK);
-                            
-                        },()=>{
-        
-                            TOASTVIEW("Invalid Code");
-        
-                        });
+                        FORGOTPASSWORDSERVER(LINK);
                         
                     },()=>{
 
-                        TOASTVIEW("No Code Entered");
+                        TOASTVIEW("No Email Entered");
 
                     });
  
@@ -65,10 +57,6 @@ export const FORGOTPASSWORDVIEW=(ELEMENTS,WORD,LINK)=>{
                 RADIUS(ELEMENT,"10px");
 
                 CLICK(ELEMENT,()=>{
-
-                    DELETEDATASTORE(" ","UserID");
-
-                    DELETEDATASTORE(" ","UserCodes");
 
                     RELOAD();
 
@@ -100,7 +88,7 @@ export const FORGOTPASSWORDVIEW=(ELEMENTS,WORD,LINK)=>{
 
         BREAK(ELEMENTS);
 
-        INPUT(ELEMENTS,"email","Enter Email Code","UserCode",()=>{
+        INPUT(ELEMENTS,"email","Enter Email Code","UserEmail",()=>{
 
         });
 
@@ -110,23 +98,15 @@ export const FORGOTPASSWORDVIEW=(ELEMENTS,WORD,LINK)=>{
 
             CLICK(ELEMENT,()=>{
 
-                CONDITION(sessionStorage.getItem("UserCode"),()=>{
+                CONDITION(sessionStorage.getItem("UserEmail"),()=>{
 
-                    CONDITION(sessionStorage.getItem("UserCode") === localStorage.getItem("UserCodes") ,()=>{
-    
-                        TOASTVIEW("Please Wait...");
+                    TOASTVIEW("Please Wait...");
 
-                        EMAILVERIFICATIONSERVER(LINK);
-                          
-                    },()=>{
-    
-                        TOASTVIEW("Invalid Code");
-    
-                    });
+                    FORGOTPASSWORDSERVER(LINK);
                       
                 },()=>{
 
-                    TOASTVIEW("No Code Entered");
+                    TOASTVIEW("No Email Entered");
 
                 });
 
@@ -148,10 +128,6 @@ export const FORGOTPASSWORDVIEW=(ELEMENTS,WORD,LINK)=>{
 
             CLICK(ELEMENT,()=>{
          
-                DELETEDATASTORE(" ","UserID");
-
-                DELETEDATASTORE(" ","UserCodes");
-
                 RELOAD();
 
             });
