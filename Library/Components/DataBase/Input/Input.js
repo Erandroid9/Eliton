@@ -1,6 +1,20 @@
-export const INPUT=(HOLDER,TYPES,MESSAGE,callBack)=>{
+export const INPUT=(HOLDER,TYPES,MESSAGE,STORAGE,CallBack)=>{
 
     ELEMENTED(HOLDER,"input",(ELEMENT)=>{
+
+        FUNCTIONED(ELEMENT,"input",()=>{
+
+            CONDITION(ELEMENT.value,()=>{
+
+                DATASTORE("",STORAGE,ELEMENT.value);
+
+            },()=>{
+
+                DELETEDATASTORE("",STORAGE,ELEMENT.value);
+
+            });
+
+        });
 
         TYPE(ELEMENT,TYPES||"text");
 
@@ -18,7 +32,7 @@ export const INPUT=(HOLDER,TYPES,MESSAGE,callBack)=>{
         BACKGROUND(ELEMENT,TRANSPARENT);
         COLOR(ELEMENT,WHITE);
 
-        callBack(ELEMENT);
+        CallBack(ELEMENT);
 
     });
 

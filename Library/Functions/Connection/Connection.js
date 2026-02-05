@@ -40,7 +40,6 @@ import { GETINDEXDATA } from "../DataBase/GetIndexData/GetIndexData.js";
 import { FILEPICKER } from "../DataBase/FilePicker/FilePicker.js";
 import { REDUX } from "../DataBase/Redux/Redux.js";
 import { SPACEDWORDS } from "../DataBase/SpacedWords/SpacedWords.js";
-import { INPUTTED } from "../DataBase/Inputted/Inputted.js";
 import { PATHREVERSE } from "../DataBase/PathReverse/PathReverse.js";
 import { DOWNLOADFILE } from "../DataBase/DownloadFile/DownloadFile.js";
 import { COPY } from "../DataBase/Copy/Copy.js";
@@ -69,6 +68,7 @@ import { WEBSITE } from "../DataBase/WebSite/WebSite.js";
 import { ERANDIXPAY } from "../DataBase/ErandixPay/ErandixPay.js";
 import { WHATSAPP } from "../DataBase/WhatsApp/WhatsApp.js";
 import { SERVERCOMPONENTS } from "../DataBase/ServerComponents/ServerComponents.js";
+import { DELETEDATASTORE } from "../DataBase/DeleteDataStore/DeleteDataStore.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -114,7 +114,6 @@ const GETINDEXDATA=${GETINDEXDATA};
 const FILEPICKER=${FILEPICKER};
 const REDUX=${REDUX};
 const SPACEDWORDS=${SPACEDWORDS};
-const INPUTTED=${INPUTTED};
 const PATHREVERSE=${PATHREVERSE};
 const DOWNLOADFILE=${DOWNLOADFILE};
 const COPY=${COPY};
@@ -143,6 +142,7 @@ const WEBSITE=${WEBSITE};
 const ERANDIXPAY=${ERANDIXPAY};
 const WHATSAPP=${WHATSAPP};
 const SERVERCOMPONENTS=${SERVERCOMPONENTS};
+const DELETEDATASTORE=${DELETEDATASTORE};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -150,5 +150,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const SERVERCOMPONENTS=${SERVERCOMPONENTS};
+const DELETEDATASTORE=${DELETEDATASTORE};
 `

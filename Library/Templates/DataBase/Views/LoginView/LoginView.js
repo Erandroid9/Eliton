@@ -16,13 +16,13 @@ export const LOGINVIEW=(WORD)=>{
 
             BREAK(ELEMENT);
 
-            INPUT(ELEMENT,"email","Enter Your Email",(ELEMENTS)=>{
+            INPUT(ELEMENT,"email","Enter Your Email","UserEmail",()=>{
 
             });
 
             BREAK(ELEMENT);
 
-            INPUT(ELEMENT,"password","Enter Your Password",(ELEMENTS)=>{
+            INPUT(ELEMENT,"password","Enter Your Password","UserPassword",()=>{
 
             });
 
@@ -51,19 +51,21 @@ export const LOGINVIEW=(WORD)=>{
 
         BREAK();
 
-        INPUT("","email","Enter Your Email",()=>{
+        INPUT("","email","Enter Your Email","UserEmail",()=>{
 
         });
 
         BREAK();
 
-        INPUT("","password","Enter Your Password",()=>{
+        INPUT("","password","Enter Your Password","UserPassword",()=>{
 
         });
 
         BREAK();
 
         BUTTON("","Sign In",FORESTGREEN,WHITE,(ELEMENT)=>{
+
+            CONDITION(sessionStorage.getItem("UserEmail"))
 
             WIDTH(ELEMENT,"95%");
             RADIUS(ELEMENT,"10px");
