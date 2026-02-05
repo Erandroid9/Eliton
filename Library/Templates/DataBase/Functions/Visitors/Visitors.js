@@ -2,8 +2,8 @@ export const  VISITORS=()=>{
 
     CONDITION(localStorage.getItem("Env") === "Dev" ,()=>{
 
-        console.log("Dev");
-        
+        //PERFORM DEVELOPMENT MODE
+
     },()=>{
 
         const HEADERS=["DeviceName","DeviceTime","VisitedTimes","Platform","Language","Screen","FullData","Approved"];
