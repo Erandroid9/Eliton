@@ -38,7 +38,7 @@ export const FORGOTPASSWORDVIEW=(ELEMENTS,WORD,LINK)=>{
                         
                     },()=>{
 
-                        TOASTVIEW("No Email Entered");
+                        TOASTVIEW("Enter Your Email");
 
                     });
  
@@ -110,7 +110,7 @@ export const FORGOTPASSWORDVIEW=(ELEMENTS,WORD,LINK)=>{
                       
                 },()=>{
 
-                    TOASTVIEW("No Email Entered");
+                    TOASTVIEW("Enter Your Email");
 
                 });
 
