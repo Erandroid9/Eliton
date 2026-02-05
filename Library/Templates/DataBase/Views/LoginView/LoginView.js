@@ -16,13 +16,13 @@ export const LOGINVIEW=(WORD)=>{
 
             BREAK(ELEMENT);
 
-            INPUT(ELEMENT,"email","Enter Your Email",()=>{
+            INPUT(ELEMENT,"email","Enter Your Email",(ELEMENTS)=>{
 
             });
 
             BREAK(ELEMENT);
 
-            INPUT(ELEMENT,"password","Enter Your Password",()=>{
+            INPUT(ELEMENT,"password","Enter Your Password",(ELEMENTS)=>{
 
             });
 

@@ -6,9 +6,23 @@ const ERANDES=()=>{
 
 const MOBILEVIEW=()=>{
 
-    HEADERVIEW((ELEMENT)=>{
+    ACCOUNTEMAILCHECKER(()=>{
 
-    },(ELEMENT)=>{
+        MOBILEHOMEPAGE();
+
+    },()=>{
+
+        LOGINVIEW("Erandix Users");
+
+    });
+
+};
+
+const MOBILEHOMEPAGE=()=>{
+
+    HEADERVIEW(()=>{
+
+    },()=>{
 
     });
 
