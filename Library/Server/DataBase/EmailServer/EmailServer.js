@@ -8,6 +8,8 @@ export const EMAILSERVER=(EMAIL,SUBJECT,MESSAGE,callBack)=>{
 
     CLOUDPOST(EMAILLINK,DATA,(Data)=>{
 
+        console.log(Data)
+
         CONDITION(Data.status === "success",()=>{
 
             callBack(Data);

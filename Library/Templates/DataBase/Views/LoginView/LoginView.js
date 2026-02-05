@@ -42,13 +42,7 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
 
                         CONDITION(sessionStorage.getItem("UserPassword"),()=>{
 
-                            TOASTVIEW("Please Wait...");
-
-                            LOGINSERVER(LINK,"Users",()=>{
-                                
-                                RELOAD();
-
-                            });
+                            LOGINSERVER(LINK);
 
                         },()=>{
 
@@ -78,7 +72,7 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
 
                 CLICK(ELEMENT,()=>{
 
-                    CREATEACCOUNTVIEW(ELEMENTS,WORD);
+                    CREATEACCOUNTVIEW(ELEMENTS,WORD,LINK);
 
                 });
 
@@ -120,13 +114,7 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
 
                     CONDITION(sessionStorage.getItem("UserPassword"),()=>{
 
-                        TOASTVIEW("Please Wait...");
-
-                            LOGINSERVER(LINK,"Users",()=>{
-                                
-                                RELOAD();
-
-                            });
+                        LOGINSERVER(LINK);
 
                     },()=>{
 
@@ -158,7 +146,7 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
 
             CLICK(ELEMENT,()=>{
 
-                CREATEACCOUNTVIEW(ELEMENTS,WORD);
+                CREATEACCOUNTVIEW(ELEMENTS,WORD,LINK);
 
             });
 

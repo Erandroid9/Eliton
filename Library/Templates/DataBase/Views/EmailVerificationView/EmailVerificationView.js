@@ -1,3 +1,3 @@
-export const EMAILVERIFICATIONVIEW=()=>{
+export const EMAILVERIFICATIONVIEW=(ELEMENTS,WORD,LINK)=>{
 
 };

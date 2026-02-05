@@ -58,19 +58,7 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
 
                                     DATASTORE(" ","UserCodes",Codes);
 
-                                    const HEADERS=["UserName","UserEmail","UserPassword","Device","Date","Approved","Location","UserProfile","UserActivity","UserVisits","UserLanguage","UserDevice","UserNumber","UserCode","UserLinks"];
-        
-                                    DEVICE((Data)=>{
-        
-                                        const INFO=[sessionStorage.getItem("UserName"),sessionStorage.getItem("UserEmail"),sessionStorage.getItem("UserPassword"),Data,new Date(),"Approved","","",`[${new Date()}]`,1,Data.language,"","",localStorage.getItem("UserCode"),`[]`];
-            
-                                        CREATEACCOUNTSERVER(LINK,"Users",HEADERS,INFO,()=>{
-        
-                                            RELOAD();
-        
-                                        });
-        
-                                    });
+                                    CREATEACCOUNTSERVER(LINK);
 
                                 });
     
@@ -108,7 +96,7 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
 
                 CLICK(ELEMENT,()=>{
 
-                    LOGINVIEW(ELEMENTS,WORD);
+                    LOGINVIEW(ELEMENTS,WORD,LINK);
 
                 });
 
@@ -164,19 +152,7 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
 
                                 DATASTORE(" ","UserCodes",Codes);
 
-                                const HEADERS=["UserName","UserEmail","UserPassword","Device","Date","Approved","Location","UserProfile","UserActivity","UserVisits","UserLanguage","UserDevice","UserNumber","UserCode","UserLinks"];
-    
-                                DEVICE((Data)=>{
-    
-                                    const INFO=[sessionStorage.getItem("UserName"),sessionStorage.getItem("UserEmail"),sessionStorage.getItem("UserPassword"),Data,new Date(),"Approved","","",`[${new Date()}]`,1,Data.language,"","",localStorage.getItem("UserCode"),`[]`];
-        
-                                    CREATEACCOUNTSERVER(LINK,"Users",HEADERS,INFO,()=>{
-    
-                                        RELOAD();
-    
-                                    });
-    
-                                });
+                                CREATEACCOUNTSERVER(LINK);
 
                             });
 
@@ -216,7 +192,7 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
 
             CLICK(ELEMENT,()=>{
 
-                LOGINVIEW(ELEMENTS,WORD);
+                LOGINVIEW(ELEMENTS,WORD,LINK);
 
             });
 

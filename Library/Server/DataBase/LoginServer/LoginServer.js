@@ -1,18 +1,18 @@
-export const LOGINSERVER=(LINK,NAME,CALLBACK)=>{
+export const LOGINSERVER=(LINK)=>{
 
-    GETDATA(LINK,NAME,(Data)=>{
+    GETDATA(LINK,"Users",(Data)=>{
 
         TOASTVIEW("Please Wait,Fetching User Data?");
 
-        FINDER(Data,"UserEmail",localStorage.getItem("UserEmail"),(User)=>{
+        FINDER(Data,"UserEmail",sessionStorage.getItem("UserEmail"),(User)=>{
 
-            CONDITION(User.UserEmail === localStorage.getItem("UserEmail"),()=>{
+            CONDITION(User.UserEmail === sessionStorage.getItem("UserEmail"),()=>{
 
-                CONDITION(User.UserPassword === localStorage.getItem("UserEmail"),()=>{
+                CONDITION(User.UserPassword === sessionStorage.getItem("UserPassword"),()=>{
 
                     DATASTORE(" ","User",User.ID);
 
-                    CALLBACK();
+                    RELOAD();
 
                 },()=>{
 
