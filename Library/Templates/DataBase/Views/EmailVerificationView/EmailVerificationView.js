@@ -34,6 +34,8 @@ export const EMAILVERIFICATIONVIEW=(ELEMENTS,WORD,LINK)=>{
 
                         CONDITION(sessionStorage.getItem("UserCode") === localStorage.getItem("UserCodes") ,()=>{
         
+                            TOASTVIEW("Please Wait...");
+
                             EMAILVERIFICATIONSERVER(LINK);
                             
                         },()=>{
@@ -112,6 +114,8 @@ export const EMAILVERIFICATIONVIEW=(ELEMENTS,WORD,LINK)=>{
 
                     CONDITION(sessionStorage.getItem("UserCode") === localStorage.getItem("UserCodes") ,()=>{
     
+                        TOASTVIEW("Please Wait...");
+
                         EMAILVERIFICATIONSERVER(LINK);
                           
                     },()=>{

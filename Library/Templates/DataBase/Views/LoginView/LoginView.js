@@ -42,6 +42,8 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
 
                         CONDITION(sessionStorage.getItem("UserPassword"),()=>{
 
+                            TOASTVIEW("Please Wait...");
+
                             LOGINSERVER(LINK);
 
                         },()=>{
@@ -113,6 +115,8 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
                 CONDITION(sessionStorage.getItem("UserEmail"),()=>{
 
                     CONDITION(sessionStorage.getItem("UserPassword"),()=>{
+
+                        TOASTVIEW("Please Wait...");
 
                         LOGINSERVER(LINK);
 
