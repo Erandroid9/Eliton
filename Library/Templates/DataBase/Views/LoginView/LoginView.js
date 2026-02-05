@@ -1,5 +1,9 @@
 export const LOGINVIEW=(WORD)=>{
 
+    DELETEDATASTORE("","UserEmail");
+    
+    DELETEDATASTORE("","UserPassword");
+
     SWITCHER("800px",()=>{
 
         BREAK();
@@ -29,6 +33,28 @@ export const LOGINVIEW=(WORD)=>{
             BREAK(ELEMENT);
 
             BUTTON(ELEMENT,"Sign In",FORESTGREEN,WHITE,(ELEMENT)=>{
+
+                CLICK(ELEMENT,()=>{
+
+                    CONDITION(sessionStorage.getItem("UserEmail"),()=>{
+
+                        CONDITION(sessionStorage.getItem("UserPassword"),()=>{
+
+                            TOASTVIEW("Please Wait...");
+
+                        },()=>{
+
+                            TOASTVIEW("Enter Your Password");
+
+                        });
+
+                    },()=>{
+
+                        TOASTVIEW("Enter Your Email");
+
+                    });
+
+                });
 
                 WIDTH(ELEMENT,"95%");
                 RADIUS(ELEMENT,"10px");
@@ -65,7 +91,27 @@ export const LOGINVIEW=(WORD)=>{
 
         BUTTON("","Sign In",FORESTGREEN,WHITE,(ELEMENT)=>{
 
-            CONDITION(sessionStorage.getItem("UserEmail"))
+            CLICK(ELEMENT,()=>{
+
+                CONDITION(sessionStorage.getItem("UserEmail"),()=>{
+
+                    CONDITION(sessionStorage.getItem("UserPassword"),()=>{
+
+                        TOASTVIEW("Please Wait...");
+
+                    },()=>{
+
+                        TOASTVIEW("Enter Your Password");
+
+                    });
+
+                },()=>{
+
+                    TOASTVIEW("Enter Your Email");
+
+                });
+
+            });
 
             WIDTH(ELEMENT,"95%");
             RADIUS(ELEMENT,"10px");
