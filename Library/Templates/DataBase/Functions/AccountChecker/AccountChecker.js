@@ -1,4 +1,4 @@
-export const ACCOUNTEMAILCHECKER=(CALLBACK,CALLBACKTWO)=>{
+export const ACCOUNTEMAILCHECKER=(CALLBACK,CALLBACKTWO,CALLBACKTHREE)=>{
 
     CONDITION(localStorage.getItem("UserCode"),()=>{
 
@@ -6,7 +6,15 @@ export const ACCOUNTEMAILCHECKER=(CALLBACK,CALLBACKTWO)=>{
 
     },()=>{
 
-        CALLBACKTWO();
+        CONDITION(localStorage.getItem("User"),()=>{
+
+            CALLBACKTWO();
+
+        },()=>{
+
+            CALLBACKTHREE();
+
+        });
 
     });
 

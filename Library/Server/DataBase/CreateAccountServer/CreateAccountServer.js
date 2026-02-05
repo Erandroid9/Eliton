@@ -16,7 +16,7 @@ export const CREATEACCOUNTSERVER=(LINK,NAME,HEADERS,DATA,CALLBACK)=>{
                     
                     DATASTORE(" ","User",MeData.ID);
                     
-                    CALLBACK(MeData);
+                    CALLBACK();
 
                 });
 

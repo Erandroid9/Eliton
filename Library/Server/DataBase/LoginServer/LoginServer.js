@@ -12,7 +12,7 @@ export const LOGINSERVER=(LINK,NAME,CALLBACK)=>{
 
                     DATASTORE(" ","User",User.ID);
 
-                    CALLBACK(User);
+                    CALLBACK();
 
                 },()=>{
 

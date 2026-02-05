@@ -1,4 +1,4 @@
-export const CREATEACCOUNTVIEW=(ELEMENTS,WORD)=>{
+export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
 
     CLEAR(ELEMENTS);
 
@@ -53,6 +53,20 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD)=>{
                             CONDITION(sessionStorage.getItem("UserPassword"),()=>{
     
                                 TOASTVIEW("Please Wait...");
+
+                                const HEADERS=["UserName","UserEmail","UserPassword","Device","Date","Approved","Location","UserProfile","UserActivity","UserVisits","UserLanguage","UserDevice","UserNumber","UserCode","UserLinks"];
+
+                                DEVICE((Data)=>{
+
+                                    const INFO=[sessionStorage.getItem("UserName"),sessionStorage.getItem("UserEmail"),sessionStorage.getItem("UserPassword"),Data,new Date(),"Approved","","",`[${new Date()}]`,1,Data.language,`[]`,"",localStorage.getItem("UserCode"),`[]`];
+        
+                                    CREATEACCOUNTSERVER(LINK,"Users",HEADERS,INFO,()=>{
+
+                                        RELOAD();
+
+                                    });
+
+                                });
     
                             },()=>{
     
@@ -139,6 +153,20 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD)=>{
                         CONDITION(sessionStorage.getItem("UserPassword"),()=>{
     
                             TOASTVIEW("Please Wait...");
+
+                            const HEADERS=["UserName","UserEmail","UserPassword","Device","Date","Approved","Location","UserProfile","UserActivity","UserVisits","UserLanguage","UserDevice","UserNumber","UserCode","UserLinks"];
+
+                            DEVICE((Data)=>{
+
+                                const INFO=[sessionStorage.getItem("UserName"),sessionStorage.getItem("UserEmail"),sessionStorage.getItem("UserPassword"),Data,new Date(),"Approved","","",`[${new Date()}]`,1,Data.language,`[]`,"",localStorage.getItem("UserCode"),`[]`];
+    
+                                CREATEACCOUNTSERVER(LINK,"Users",HEADERS,INFO,()=>{
+
+                                    RELOAD();
+
+                                });
+
+                            });
     
                         },()=>{
     

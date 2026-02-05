@@ -7,6 +7,8 @@ const ERANDES=()=>{
 const MOBILEVIEW=()=>{
 
     ACCOUNTEMAILCHECKER(()=>{
+        
+    },()=>{
 
         MOBILEHOMEPAGE();
 

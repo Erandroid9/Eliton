@@ -1,4 +1,4 @@
-export const LOGINVIEW=(ELEMENTS,WORD)=>{
+export const LOGINVIEW=(ELEMENTS,WORD,LINK,CALLBACK)=>{
 
     CLEAR(ELEMENTS);
 
@@ -43,6 +43,12 @@ export const LOGINVIEW=(ELEMENTS,WORD)=>{
                         CONDITION(sessionStorage.getItem("UserPassword"),()=>{
 
                             TOASTVIEW("Please Wait...");
+
+                            LOGINSERVER(LINK,"Users",()=>{
+                                
+                                RELOAD();
+
+                            });
 
                         },()=>{
 
@@ -115,6 +121,12 @@ export const LOGINVIEW=(ELEMENTS,WORD)=>{
                     CONDITION(sessionStorage.getItem("UserPassword"),()=>{
 
                         TOASTVIEW("Please Wait...");
+
+                            LOGINSERVER(LINK,"Users",()=>{
+                                
+                                RELOAD();
+
+                            });
 
                     },()=>{
 
