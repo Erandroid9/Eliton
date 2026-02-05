@@ -34,6 +34,22 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
 
             BREAK(ELEMENT);
 
+            INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTSAS)=>{
+
+                RIGHTTEXTVIEW(ELEMENTSAS,"Forgot Password?",(ELEMENTSS)=>{
+    
+                    CLICK(ELEMENTSS,()=>{
+    
+                        FORGOTPASSWORDVIEW(ELEMENT,WORD,LINK);
+    
+                    });
+    
+                });
+
+            })
+
+            BREAK(ELEMENT);
+
             BUTTON(ELEMENT,"Sign In",FORESTGREEN,WHITE,(ELEMENT)=>{
 
                 CLICK(ELEMENT,()=>{
@@ -103,6 +119,20 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
         BREAK(ELEMENTS);
 
         INPUT(ELEMENTS,"password","Enter Your Password","UserPassword",()=>{
+
+        });
+
+        INLINEVIEW(ELEMENTS,"95%","50px",TRANSPARENT,"2%",(ELEMENTSAS)=>{
+
+            RIGHTTEXTVIEW(ELEMENTSAS,"Forgot Password?",(ELEMENTSS)=>{
+    
+                CLICK(ELEMENTSS,()=>{
+    
+                    FORGOTPASSWORDVIEW(ELEMENTS,WORD,LINK);
+    
+                });
+    
+            });
 
         });
 

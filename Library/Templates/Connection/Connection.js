@@ -26,6 +26,7 @@ import { QELPAY } from "../DataBase/Functions/QelPay/QelPay.js";
 import { VISITORS } from "../DataBase/Functions/Visitors/Visitors.js";
 import { CREATEACCOUNTVIEW } from "../DataBase/Views/CreateAccountView/CreateAccountView.js";
 import { EMAILVERIFICATIONVIEW } from "../DataBase/Views/EmailVerificationView/EmailVerificationView.js";
+import { FORGOTPASSWORDVIEW } from "../DataBase/Views/ForgotPasswordView/ForgotPasswordView.js";
 import { LOGINVIEW } from "../DataBase/Views/LoginView/LoginView.js";
 
 export const TEMPLATESCONNECTION=()=>{
@@ -58,6 +59,7 @@ const VISITORS=${VISITORS};
 const ACCOUNTEMAILCHECKER=${ACCOUNTEMAILCHECKER};
 const CREATEACCOUNTVIEW=${CREATEACCOUNTVIEW};
 const EMAILVERIFICATIONVIEW=${EMAILVERIFICATIONVIEW};
+const FORGOTPASSWORDVIEW=${FORGOTPASSWORDVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -65,5 +67,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const EMAILVERIFICATIONVIEW=${EMAILVERIFICATIONVIEW};
+const FORGOTPASSWORDVIEW=${FORGOTPASSWORDVIEW};
 `

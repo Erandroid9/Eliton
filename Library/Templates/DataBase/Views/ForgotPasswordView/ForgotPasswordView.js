@@ -1,4 +1,4 @@
-export const EMAILVERIFICATIONVIEW=(ELEMENTS,WORD,LINK)=>{
+export const FORGOTPASSWORDVIEW=(ELEMENTS,WORD,LINK)=>{
 
     CLEAR(ELEMENTS);
 
@@ -20,13 +20,13 @@ export const EMAILVERIFICATIONVIEW=(ELEMENTS,WORD,LINK)=>{
 
             BREAK(ELEMENT);
 
-            INPUT(ELEMENT,"tel","Enter Email Code","UserCode",()=>{
+            INPUT(ELEMENT,"email","Enter User Email","UserPassword",()=>{
 
             });
 
             BREAK(ELEMENT);
 
-            BUTTON(ELEMENT,"Verify",FORESTGREEN,WHITE,(ELEMENT)=>{
+            BUTTON(ELEMENT,"Recover",FORESTGREEN,WHITE,(ELEMENT)=>{
 
                 CLICK(ELEMENT,()=>{
 
@@ -100,13 +100,13 @@ export const EMAILVERIFICATIONVIEW=(ELEMENTS,WORD,LINK)=>{
 
         BREAK(ELEMENTS);
 
-        INPUT(ELEMENTS,"tel","Enter Email Code","UserCode",()=>{
+        INPUT(ELEMENTS,"email","Enter Email Code","UserCode",()=>{
 
         });
 
         BREAK(ELEMENTS);
 
-        BUTTON(ELEMENTS,"Verify",FORESTGREEN,WHITE,(ELEMENT)=>{
+        BUTTON(ELEMENTS,"Recover",FORESTGREEN,WHITE,(ELEMENT)=>{
 
             CLICK(ELEMENT,()=>{
 
