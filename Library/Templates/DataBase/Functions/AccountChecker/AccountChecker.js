@@ -1,18 +1,18 @@
-export const ACCOUNTEMAILCHECKER=(CALLBACK,CALLBACKTWO,CALLBACKTHREE)=>{
+export const ACCOUNTEMAILCHECKER=(ELEMENTS,WORD,CALLBACK,LINK)=>{
 
     CONDITION(localStorage.getItem("UserCode"),()=>{
 
-        CALLBACK();
+        EMAILVERIFICATIONVIEW(NAME);
 
     },()=>{
 
         CONDITION(localStorage.getItem("User"),()=>{
 
-            CALLBACKTWO();
+            CALLBACK();
 
         },()=>{
 
-            CALLBACKTHREE();
+            LOGINVIEW(ELEMENTS,WORD,LINK,CALLBACK);
 
         });
 

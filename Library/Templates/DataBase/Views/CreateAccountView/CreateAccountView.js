@@ -54,16 +54,22 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
     
                                 TOASTVIEW("Please Wait...");
 
-                                const HEADERS=["UserName","UserEmail","UserPassword","Device","Date","Approved","Location","UserProfile","UserActivity","UserVisits","UserLanguage","UserDevice","UserNumber","UserCode","UserLinks"];
+                                RANDOMCODEGENERATOR((Codes)=>{
 
-                                DEVICE((Data)=>{
+                                    DATASTORE(" ","UserCodes",Codes);
 
-                                    const INFO=[sessionStorage.getItem("UserName"),sessionStorage.getItem("UserEmail"),sessionStorage.getItem("UserPassword"),Data,new Date(),"Approved","","",`[${new Date()}]`,1,Data.language,`[]`,"",localStorage.getItem("UserCode"),`[]`];
+                                    const HEADERS=["UserName","UserEmail","UserPassword","Device","Date","Approved","Location","UserProfile","UserActivity","UserVisits","UserLanguage","UserDevice","UserNumber","UserCode","UserLinks"];
         
-                                    CREATEACCOUNTSERVER(LINK,"Users",HEADERS,INFO,()=>{
-
-                                        RELOAD();
-
+                                    DEVICE((Data)=>{
+        
+                                        const INFO=[sessionStorage.getItem("UserName"),sessionStorage.getItem("UserEmail"),sessionStorage.getItem("UserPassword"),Data,new Date(),"Approved","","",`[${new Date()}]`,1,Data.language,"","",localStorage.getItem("UserCode"),`[]`];
+            
+                                        CREATEACCOUNTSERVER(LINK,"Users",HEADERS,INFO,()=>{
+        
+                                            RELOAD();
+        
+                                        });
+        
                                     });
 
                                 });
@@ -154,20 +160,26 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
     
                             TOASTVIEW("Please Wait...");
 
-                            const HEADERS=["UserName","UserEmail","UserPassword","Device","Date","Approved","Location","UserProfile","UserActivity","UserVisits","UserLanguage","UserDevice","UserNumber","UserCode","UserLinks"];
+                            RANDOMCODEGENERATOR((Codes)=>{
 
-                            DEVICE((Data)=>{
+                                DATASTORE(" ","UserCodes",Codes);
 
-                                const INFO=[sessionStorage.getItem("UserName"),sessionStorage.getItem("UserEmail"),sessionStorage.getItem("UserPassword"),Data,new Date(),"Approved","","",`[${new Date()}]`,1,Data.language,`[]`,"",localStorage.getItem("UserCode"),`[]`];
+                                const HEADERS=["UserName","UserEmail","UserPassword","Device","Date","Approved","Location","UserProfile","UserActivity","UserVisits","UserLanguage","UserDevice","UserNumber","UserCode","UserLinks"];
     
-                                CREATEACCOUNTSERVER(LINK,"Users",HEADERS,INFO,()=>{
-
-                                    RELOAD();
-
+                                DEVICE((Data)=>{
+    
+                                    const INFO=[sessionStorage.getItem("UserName"),sessionStorage.getItem("UserEmail"),sessionStorage.getItem("UserPassword"),Data,new Date(),"Approved","","",`[${new Date()}]`,1,Data.language,"","",localStorage.getItem("UserCode"),`[]`];
+        
+                                    CREATEACCOUNTSERVER(LINK,"Users",HEADERS,INFO,()=>{
+    
+                                        RELOAD();
+    
+                                    });
+    
                                 });
 
                             });
-    
+
                         },()=>{
     
                             TOASTVIEW("Enter Your Password");

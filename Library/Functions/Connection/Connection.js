@@ -69,6 +69,7 @@ import { ERANDIXPAY } from "../DataBase/ErandixPay/ErandixPay.js";
 import { WHATSAPP } from "../DataBase/WhatsApp/WhatsApp.js";
 import { SERVERCOMPONENTS } from "../DataBase/ServerComponents/ServerComponents.js";
 import { DELETEDATASTORE } from "../DataBase/DeleteDataStore/DeleteDataStore.js";
+import { RANDOMCODEGENERATOR } from "../DataBase/RandomCodeGenerator/RandomCodeGenerator.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -143,6 +144,7 @@ const ERANDIXPAY=${ERANDIXPAY};
 const WHATSAPP=${WHATSAPP};
 const SERVERCOMPONENTS=${SERVERCOMPONENTS};
 const DELETEDATASTORE=${DELETEDATASTORE};
+const RANDOMCODEGENERATOR=${RANDOMCODEGENERATOR};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -150,5 +152,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const DELETEDATASTORE=${DELETEDATASTORE};
+const RANDOMCODEGENERATOR=${RANDOMCODEGENERATOR};
 `
