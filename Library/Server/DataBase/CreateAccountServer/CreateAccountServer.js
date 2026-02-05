@@ -20,7 +20,7 @@ export const CREATEACCOUNTSERVER=(LINK)=>{
 
                         const HEADERS=["UserName","UserEmail","UserPassword","Device","Date","Approved","Location","UserProfile","UserActivity","UserVisits","UserLanguage","UserDevice","UserNumber","UserCode","UserLinks","Confirmed"];
         
-                        const INFO=[sessionStorage.getItem("UserName"),sessionStorage.getItem("UserEmail"),sessionStorage.getItem("UserPassword"),Data,new Date(),"Approved","","",`[${new Date()}]`,1,Data.language,"","",localStorage.getItem("UserCodes"),`[]`,""];
+                        const INFO=[sessionStorage.getItem("UserName"),sessionStorage.getItem("UserEmail"),sessionStorage.getItem("UserPassword"),Data,new Date(),"Approved","","",`[${new Date()}]`,1,Data.language,localStorage.getItem("VisitorID")||"","",localStorage.getItem("UserCodes"),`[]`,""];
             
                         INSERTDATA(LINK,"Users",HEADERS,INFO,(data)=>{
 

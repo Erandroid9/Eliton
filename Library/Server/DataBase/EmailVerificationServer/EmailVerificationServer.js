@@ -10,7 +10,7 @@ export const EMAILVERIFICATIONSERVER=(LINK)=>{
 
                 DATASTORE(" ","User",localStorage.getItem("UserID"));
 
-                const INFO=[User.UserName,User.UserEmail,User.UserPassword,User.Device,User.Date,User.Approved,User.Location,User.UserProfile,User.UserActivity,User.UserVisits+1,User.UserLanguage,User.UserDevice,User.UserNumber,User.UserCode,User.UserLinks,"Confirmed"];
+                const INFO=[User.UserName,User.UserEmail,User.UserPassword,User.Device,User.Date,User.Approved,User.Location,User.UserProfile,User.UserActivity,User.UserVisits+1,User.UserLanguage,localStorage.getItem("VisitorID")||"",User.UserNumber,User.UserCode,User.UserLinks,"Confirmed"];
         
                 UPDATEDATA(LINK,"Users",localStorage.getItem("UserID"),INFO,(data)=>{
 
