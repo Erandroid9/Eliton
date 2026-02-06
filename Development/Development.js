@@ -16,7 +16,6 @@ const MOBILEVIEW=()=>{
 
     });
 
-
 };
 
 const DESKTOPVIEW=()=>{
