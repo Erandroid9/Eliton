@@ -44,6 +44,28 @@ const DESKTOPHOMEPAGE=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
+        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
+
+        });
+
+        ROUNDINPUTVIEW(ELEMENT,"search","Find Your Project","ProjectName",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"30%");
+
+        });
+
+        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
+
+        });
+
+        ICONVIEW(ELEMENT,WHITEADDICON,()=>{
+
+        });
+
+        ICONVIEW(ELEMENT,WHITEUSERICON,()=>{
+
+        });
+
     },(ELEMENT)=>{
 
     });
