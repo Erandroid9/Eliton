@@ -2,7 +2,7 @@ import { SERVERASSETS } from "../../../../../Functions/DataBase/ServerAssets/Ser
 
 export const  DEVSTAGETHREE=(AMOUNT,DisplayImage)=>{
 
-    if (AMOUNT === "75%" ) {
+    if (AMOUNT === "80%" ) {
 
         SERVERASSETS("Images/AppDevelopment.webp",(Data)=>{
                
