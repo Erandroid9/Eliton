@@ -5,7 +5,7 @@ export const  DEVSTAGEONE=(AMOUNT,DisplayImage)=>{
 
     if (AMOUNT === "25%" ) {
 
-        SERVERASSETS("Images/SystemDevelopment.webp",(Data)=>{
+        SERVERASSETS("Images/DoctorMjombaAli/marriage.webp",(Data)=>{
         
             DisplayImage.src=Data;
         
