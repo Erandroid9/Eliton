@@ -4,7 +4,7 @@ export const  DEVSTAGETHREE=(AMOUNT,DisplayImage)=>{
 
     if (AMOUNT === "75%" ) {
 
-        SERVERASSETS("Images/AppDevelopment.webp",(Data)=>{
+        SERVERASSETS("Images/DoctorMjombaAli/richness.webp",(Data)=>{
                
             DisplayImage.src=Data;
                
@@ -12,7 +12,7 @@ export const  DEVSTAGETHREE=(AMOUNT,DisplayImage)=>{
 
     } else {
 
-        SERVERASSETS("Images/AppDevelopment.webp",(Data)=>{
+        SERVERASSETS("Images/DoctorMjombaAli/landgrabbing.jpg",(Data)=>{
                
             DisplayImage.src=Data;
                

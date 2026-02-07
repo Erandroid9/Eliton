@@ -5,7 +5,7 @@ export const  DEVSTAGETWO=(AMOUNT,DisplayImage)=>{
 
     if (AMOUNT === "50%" ) {
 
-        SERVERASSETS("Images/DesktopDevelopment.png",(Data)=>{
+        SERVERASSETS("Images/DoctorMjombaAli/Sickness.jpg",(Data)=>{
                        
             DisplayImage.src=Data;
                        
