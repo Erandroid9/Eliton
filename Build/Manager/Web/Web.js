@@ -56,6 +56,44 @@ const DESKTOPVIEW=()=>{
 
             WIDTH(ELEMENTS,"40%");
 
+            BREAK(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Deleted Project",FORESTGREEN,"",()=>{
+
+            });
+
+            BREAK(ELEMENTS);
+
+            BUTTON(ELEMENTS," Project",FORESTGREEN,"",()=>{
+
+            });
+
+            BREAK(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Policies",FORESTGREEN,"",()=>{
+
+            });
+
+            BREAK(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Log Out",BROWN,"",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DELETEDATASTORE(" ","User");
+
+                    RELOAD();
+
+                });
+
+            });
+
+            BREAK(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Deleted My Account",RED,"",()=>{
+
+            });
+
         });
 
         RIGHTDIVVIEW(ELEMENT,"",(ELEMENTS)=>{
