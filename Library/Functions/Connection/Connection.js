@@ -70,6 +70,7 @@ import { WHATSAPP } from "../DataBase/WhatsApp/WhatsApp.js";
 import { SERVERCOMPONENTS } from "../DataBase/ServerComponents/ServerComponents.js";
 import { DELETEDATASTORE } from "../DataBase/DeleteDataStore/DeleteDataStore.js";
 import { RANDOMCODEGENERATOR } from "../DataBase/RandomCodeGenerator/RandomCodeGenerator.js";
+import { SERVERASSETS } from "../DataBase/ServerAssets/ServerAssets.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -145,6 +146,7 @@ const WHATSAPP=${WHATSAPP};
 const SERVERCOMPONENTS=${SERVERCOMPONENTS};
 const DELETEDATASTORE=${DELETEDATASTORE};
 const RANDOMCODEGENERATOR=${RANDOMCODEGENERATOR};
+const SERVERASSETS=${SERVERASSETS};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -152,5 +154,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const RANDOMCODEGENERATOR=${RANDOMCODEGENERATOR};
+const SERVERASSETS=${SERVERASSETS};
 `
