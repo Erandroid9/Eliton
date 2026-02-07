@@ -82,15 +82,15 @@ export const DISPLAYLOADER=(AMOUNT)=>{
             
             `;
 
-            const DisplayImage=document.querySelector(".DisplayImage");
-
-            SERVERASSETS("",(Data)=>{
+            SERVERASSETS("Images/Welcome.webp",(Data)=>{
 
                 DisplayImage.src=Data;
 
                 SPLASHSCREENCONFIG(AMOUNT,DisplayImage);
 
             });
+
+            const DisplayImage=document.querySelector(".DisplayImage");
 
             const Data=document.querySelector(".Data");
 
@@ -104,7 +104,7 @@ export const DISPLAYLOADER=(AMOUNT)=>{
 
                 <div>
 
-                    <img class="DisplayImage">
+                    <img  class="DisplayImage">
 
                     <div class="DataHolder" >
 
@@ -118,19 +118,21 @@ export const DISPLAYLOADER=(AMOUNT)=>{
             
             `;
 
-            const Data=document.querySelector(".Data");
-
-            Data.style.width=AMOUNT;
-
-            const DisplayImage=document.querySelector(".DisplayImage");
-
-            SERVERASSETS("",(Data)=>{
+            SERVERASSETS("Images/Welcome.webp",(Data)=>{
 
                 DisplayImage.src=Data;
 
                 SPLASHSCREENCONFIG(AMOUNT,DisplayImage);
 
             });
+
+            const Data=document.querySelector(".Data");
+
+            Data.style.width=AMOUNT;
+
+            const DisplayImage=document.querySelector(".DisplayImage");
+
+
             
         };
 

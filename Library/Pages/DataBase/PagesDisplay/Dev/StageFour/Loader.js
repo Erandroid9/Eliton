@@ -3,7 +3,7 @@ import { DEVSTAGEONE } from "../StageOne/Loader.js";
 
 export const  DEVSTAGE=(AMOUNT,DisplayImage)=>{
 
-    if (AMOUNT === "5%" ) {
+    if (AMOUNT === "20%" ) {
 
         SERVERASSETS("Images/WebDevelopment.webp",(Data)=>{
 

@@ -3,7 +3,7 @@ import { DEVSTAGETHREE } from "../StageThree/Loader.js";
 
 export const  DEVSTAGETWO=(AMOUNT,DisplayImage)=>{
 
-    if (AMOUNT === "50%" ) {
+    if (AMOUNT === "70%" ) {
 
         SERVERASSETS("Images/DesktopDevelopment.png",(Data)=>{
                        
