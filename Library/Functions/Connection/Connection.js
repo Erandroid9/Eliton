@@ -71,6 +71,7 @@ import { SERVERCOMPONENTS } from "../DataBase/ServerComponents/ServerComponents.
 import { DELETEDATASTORE } from "../DataBase/DeleteDataStore/DeleteDataStore.js";
 import { RANDOMCODEGENERATOR } from "../DataBase/RandomCodeGenerator/RandomCodeGenerator.js";
 import { SERVERASSETS } from "../DataBase/ServerAssets/ServerAssets.js";
+import { GETEMAILS } from "../DataBase/GetEmails/GetEmails.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -147,6 +148,7 @@ const SERVERCOMPONENTS=${SERVERCOMPONENTS};
 const DELETEDATASTORE=${DELETEDATASTORE};
 const RANDOMCODEGENERATOR=${RANDOMCODEGENERATOR};
 const SERVERASSETS=${SERVERASSETS};
+const GETEMAILS=${GETEMAILS};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -154,5 +156,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const SERVERASSETS=${SERVERASSETS};
+const GETEMAILS=${GETEMAILS};
 `
