@@ -43,6 +43,7 @@ export const DISPLAYLOADER=(AMOUNT)=>{
             left:50%;
             margin-top:5%;
             font-weight:bold;
+            color:orange;
         }
 
         .DisplayImage{
@@ -72,9 +73,11 @@ export const DISPLAYLOADER=(AMOUNT)=>{
 
                     <div class="DataHolder" >
 
-                        <p class="Message">${AMOUNT||"..."}</p>
+                        <div class="Data">
 
-                        <div class="Data"></div>
+                            <p class="Message">${AMOUNT||"..."}</p>
+                        
+                        </div>
 
                     </div>
 
@@ -108,9 +111,11 @@ export const DISPLAYLOADER=(AMOUNT)=>{
 
                     <div class="DataHolder" >
 
-                        <p class="Message">${AMOUNT||"..."}</p>
+                        <div class="Data">
 
-                        <div class="Data"></div>
+                            <p class="Message">${AMOUNT||"..."}</p>
+                        
+                        </div>
 
                     </div>
 
