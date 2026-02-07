@@ -14,6 +14,8 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
 
         BREAK(ELEMENTS);
 
+        BREAK(ELEMENTS);
+
         DIVVIEW(ELEMENTS,"80%","80%",TRANSPARENT,(ELEMENT)=>{
 
             TEXT(ELEMENT,"h1",WORD,"",(ELEMENT)=>{
@@ -109,6 +111,8 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
     },()=>{
 
         CLEAR(ELEMENTS);
+
+        BREAK(ELEMENTS);
 
         BREAK(ELEMENTS);
 
