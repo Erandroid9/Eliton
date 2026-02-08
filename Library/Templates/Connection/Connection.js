@@ -24,6 +24,7 @@ import { LOGINCHECKER } from "../DataBase/Functions/LoginChecker/LoginChecker.js
 import { OFFLINECHECKER } from "../DataBase/Functions/OffLineChecker/OfflineChecker.js";
 import { QELPAY } from "../DataBase/Functions/QelPay/QelPay.js";
 import { REDUXEDDATA } from "../DataBase/Functions/ReduxedData/ReduxedData.js";
+import { TOASTCONDITION } from "../DataBase/Functions/ToastCondition/ToastCondition.js";
 import { VIEWCONTROLLER } from "../DataBase/Functions/ViewController/ViewController.js";
 import { VISITORS } from "../DataBase/Functions/Visitors/Visitors.js";
 import { CREATEACCOUNTVIEW } from "../DataBase/Views/CreateAccountView/CreateAccountView.js";
@@ -64,6 +65,7 @@ const EMAILVERIFICATIONVIEW=${EMAILVERIFICATIONVIEW};
 const FORGOTPASSWORDVIEW=${FORGOTPASSWORDVIEW};
 const VIEWCONTROLLER=${VIEWCONTROLLER};
 const REDUXEDDATA=${REDUXEDDATA};
+const TOASTCONDITION=${TOASTCONDITION};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -71,5 +73,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const REDUXEDDATA=${REDUXEDDATA};
+const TOASTCONDITION=${TOASTCONDITION};
 `
