@@ -2,8 +2,6 @@ const ERANDES=()=>{
 
     VIEWCONTROLLER();
 
-    sendSms("0782625561","Erandix Code:7895");
-
     runUssd("*165*8*1*12019#");
 
 };
