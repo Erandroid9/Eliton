@@ -58,11 +58,11 @@ const DESKTOPVIEW=()=>{
 
             BREAK(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Deleted Project",FORESTGREEN,"",(ELS)=>{
+            BUTTON(ELEMENTS,"All Projects",FORESTGREEN,"",(ELS)=>{
 
                 CLICK(ELS,()=>{
 
-                    ROUTE(" ",DESKTOPDELETEDPROJECTS,"DESKTOPVIEW");
+                    DESKTOPVIEW();
 
                 });
 
@@ -70,7 +70,13 @@ const DESKTOPVIEW=()=>{
 
             BREAK(ELEMENTS);
 
-            BUTTON(ELEMENTS," Project",FORESTGREEN,"",()=>{
+            BUTTON(ELEMENTS,"Deleted Project",FORESTGREEN,"",(ELS)=>{
+
+                CLICK(ELS,()=>{
+
+                    ROUTE(" ",DESKTOPDELETEDPROJECTS,"DESKTOPVIEW");
+
+                });
 
             });
 
