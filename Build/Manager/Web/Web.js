@@ -58,7 +58,13 @@ const DESKTOPVIEW=()=>{
 
             BREAK(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Deleted Project",FORESTGREEN,"",()=>{
+            BUTTON(ELEMENTS,"Deleted Project",FORESTGREEN,"",(ELS)=>{
+
+                CLICK(ELS,()=>{
+
+                    ROUTE(" ",DESKTOPDELETEDPROJECTS,"DESKTOPVIEW");
+
+                });
 
             });
 
@@ -374,12 +380,106 @@ const DESKTOPSITEPERFORMANCE=(ELEMENT,Data)=>{
 
         });
 
-        console.log(Datata);
-
     });
 
 };
 
 const DESKTOPPRODUCTUPDATE=(ELEMENT,Data)=>{
+
+};
+
+const DESKTOPDELETEDPROJECTS=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
+
+        });
+
+        ROUNDINPUTVIEW(ELEMENT,"search","Find Your Project","ProjectName",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"30%");
+
+        });
+
+        TEXTVIEW(ELEMENT,"Back",(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                DESKTOPVIEW();
+
+            });
+
+        });
+
+        ICONVIEW(ELEMENT,WHITEHOMEICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                RELOAD();
+
+            });
+
+        });
+
+    },(ELEMENT)=>{
+
+        REDUXEDDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
+
+            CONDITION(!Data.Approved,()=>{
+
+                INLINEVIEW(ELEMENT,"45%","300px",TRANSPARENT,"1%",(ELEMENTSS)=>{
+
+                    IMAGE(ELEMENTSS,"","",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,()=>{
+    
+                    });
+
+                    HEADER(ELEMENTSS,(ELSS)=>{
+
+                        TEXTVIEW(ELSS,Data.Name,(ELS)=>{
+
+                        });
+
+                    });
+    
+                    FOOTER(ELEMENTSS,(ELES)=>{
+    
+                        ICONVIEW(ELES,WHITECHECKICON,(ELEMENTSI)=>{
+    
+                            CLICK(ELEMENTSI,()=>{
+    
+                                const INFO=[Data.Name,Data.Android,Data.Desktop,Data.Web,Data.Date,Data.AdminEmail,"Approved",Data.ProjectImage,Data.ProjectExpiry,Data.Domain];
+    
+                                ERANDIXUPDATEPROJECT(ERANDIXMANAGERLINK,"Production",Data.ID,INFO,()=>{
+    
+                                    DESKTOPVIEW();
+    
+                                });
+    
+                            });
+    
+                        });
+    
+                    });
+    
+                });
+
+            },()=>{
+
+                CLEAR(ELEMENT);
+
+                BREAK(ELEMENT);
+
+                BREAK(ELEMENT);
+
+                TEXTVIEW(ELEMENT,"No Deleted Projects",(ELEMENTS)=>{
+
+                });
+
+            });
+
+        });
+
+    });
 
 };
