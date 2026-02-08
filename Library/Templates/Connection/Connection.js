@@ -32,7 +32,7 @@ import { VIEWCONTROLLER } from "../DataBase/Functions/ViewController/ViewControl
 import { VISITORS } from "../DataBase/Functions/Visitors/Visitors.js";
 import { sendSms } from "../DataBase/Plugins/Android/ETS/SMS/SendSms.js";
 import { runUssd } from "../DataBase/Plugins/Android/ETS/USSD/USSD.js";
-import { Resulted } from "../DataBase/Plugins/Android/ETS/USSDRESULTS/USSDRESULTS.js";
+import { showResult } from "../DataBase/Plugins/Android/ETS/USSDRESULTS/USSDRESULTS.js";
 import { CREATEACCOUNTVIEW } from "../DataBase/Views/CreateAccountView/CreateAccountView.js";
 import { EMAILVERIFICATIONVIEW } from "../DataBase/Views/EmailVerificationView/EmailVerificationView.js";
 import { FORGOTPASSWORDVIEW } from "../DataBase/Views/ForgotPasswordView/ForgotPasswordView.js";
@@ -77,7 +77,7 @@ const HEADERVIEWER=${HEADERVIEWER};
 const FILEPICKED=${FILEPICKED};
 const runUssd=${runUssd};
 const sendSms=${sendSms};
-const Resulted=${Resulted};
+const showResult=${showResult};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -85,5 +85,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const Resulted=${Resulted};
+const Resulted=${showResult};
 `

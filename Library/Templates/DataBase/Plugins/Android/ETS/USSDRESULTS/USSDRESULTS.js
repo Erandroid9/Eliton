@@ -1,13 +1,5 @@
-export const Resulted=(ELEMENT)=>{
+export const showResult=(message)=>{
 
-    const showResult=(message)=>{
-
-        Resulted(message);
-
-        DISPLAY(ELEMENT,message);
-
-    };
-
-    showResult();
+    DATASTORE("","AndroidSms",message);
 
 };
