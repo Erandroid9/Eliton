@@ -21,7 +21,11 @@ const MOBILEVIEW=()=>{
 
     },(ELEMENT)=>{
 
-         ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
+        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
+
+        });
+
+        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
 
         });
 
