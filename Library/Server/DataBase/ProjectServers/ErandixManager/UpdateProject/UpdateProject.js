@@ -8,18 +8,10 @@ export const ERANDIXUPDATEPROJECT=(LINK,NAME,ID,INFO,CALLBACK)=>{
 
             CONDITION(User.ID ===ID,()=>{
 
-                CONDITION(User.Approved,()=>{
-
-                    UPDATEDATA(LINK,NAME,ID,INFO,(data)=>{
+                UPDATEDATA(LINK,NAME,ID,INFO,(data)=>{
     
-                        CALLBACK(data);
+                    CALLBACK(data);
     
-                    });
-
-                },()=>{
-
-                    TOASTVIEW("Something Went Wrong,Try Again Later!");
-
                 });
 
             },()=>{
