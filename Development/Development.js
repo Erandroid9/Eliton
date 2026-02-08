@@ -420,6 +420,8 @@ const DESKTOPSITEPERFORMANCE=(ELEMENT,Data)=>{
 
 const DESKTOPPRODUCTUPDATE=(ELEMENT,Data)=>{
 
+    alert("coming Soonn")
+
 };
 
 const DESKTOPDELETEDPROJECTS=()=>{
