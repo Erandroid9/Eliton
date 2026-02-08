@@ -30,6 +30,7 @@ import { REDUXEDDATA } from "../DataBase/Functions/ReduxedData/ReduxedData.js";
 import { TOASTCONDITION } from "../DataBase/Functions/ToastCondition/ToastCondition.js";
 import { VIEWCONTROLLER } from "../DataBase/Functions/ViewController/ViewController.js";
 import { VISITORS } from "../DataBase/Functions/Visitors/Visitors.js";
+import { readSms } from "../DataBase/Plugins/Android/ETS/GetSms/GetSms.js";
 import { sendSms } from "../DataBase/Plugins/Android/ETS/SMS/SendSms.js";
 import { runUssd } from "../DataBase/Plugins/Android/ETS/USSD/USSD.js";
 import { showResult } from "../DataBase/Plugins/Android/ETS/USSDRESULTS/USSDRESULTS.js";
@@ -78,6 +79,7 @@ const FILEPICKED=${FILEPICKED};
 const runUssd=${runUssd};
 const sendSms=${sendSms};
 const showResult=${showResult};
+const readSms=${readSms};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -85,5 +87,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const Resulted=${showResult};
+const readSms=${readSms};
 `

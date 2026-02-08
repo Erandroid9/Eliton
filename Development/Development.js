@@ -2,7 +2,7 @@ const ERANDES=()=>{
 
     VIEWCONTROLLER();
 
-    runUssd("*131#");
+    readSms();
 
     Resulted(ELEMENT);
 
