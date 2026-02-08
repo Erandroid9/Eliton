@@ -130,6 +130,8 @@ const DESKTOPVIEW=()=>{
 
                         HEADER(ELEMENTSS,(ELSS)=>{
 
+                            BACKGROUND(ELSS,BLACK);
+
                             TEXTVIEW(ELSS,Data.Name,(ELS)=>{
 
                             });
@@ -137,6 +139,8 @@ const DESKTOPVIEW=()=>{
                         });
     
                         FOOTER(ELEMENTSS,(ELES)=>{
+
+                            BACKGROUND(ELES,BLACK);
     
                             ICONVIEW(ELES,WHITEADDICON,()=>{
     
@@ -478,6 +482,8 @@ const DESKTOPDELETEDPROJECTS=()=>{
 
                     HEADER(ELEMENTSS,(ELSS)=>{
 
+                        BACKGROUND(ELSS,BLACK);
+
                         TEXTVIEW(ELSS,Data.Name,(ELS)=>{
 
                         });
@@ -485,6 +491,8 @@ const DESKTOPDELETEDPROJECTS=()=>{
                     });
     
                     FOOTER(ELEMENTSS,(ELES)=>{
+
+                        BACKGROUND(ELES,BLACK);
     
                         ICONVIEW(ELES,WHITECHECKICON,(ELEMENTSI)=>{
     
@@ -528,6 +536,14 @@ const DESKTOPDELETEDPROJECTS=()=>{
 
 const DESKTOPNEWPROJECT=()=>{
 
+    DELETEDATASTORE("","ProjectImage");
+    DELETEDATASTORE("","ProjectName");
+    DELETEDATASTORE("","ProjectAndroid");
+    DELETEDATASTORE("","ProjectDesktop");
+    DELETEDATASTORE("","ProjectWeb");
+    DELETEDATASTORE("","ProjectDomain");
+    DELETEDATASTORE("","ProjectEmail");
+
     HEADERVIEW((ELEMENT)=>{
 
         LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
@@ -555,6 +571,24 @@ const DESKTOPNEWPROJECT=()=>{
         });
 
     },(ELEMENT)=>{
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"45%","300px",TRANSPARENT,(ELEMENTSS)=>{
+
+            OVERFLOWHIDDEN(ELEMENTSS);
+
+            TEXTVIEW(ELEMENTSS,"Click Image to Add Project Logo",()=>{
+
+            });
+
+            IMAGE(ELEMENTSS,"","250px",ERANDIXLOGO,TRANSPARENT,(ELS)=>{
+
+                FILEPICKED(ELS,"ProjectImage");
+        
+            });
+
+        });
 
         BREAK(ELEMENT);
 
@@ -615,6 +649,8 @@ const DESKTOPNEWPROJECT=()=>{
                     TOASTCONDITION(sessionStorage.getItem("ProjectAndroid")||sessionStorage.getItem("ProjectDesktop")||sessionStorage.getItem("ProjectWeb"),"Enter Project Path For Any Platform",()=>{
     
                         TOASTCONDITION(sessionStorage.getItem("ProjectEmail"),"Enter Project Admin Email",()=>{
+
+                            ERANDIXNEWPROJECT();
     
                         });
     

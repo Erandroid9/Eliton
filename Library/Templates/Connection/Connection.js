@@ -21,6 +21,7 @@ import { ACCOUNTEMAILCHECKER } from "../DataBase/Functions/AccountChecker/Accoun
 import { BASE64CONVERTOR } from "../DataBase/Functions/Base64Convertor/Base64Convertor.js";
 import { COMPONENTVALUE } from "../DataBase/Functions/Componentvalue/Componentvalue.js";
 import { DOWNLOADSAVEINDEX } from "../DataBase/Functions/DownloadSaveIndex/DownloadSaveIndex.js";
+import { FILEPICKED } from "../DataBase/Functions/FilePicked/FilePicked.js";
 import { GETSAVEDINDEX } from "../DataBase/Functions/GetSavedIndex/GetSavedIndex.js";
 import { LOGINCHECKER } from "../DataBase/Functions/LoginChecker/LoginChecker.js";
 import { OFFLINECHECKER } from "../DataBase/Functions/OffLineChecker/OfflineChecker.js";
@@ -70,6 +71,7 @@ const REDUXEDDATA=${REDUXEDDATA};
 const TOASTCONDITION=${TOASTCONDITION};
 const COMPONENTVALUE=${COMPONENTVALUE};
 const HEADERVIEWER=${HEADERVIEWER};
+const FILEPICKED=${FILEPICKED};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -77,5 +79,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const HEADERVIEWER=${HEADERVIEWER};
+const FILEPICKED=${FILEPICKED};
 `

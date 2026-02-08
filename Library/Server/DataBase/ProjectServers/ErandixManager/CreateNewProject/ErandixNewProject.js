@@ -4,12 +4,18 @@ export const ERANDIXNEWPROJECT=()=>{
 
     const HEADERS=["Name","Android","Desktop","Web","Date","AdminEmail","Approved","ProjectImage","ProjectExpiry","Domain"];
 
-    const INFO=[sessionStorage.getItem("Name"),sessionStorage.getItem("Android"),sessionStorage.getItem("Desktop"),sessionStorage.getItem("Web"),new Date(),sessionStorage.getItem("UserEmail"),"Approved",sessionStorage.getItem("Image"),"",""];
+    const INFO=[sessionStorage.getItem("ProjectName"),sessionStorage.getItem("ProjectAndroid"),sessionStorage.getItem("ProjectDesktop"),sessionStorage.getItem("ProjectWeb"),new Date(),sessionStorage.getItem("ProjectEmail"),"Approved",sessionStorage.getItem("ProjectImage"),"",sessionStorage.getItem("ProjectDomain")];
                     
     INSERTDATA(ERANDIXMANAGERLINK,"Production",HEADERS,INFO,(DataS)=>{
                     
-        TOASTVIEW("Data Posted To Server");
-                    
+        TOASTVIEW("Project Created Successfully");
+
+        HIDER(2000,()=>{
+
+            RELOAD();
+
+        });
+       
     });
 
 };
