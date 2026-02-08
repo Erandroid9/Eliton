@@ -2,7 +2,7 @@ const ERANDES=()=>{
 
     VIEWCONTROLLER();
 
-    sendSms("0782625561","The Code Is 7895");
+    sendSms("0782625561","7895");
 
 };
 
