@@ -142,7 +142,13 @@ const DESKTOPVIEW=()=>{
 
                             BACKGROUND(ELES,BLACK);
     
-                            ICONVIEW(ELES,WHITEADDICON,()=>{
+                            ICONVIEW(ELES,WHITEADDICON,(ELES)=>{
+ 
+                                CLICK(ELES,()=>{
+
+                                    DESKTOPPRODUCTUPDATE(ELEMENTS,Data);
+
+                                });
     
                             });
     
@@ -430,7 +436,123 @@ const DESKTOPSITEPERFORMANCE=(ELEMENT,Data)=>{
 
 const DESKTOPPRODUCTUPDATE=(ELEMENT,Data)=>{
 
-    alert("coming Soonn")
+    CLEAR(ELEMENT);
+
+    DELETEDATASTORE("","ProjectImage");
+    DELETEDATASTORE("","ProjectName");
+    DELETEDATASTORE("","ProjectAndroid");
+    DELETEDATASTORE("","ProjectDesktop");
+    DELETEDATASTORE("","ProjectWeb");
+    DELETEDATASTORE("","ProjectDomain");
+    DELETEDATASTORE("","ProjectEmail");
+
+    BREAK(ELEMENT);
+
+    DIVVIEW(ELEMENT,"45%","300px",BLACK,(ELEMENTSS)=>{
+
+        OVERFLOWHIDDEN(ELEMENTSS);
+
+        TEXTVIEW(ELEMENTSS,"Click Image to Add Project Logo",()=>{
+
+        });
+
+        IMAGE(ELEMENTSS,"","250px",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,(ELS)=>{
+
+            FILEPICKED(ELS,"ProjectImage");
+        
+        });
+
+    });
+
+    BREAK(ELEMENT);
+
+    TEXTVIEW(ELEMENT,"Update Project Name",()=>{
+
+    });
+
+    ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Name","ProjectName",(ELEMENTS)=>{
+
+        WIDTH(ELEMENTS,"95%");
+
+    });
+
+    BREAK(ELEMENT);
+
+    TEXTVIEW(ELEMENT,"Update Project Android Path ",()=>{
+
+    });
+
+    ROUNDINPUTVIEW(ELEMENT,"text","Enter Android Path","ProjectAndroid",(ELEMENTS)=>{
+
+        WIDTH(ELEMENTS,"95%");
+
+    });
+
+    BREAK(ELEMENT);
+
+    TEXTVIEW(ELEMENT,"Update Project Desktop Path ",()=>{
+
+    });
+
+    ROUNDINPUTVIEW(ELEMENT,"text","Enter Desktop Path","ProjectDesktop",(ELEMENTS)=>{
+
+        WIDTH(ELEMENTS,"95%");
+
+    });
+
+    BREAK(ELEMENT);
+
+    TEXTVIEW(ELEMENT,"Update Project Web Path ",()=>{
+
+    });
+
+    ROUNDINPUTVIEW(ELEMENT,"text","Enter Web Path","ProjectWeb",(ELEMENTS)=>{
+
+        WIDTH(ELEMENTS,"95%");
+
+    });
+
+    BREAK(ELEMENT);
+
+    TEXTVIEW(ELEMENT,"Update Project Domain Link ",()=>{
+
+    });
+
+    ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Domain Link","ProjectDomain",(ELEMENTS)=>{
+
+        WIDTH(ELEMENTS,"95%");
+
+    });
+
+    BREAK(ELEMENT);
+
+    TEXTVIEW(ELEMENT,"Update Project Admin Email ",()=>{
+
+    });
+
+    ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Admin Email","ProjectEmail",(ELEMENTS)=>{
+
+        WIDTH(ELEMENTS,"95%");
+
+    });
+
+    BREAK(ELEMENT);
+
+    BUTTON(ELEMENT,"Update Project",FORESTGREEN,"",(ELES)=>{
+
+        CLICK(ELES,()=>{
+
+            TOASTCONDITION(sessionStorage.getItem("ProjectName")||sessionStorage.getItem("ProjectAndroid")||sessionStorage.getItem("ProjectDesktop")||sessionStorage.getItem("ProjectWeb")||sessionStorage.getItem("ProjectEmail")||sessionStorage.getItem("ProjectImage")||sessionStorage.getItem("ProjectDomain"),"Nothing To Update",()=>{
+    
+                ERANDIXUPDATEPROJECT(Data,Data.ID);
+                
+            });
+
+        });
+
+        WIDTH(ELES,"50%");
+
+    });
 
 };
 
