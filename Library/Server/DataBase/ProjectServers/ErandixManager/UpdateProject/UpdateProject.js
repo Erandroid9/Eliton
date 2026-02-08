@@ -2,7 +2,7 @@ export const ERANDIXUPDATEPROJECT=(LINK,NAME,ID,INFO,CALLBACK)=>{
 
     GETDATA(LINK,NAME,(Data)=>{
 
-        TOASTVIEW("Please Wait,Fetching  Data?");
+        TOASTVIEW("Please Wait,Fetching Project Data");
 
         FINDER(Data,"ID",ID,(User)=>{
 

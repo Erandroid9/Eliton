@@ -102,39 +102,45 @@ const DESKTOPVIEW=()=>{
 
             REDUXEDDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
 
-                INLINEVIEW(ELEMENTS,"45%","300px",TRANSPARENT,"1%",(ELEMENTSS)=>{
-                    
-                    IMAGE(ELEMENTSS,"","",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,()=>{
+                CHECKER(Data.Approved,()=>{
 
-                    });
-
-                    FOOTER(ELEMENTSS,(ELES)=>{
-
-                        ICONVIEW(ELES,WHITEADDICON,()=>{
-
+                    INLINEVIEW(ELEMENTS,"45%","300px",TRANSPARENT,"1%",(ELEMENTSS)=>{
+                        
+                        IMAGE(ELEMENTSS,"","",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,()=>{
+    
                         });
-
-                        ICONVIEW(ELES,WHITEINFOICON,()=>{
-
-                        });
-
-                        ICONVIEW(ELES,WHITEDELETEICON,(ELEMENTSI)=>{
-
-                            CLICK(ELEMENTSI,()=>{
-
-                                const
-
-                                ERANDIXUPDATEPROJECT(ERANDIXMANAGERLINK,"Production",Data.ID,INFO,CALLBACK)
-
+    
+                        FOOTER(ELEMENTSS,(ELES)=>{
+    
+                            ICONVIEW(ELES,WHITEADDICON,()=>{
+    
                             });
-
+    
+                            ICONVIEW(ELES,WHITEINFOICON,()=>{
+    
+                            });
+    
+                            ICONVIEW(ELES,WHITEDELETEICON,(ELEMENTSI)=>{
+    
+                                CLICK(ELEMENTSI,()=>{
+    
+                                    const INFO=[Data.Name,Data.Android,Data.Desktop,Data.Web,Data.Date,Data.AdminEmail,"",Data.ProjectImage,Data.ProjectExpiry,Data.Domain];
+    
+                                    ERANDIXUPDATEPROJECT(ERANDIXMANAGERLINK,"Production",Data.ID,INFO,()=>{
+    
+                                        DESKTOPVIEW();
+    
+                                    });
+    
+                                });
+    
+                            });
+    
                         });
-
+    
                     });
 
                 });
-
-                console.log(Data);
 
             });
 
