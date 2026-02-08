@@ -18,6 +18,7 @@ import { TOASTVIEW } from "../DataBase/Components/ToastView/ToastView.js";
 import { QELDATABASELINK } from "../DataBase/Constants/QelDataBaseLink/QelDataBaseLink.js";
 import { ACCOUNTEMAILCHECKER } from "../DataBase/Functions/AccountChecker/AccountChecker.js";
 import { BASE64CONVERTOR } from "../DataBase/Functions/Base64Convertor/Base64Convertor.js";
+import { COMPONENTVALUE } from "../DataBase/Functions/Componentvalue/Componentvalue.js";
 import { DOWNLOADSAVEINDEX } from "../DataBase/Functions/DownloadSaveIndex/DownloadSaveIndex.js";
 import { GETSAVEDINDEX } from "../DataBase/Functions/GetSavedIndex/GetSavedIndex.js";
 import { LOGINCHECKER } from "../DataBase/Functions/LoginChecker/LoginChecker.js";
@@ -66,6 +67,7 @@ const FORGOTPASSWORDVIEW=${FORGOTPASSWORDVIEW};
 const VIEWCONTROLLER=${VIEWCONTROLLER};
 const REDUXEDDATA=${REDUXEDDATA};
 const TOASTCONDITION=${TOASTCONDITION};
+const COMPONENTVALUE=${COMPONENTVALUE};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -73,5 +75,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const TOASTCONDITION=${TOASTCONDITION};
+const COMPONENTVALUE=${COMPONENTVALUE};
 `

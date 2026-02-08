@@ -105,9 +105,17 @@ const DESKTOPVIEW=()=>{
                 CHECKER(Data.Approved,()=>{
 
                     INLINEVIEW(ELEMENTS,"45%","300px",TRANSPARENT,"1%",(ELEMENTSS)=>{
-                        
+
                         IMAGE(ELEMENTSS,"","",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,()=>{
     
+                        });
+
+                        HEADER(ELEMENTSS,(ELSS)=>{
+
+                            TEXTVIEW(ELSS,Data.Name,(ELS)=>{
+
+                            });
+
                         });
     
                         FOOTER(ELEMENTSS,(ELES)=>{
@@ -179,6 +187,12 @@ const DESKTOPPRODUCTINFO=(ELEMENT,Data)=>{
         BUTTON(ELEMENTSS,"Performance",FORESTGREEN,"",(ELES)=>{
 
             WIDTH(ELES,"30%");
+
+            CLICK(ELES,()=>{
+
+                DESKTOPSITEPERFORMANCE(ELEMENT,Data);
+
+            });
 
         });
 
@@ -301,6 +315,66 @@ const DESKTOPPRODUCTINFO=(ELEMENT,Data)=>{
         RIGHTTEXTVIEW(ELEMENTSS,Data.Domain||"No Domain Link Added",()=>{
 
         });
+
+    });
+
+};
+
+const DESKTOPSITEPERFORMANCE=(ELEMENT,Data)=>{
+
+    CLEAR(ELEMENT);
+
+    BREAK(ELEMENT);
+
+    INLINEVIEW(ELEMENT,"95%","100px",TRANSPARENT,"1%",(ELEMENTSS)=>{
+
+        BUTTON(ELEMENTSS,"Get Number",FORESTGREEN,"",(ELES)=>{
+
+            WIDTH(ELES,"30%");
+
+            CLICK(ELES,()=>{
+
+                DISPLAY(ELES,sessionStorage.getItem("DataFetched"));
+
+            });
+
+        });
+
+        BUTTON(ELEMENTSS,"Email Developer",TEAL,"",(ELES)=>{
+
+            WIDTH(ELES,"30%");
+
+        });
+
+        BUTTON(ELEMENTSS,"Back",GREEN,"",(ELES)=>{
+
+            WIDTH(ELES,"30%");
+
+            CLICK(ELES,()=>{
+
+                DESKTOPPRODUCTINFO(ELEMENT,Data)
+
+            });
+
+        });
+
+    });
+
+    REDUXEDDATA(ERANDIXSITEMANAGERLINK,Data.ID,(Datata)=>{
+
+        INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
+
+            LEFTTEXTVIEW(ELEMENTSS,Datata.ID,()=>{
+
+            });
+
+            RIGHTTEXTVIEW(ELEMENTSS,Datata.VisitedTimes,()=>{
+
+            });
+
+        });
+
+        console.log(Datata);
 
     });
 
