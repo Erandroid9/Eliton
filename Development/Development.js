@@ -222,7 +222,29 @@ const DESKTOPPRODUCTINFO=(ELEMENT,Data)=>{
 
                 TOASTCONDITION(Data.Domain,"No Site Link Added",()=>{
 
-                    WEBSITE(Data.Domain);
+                    HEADERVIEWER(ELEMENT,(ELSSS)=>{
+
+                        LEFTTEXTVIEW(ELSSS,"Back",(EKS)=>{
+
+                            CLICK(EKS,()=>{
+
+                                DESKTOPPRODUCTINFO(ELEMENT,Data);
+
+                            });
+
+                        });
+
+                        RIGHTTEXTVIEW(ELSSS,Data.Name,()=>{
+
+                        });
+
+                    },(ELSSS)=>{
+
+                        IFRAME(ELSSS,Data.Domain,(ELSI)=>{
+
+                        });
+
+                    });
 
                 });
 

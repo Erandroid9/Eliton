@@ -2,7 +2,7 @@ export const IFRAME=(HOLDER,SRC,callBack)=>{
 
     ELEMENTED(HOLDER,"iframe",(ELEMENT)=>{
 
-        SOURCEREF(ELEMENT,SRC);
+        SOURCED(ELEMENT,SRC);
 
         POSITIONRELATIVE(ELEMENT);
         WIDTH(ELEMENT,"");

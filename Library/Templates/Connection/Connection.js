@@ -3,6 +3,7 @@ import { DIVVIEW } from "../DataBase/Components/DivView/DivView.js";
 import { FOOTERVIEW } from "../DataBase/Components/FooterView/FooterView.js";
 import { HEADERFOOTERVIEW } from "../DataBase/Components/HeaderFooterView/HeaderFooterView.js";
 import { HEADERVIEW } from "../DataBase/Components/HeaderView/HeaderView.js";
+import { HEADERVIEWER } from "../DataBase/Components/HeaderViewer/HeaderViewer.js";
 import { ICONVIEW } from "../DataBase/Components/IconView/IconView.js";
 import { INLINEVIEW } from "../DataBase/Components/InlineView/InlineView.js";
 import { LEFTDIVVIEW } from "../DataBase/Components/LeftDivView/LeftDivView.js";
@@ -68,6 +69,7 @@ const VIEWCONTROLLER=${VIEWCONTROLLER};
 const REDUXEDDATA=${REDUXEDDATA};
 const TOASTCONDITION=${TOASTCONDITION};
 const COMPONENTVALUE=${COMPONENTVALUE};
+const HEADERVIEWER=${HEADERVIEWER};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -75,5 +77,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const COMPONENTVALUE=${COMPONENTVALUE};
+const HEADERVIEWER=${HEADERVIEWER};
 `
