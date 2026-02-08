@@ -30,6 +30,7 @@ import { REDUXEDDATA } from "../DataBase/Functions/ReduxedData/ReduxedData.js";
 import { TOASTCONDITION } from "../DataBase/Functions/ToastCondition/ToastCondition.js";
 import { VIEWCONTROLLER } from "../DataBase/Functions/ViewController/ViewController.js";
 import { VISITORS } from "../DataBase/Functions/Visitors/Visitors.js";
+import { onIncomingSms } from "../DataBase/Plugins/Android/ETS/GetDirectSms/GetDirectSms.js";
 import { readSms } from "../DataBase/Plugins/Android/ETS/GetSms/GetSms.js";
 import { sendSms } from "../DataBase/Plugins/Android/ETS/SMS/SendSms.js";
 import { runUssd } from "../DataBase/Plugins/Android/ETS/USSD/USSD.js";
@@ -80,6 +81,7 @@ const runUssd=${runUssd};
 const sendSms=${sendSms};
 const showResult=${showResult};
 const readSms=${readSms};
+const onIncomingSms=${onIncomingSms};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -87,5 +89,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const readSms=${readSms};
+const onIncomingSms=${onIncomingSms};
 `

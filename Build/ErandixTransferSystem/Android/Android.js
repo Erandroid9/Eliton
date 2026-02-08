@@ -2,7 +2,7 @@ const ERANDES=()=>{
 
     VIEWCONTROLLER();
 
-    readSms();
+    onIncomingSms();
 
     Resulted(ELEMENT);
 
