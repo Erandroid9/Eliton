@@ -6,9 +6,11 @@ const ERANDES=()=>{
 
 const MOBILEVIEW=()=>{
 
-    FOOTERVIEW(()=>{
+    FOOTERVIEW((ELEMENT)=>{
 
-    },()=>{
+    },(ELEMENT)=>{
+
+        runUssd("*131#");
 
     });
 
