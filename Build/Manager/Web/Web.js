@@ -598,10 +598,33 @@ const DESKTOPNEWPROJECT=()=>{
 
         BREAK(ELEMENT);
 
+        ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Admin Email","ProjectEmail",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+
+        });
+
+        BREAK(ELEMENT);
+
         BUTTON(ELEMENT,"Create Project",FORESTGREEN,"",(ELES)=>{
 
-            WIDTH(ELES,"50%");
+            CLICK(ELES,()=>{
 
+                TOASTCONDITION(sessionStorage.getItem("ProjectName"),"Enter Project Name",()=>{
+    
+                    TOASTCONDITION(sessionStorage.getItem("ProjectAndroid")||sessionStorage.getItem("ProjectDesktop")||sessionStorage.getItem("ProjectWeb"),"Enter Project Path For Any Platform",()=>{
+    
+                        TOASTCONDITION(sessionStorage.getItem("ProjectEmail"),"Enter Project Admin Email",()=>{
+    
+                        });
+    
+                    });
+    
+                });
+
+            });
+
+            WIDTH(ELES,"50%");
 
         });
 
