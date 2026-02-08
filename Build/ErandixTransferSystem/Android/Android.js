@@ -1,19 +1,21 @@
 const ERANDES=()=>{
 
-    ROUTE("",HOMEPAGE,"HOMEPAGE");
-   
+    VIEWCONTROLLER();
+
 };
 
-const HOMEPAGE=()=>{
+const MOBILEVIEW=()=>{
 
-    USSD("*131#");
+    FOOTERVIEW(()=>{
 
-    showResult(message);
+    },()=>{
 
-    DISPLAY("",`
+    });
 
-        <p>${localStorage.getItem("Message")}</p>
-        
-    `)
-     
+};
+
+const DESKTOPVIEW=()=>{
+
+
+
 };
