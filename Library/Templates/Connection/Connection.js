@@ -9,6 +9,7 @@ import { INLINEVIEW } from "../DataBase/Components/InlineView/InlineView.js";
 import { LEFTDIVVIEW } from "../DataBase/Components/LeftDivView/LeftDivView.js";
 import { LEFTICONVIEW } from "../DataBase/Components/LeftIconView/LeftIconView.js";
 import { LEFTTEXTVIEW } from "../DataBase/Components/LeftTextView/LeftTextView.js";
+import { LOADERVIEW } from "../DataBase/Components/LoaderView/LoaderView.js";
 import { RIGHTDIVVIEW } from "../DataBase/Components/RightDivView/RightDivView.js";
 import { RIGHTICONVIEW } from "../DataBase/Components/RightIconView/RightIconView.js";
 import { RIGHTTEXTVIEW } from "../DataBase/Components/RightTextView/RighttextView.js";
@@ -80,6 +81,7 @@ const runUssd=${runUssd};
 const sendSms=${sendSms};
 const showResult=${showResult};
 const readSms=${readSms};
+const LOADERVIEW=${LOADERVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -87,5 +89,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const onIncomingSms=${readSms};
+const LOADERVIEW=${LOADERVIEW};
 `
