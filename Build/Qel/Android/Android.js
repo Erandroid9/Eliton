@@ -382,7 +382,7 @@ const VERIFIEDUSER=()=>{
 
         });
 
-    },(ELEMENTER)=>{
+    },(ELEMENT)=>{
 
         DIVVIEW(ELEMENT,"95%","300px",ORANGE,(ELEMENTS)=>{
 
