@@ -1,45 +1,41 @@
-export const LOADERVIEW = (ELEMENT, CALLBACK) => {
+const ERANDES=()=>{
 
-    ICONVIEW(ELEMENT,WHITERETRYICON,(ELS) => {
+    VIEWCONTROLLER();
 
-        WIDTH(ELS, "30px");
-        
-        HEIGHT(ELS, "30px");
+    readSms();
 
-        let rotation = 0;
+};
 
-        let spinning = true;
+const MOBILEVIEW=()=>{
 
-        const spin = () => {
+    FOOTERVIEW((ELEMENT)=>{
 
-            if (!spinning) return;
+        HIDER(5000,()=>{
 
-            rotation += 100;
+            DISPLAY(ELEMENT,sessionStorage.getItem("AndroidSms"))
 
-            ELS.style.transform = `rotate(${rotation}deg)`;
+        });
 
-            requestAnimationFrame(spin);
+    },(ELEMENT)=>{
 
-        };
+        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
 
-        spin();
+        });
 
-        ELS.stopSpin = () => spinning = false;
+        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
 
-        ELS.startSpin = () => {
+        });
 
-            if (!spinning) {
+        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
 
-                spinning = true;
-
-                spin();
-
-            }
-
-        };
-
-        CALLBACK(ELS);
+        });
 
     });
+
+};
+
+const DESKTOPVIEW=()=>{
+
+
 
 };

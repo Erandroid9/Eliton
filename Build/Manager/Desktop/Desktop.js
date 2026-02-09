@@ -130,72 +130,80 @@ const DESKTOPVIEW=()=>{
 
             WIDTH(ELEMENTS,"60%");
 
-            REDUXEDDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
+            LOADERVIEW(ELEMENTS,(ELSZSA)=>{
 
-                CHECKER(Data.Approved,()=>{
+                TOP(ELSZSA,"30%");
 
-                    INLINEVIEW(ELEMENTS,"45%","300px",TRANSPARENT,"1%",(ELEMENTSS)=>{
+                REDUXEDDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
 
-                        IMAGE(ELEMENTSS,"","",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,()=>{
-    
-                        });
+                    DISPLAYHIDDEN(ELSZSA);
 
-                        HEADER(ELEMENTSS,(ELSS)=>{
+                    CHECKER(Data.Approved,()=>{
 
-                            BACKGROUND(ELSS,BLACK);
+                        INLINEVIEW(ELEMENTS,"45%","300px",TRANSPARENT,"1%",(ELEMENTSS)=>{
 
-                            TEXTVIEW(ELSS,Data.Name,(ELS)=>{
-
+                            IMAGE(ELEMENTSS,"","",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,()=>{
+        
                             });
 
-                        });
-    
-                        FOOTER(ELEMENTSS,(ELES)=>{
+                            HEADER(ELEMENTSS,(ELSS)=>{
 
-                            BACKGROUND(ELES,BLACK);
-    
-                            ICONVIEW(ELES,WHITEADDICON,(ELES)=>{
- 
-                                CLICK(ELES,()=>{
+                                BACKGROUND(ELSS,BLACK);
 
-                                    DESKTOPPRODUCTUPDATE(ELEMENTS,Data);
+                                TEXTVIEW(ELSS,Data.Name,(ELS)=>{
 
                                 });
-    
+
                             });
-    
-                            ICONVIEW(ELES,WHITEINFOICON,(ELEMENTSI)=>{
+        
+                            FOOTER(ELEMENTSS,(ELES)=>{
 
-                                CLICK(ELEMENTSI,()=>{
+                                BACKGROUND(ELES,BLACK);
+        
+                                ICONVIEW(ELES,WHITEADDICON,(ELES)=>{
+    
+                                    CLICK(ELES,()=>{
 
-                                    DESKTOPPRODUCTINFO(ELEMENTS,Data);
+                                        DESKTOPPRODUCTUPDATE(ELEMENTS,Data);
 
-                                });
-    
-                            });
-    
-                            ICONVIEW(ELES,WHITEDELETEICON,(ELEMENTSI)=>{
-    
-                                CLICK(ELEMENTSI,()=>{
-    
-                                    const INFO=[Data.Name,Data.Android,Data.Desktop,Data.Web,Data.Date,Data.AdminEmail,"",Data.ProjectImage,Data.ProjectExpiry,Data.Domain];
-    
-                                    ERANDIXUPDATEPROJECT(ERANDIXMANAGERLINK,"Production",Data.ID,INFO,()=>{
-    
-                                        DESKTOPVIEW();
-    
                                     });
-    
+        
                                 });
-    
+        
+                                ICONVIEW(ELES,WHITEINFOICON,(ELEMENTSI)=>{
+
+                                    CLICK(ELEMENTSI,()=>{
+
+                                        DESKTOPPRODUCTINFO(ELEMENTS,Data);
+
+                                    });
+        
+                                });
+        
+                                ICONVIEW(ELES,WHITEDELETEICON,(ELEMENTSI)=>{
+        
+                                    CLICK(ELEMENTSI,()=>{
+        
+                                        const INFO=[Data.Name,Data.Android,Data.Desktop,Data.Web,Data.Date,Data.AdminEmail,"",Data.ProjectImage,Data.ProjectExpiry,Data.Domain];
+        
+                                        ERANDIXUPDATEPROJECT(ERANDIXMANAGERLINK,"Production",Data.ID,INFO,()=>{
+        
+                                            DESKTOPVIEW();
+        
+                                        });
+        
+                                    });
+        
+                                });
+        
                             });
-    
+        
                         });
-    
+
                     });
 
                 });
-
+                
             });
 
         });
@@ -428,18 +436,24 @@ const DESKTOPSITEPERFORMANCE=(ELEMENT,Data)=>{
 
     });
 
-    REDUXEDDATA(ERANDIXSITEMANAGERLINK,Data.ID,(Datata)=>{
+    LOADERVIEW(ELEMENT,(ELSAM)=>{
 
-        INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
+        REDUXEDDATA(ERANDIXSITEMANAGERLINK,Data.ID,(Datata)=>{
 
-            LEFTTEXTVIEW(ELEMENTSS,Datata.ID,()=>{
-
+            DISPLAYHIDDEN(ELSAM);
+    
+            INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
+    
+                LEFTTEXTVIEW(ELEMENTSS,Datata.ID,()=>{
+    
+                });
+    
+                RIGHTTEXTVIEW(ELEMENTSS,Datata.VisitedTimes,()=>{
+    
+                });
+    
             });
-
-            RIGHTTEXTVIEW(ELEMENTSS,Datata.VisitedTimes,()=>{
-
-            });
-
+    
         });
 
     });
