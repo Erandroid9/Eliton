@@ -163,46 +163,12 @@ const HOMEPAGE=()=>{
 
             CLICK(ELEMENTS,()=>{
 
-                CONDITION(localStorage.getItem("User"),()=>{
-
-                    ROUTE(" ",USERACCOUNTPAGE,"HOMEPAGE");
-
-                },()=>{
-
-                    ROUTE(" ",LOGINPAGE,"HOMEPAGE");
-
-                });
+                ROUTE(" ",USERACCOUNTPAGE,"HOMEPAGE");
 
             });
 
         });
 
-    });
-
-};
-
-const LOGINPAGE=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
-
-            CLICK(ELEMENTS,()=>{
-
-                ROUTE("",HOMEPAGE,"HOMEPAGE");
-
-            });
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Activation",(ELEMENTS)=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        LOGINVIEW(ELEMENT,"Qel Medistore",LINK);
-        
     });
 
 };
@@ -386,6 +352,16 @@ const DETAILSPAGE=()=>{
 
 const USERACCOUNTPAGE=()=>{
 
+    ACCOUNTEMAILCHECKER("","Qel",QELDATABASELINK,()=>{
+
+        VERIFIEDUSER();
+
+    });
+
+};
+
+const VERIFIEDUSER=()=>{
+
     HEADERVIEW((ELEMENT)=>{
 
         LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
@@ -406,7 +382,7 @@ const USERACCOUNTPAGE=()=>{
 
         });
 
-    },(ELEMENT)=>{
+    },(ELEMENTER)=>{
 
         DIVVIEW(ELEMENT,"95%","300px",ORANGE,(ELEMENTS)=>{
 

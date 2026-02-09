@@ -163,175 +163,9 @@ const HOMEPAGE=()=>{
 
             CLICK(ELEMENTS,()=>{
 
-                CONDITION(localStorage.getItem("User"),()=>{
-
-                    ROUTE(" ",USERACCOUNTPAGE,"HOMEPAGE");
-
-                },()=>{
-
-                    ROUTE(" ",LOGINPAGE,"HOMEPAGE");
-
-                });
+                ROUTE(" ",USERACCOUNTPAGE,"HOMEPAGE");
 
             });
-
-        });
-
-    });
-
-};
-
-const LOGINPAGE=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
-
-            CLICK(ELEMENTS,()=>{
-
-                ROUTE("",HOMEPAGE,"HOMEPAGE");
-
-            });
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Activation",(ELEMENTS)=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        BREAK(ELEMENT);
-
-        TEXTVIEW(ELEMENT,"Log In",(ELEMENTS)=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email",(ELSES)=>{
-
-            INPUTTED(ELSES,(DataUsre)=>{
-
-                DATASTORE("","UserEmail",DataUsre);
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        ROUNDINPUTVIEW(ELEMENT,"password","Enter Your Password",(ELSES)=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        BUTTON(ELEMENT,"Sign In",FORESTGREEN,WHITE,(ELEMENTSS)=>{
-
-            WIDTH(ELEMENTSS,"90%");
-            HEIGHT(ELEMENTSS,"40px");
-            RADIUS(ELEMENTSS,"10px");
-
-            CLICK(ELEMENTSS,()=>{
-
-                LOGINSERVER(QELDATABASELINK,"Users",(User)=>{
-
-                    console.log(User);
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        TEXT(ELEMENT,"p","New To App,Create One?",ORANGE,(ELIS)=>{
-
-            CLICK(ELIS,()=>{
-
-                CREATEACCOUNTPAGE(ELEMENT);
-                
-            });
-
-        });
-
-    });
-
-};
-
-const CREATEACCOUNTPAGE=(ELEMENT)=>{
-
-    CLEAR(ELEMENT);
-
-    BREAK(ELEMENT);
-
-    TEXTVIEW(ELEMENT,"Create Account",(ELEMENTS)=>{
-
-    });
-
-    BREAK(ELEMENT);
-
-    ROUNDINPUTVIEW(ELEMENT,"","Enter Your Name",()=>{
-
-    });
-
-    BREAK(ELEMENT);
-
-    ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email",()=>{
-
-    });
-
-    BREAK(ELEMENT);
-
-    ROUNDINPUTVIEW(ELEMENT,"password","Create Your Password",()=>{
-
-    });
-
-    BREAK(ELEMENT);
-
-    ROUNDINPUTVIEW(ELEMENT,"tel","Enter Your Phone Number",()=>{
-
-    });
-
-    BREAK(ELEMENT);
-
-    ROUNDINPUTVIEW(ELEMENT,"","Enter Your Location",()=>{
-
-    });
-
-    BREAK(ELEMENT);
-
-    BUTTON(ELEMENT,"Sign Up",FORESTGREEN,WHITE,(ELEMENTSS)=>{
-
-        WIDTH(ELEMENTSS,"90%");
-        HEIGHT(ELEMENTSS,"40px");
-        RADIUS(ELEMENTSS,"10px");
-
-        CLICK(ELEMENTSS,()=>{
-
-            const HEADERS=[];
-
-            const DATA=[];
-
-            CREATEACCOUNTSERVER(QELDATABASELINK,"Users",HEADERS,DATA,(UserData)=>{
-
-                console.log(UserData);
-
-            });
-
-        });
-
-    });
-
-    BREAK(ELEMENT);
-
-    TEXT(ELEMENT,"p","One Of Us,Log In?",ORANGE,(ELIS)=>{
-
-        CLICK(ELIS,()=>{
-
-            LOGINPAGE();
 
         });
 
@@ -518,6 +352,16 @@ const DETAILSPAGE=()=>{
 
 const USERACCOUNTPAGE=()=>{
 
+    ACCOUNTEMAILCHECKER("","Qel",QELDATABASELINK,()=>{
+
+        VERIFIEDUSER();
+
+    });
+
+};
+
+const VERIFIEDUSER=()=>{
+
     HEADERVIEW((ELEMENT)=>{
 
         LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
@@ -538,7 +382,7 @@ const USERACCOUNTPAGE=()=>{
 
         });
 
-    },(ELEMENT)=>{
+    },(ELEMENTER)=>{
 
         DIVVIEW(ELEMENT,"95%","300px",ORANGE,(ELEMENTS)=>{
 
