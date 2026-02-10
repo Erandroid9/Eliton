@@ -8,6 +8,6 @@ export const CONNECTIONS=()=>{
 
     DISPLAYLOADER("5%");
 
-    DATALOADER();
+    //DATALOADER();
 
 };

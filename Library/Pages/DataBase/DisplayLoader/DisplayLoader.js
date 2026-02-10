@@ -51,6 +51,8 @@ export const DISPLAYLOADER=(AMOUNT)=>{
         .DisplayImage{
             position:absolute;
             background:transparent;
+            top:0;
+            bottom:0;
             left:0;
             height:100%;
             width:100%;
