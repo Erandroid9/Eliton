@@ -6,7 +6,7 @@ export const WEBENVIRONMENT=()=>{
 
     const MAIN="https://docs.google.com/spreadsheets/d/1V_m4KRo--FQkD0fNKfRZ1EWDRCSqTvwGkM7lEFGWldA/edit?usp=sharing";
 
-    const CLOUD="https://erandroid9.github.io/Eliton/";
+    const CLOUD="https://erandroid9.github.io/f3be20b4-2c39-4c6a-b6f5-76ded0d8e655-E/";
 
     fetch("https://script.google.com/macros/s/AKfycbxgaFqwexOOBXA5tn1n2Mp0k9-KlwZ8ZP4QUvWM_CigDocfx-nVR0xz2RyuwDBYgwMp/exec",{
         method:"POST",
