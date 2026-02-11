@@ -70,7 +70,7 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWHIDDEN(ELEMENTS);
 
-            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
+            SERVERCOMPONENTS("Images/DesktopDevelopment.png",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
     
@@ -100,7 +100,7 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWHIDDEN(ELEMENTS);
 
-            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
+            SERVERCOMPONENTS("Images/WebDevelopment.webp",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
     
@@ -130,7 +130,7 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWHIDDEN(ELEMENTS);
 
-            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
+            SERVERCOMPONENTS("Images/SystemDevelopment.webp",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
     
