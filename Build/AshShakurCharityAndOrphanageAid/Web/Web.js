@@ -234,7 +234,7 @@ const MOBILEVIEW=()=>{
 
                 RADIUS(ELEMENTIS,"10px");
 
-                SERVERCOMPONENTS("Images/Asco/QurbanImageChild.jpeg",(DATA)=>{
+                SERVERCOMPONENTS("Images/Asco/FoodPackDistribution.jpeg",(DATA)=>{
 
                     IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
 
@@ -299,7 +299,7 @@ const MOBILEVIEW=()=>{
 
                 RADIUS(ELEMENTIS,"10px");
 
-                SERVERCOMPONENTS("Images/Asco/QurbanImageChild.jpeg",(DATA)=>{
+                SERVERCOMPONENTS("Images/Asco/Zakat.jpeg",(DATA)=>{
 
                     IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
 
@@ -364,7 +364,7 @@ const MOBILEVIEW=()=>{
 
                 RADIUS(ELEMENTIS,"10px");
 
-                SERVERCOMPONENTS("Images/Asco/QurbanImageChild.jpeg",(DATA)=>{
+                SERVERCOMPONENTS("Images/Asco/FoodPack.jpeg",(DATA)=>{
 
                     IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
 
