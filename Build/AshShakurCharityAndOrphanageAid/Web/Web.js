@@ -231,6 +231,16 @@ const MOBILEVIEW=()=>{
 
             RADIUS(ELEMENTS,"10px");
 
+            FOOTER(ELEMENTS,(ELS)=>{
+
+                BACKGROUND(ELS,BLACK);
+
+                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+
+                });
+
+            });
+
         });
 
         BREAK(ELEMENT);
@@ -254,6 +264,26 @@ const MOBILEVIEW=()=>{
         DIVVIEW(ELEMENT,"95%","400px",ORANGE,(ELEMENTS)=>{
 
             RADIUS(ELEMENTS,"10px");
+
+            FOOTER(ELEMENTS,(ELS)=>{
+
+                BACKGROUND(ELS,BLACK);
+
+                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","200px",ORANGE,(ELEMENTS)=>{
+
+            RADIUS(ELEMENTS,"10px");
+
+            BACKGROUND(ELEMENTS,BLACK);
 
         });
 
