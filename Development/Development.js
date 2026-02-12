@@ -571,7 +571,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
 
-            TEXTVIEW(ELEMENTS,"THE BLESSINGS OF PROVIDING WATER",(ELEMENTSES)=>{
+            TEXTVIEW(ELEMENTS,"QURABAN SACRIFICE 2026/1447H PRE-ORDER NOW!",(ELEMENTSES)=>{
 
                 MARGIN(ELEMENTSES,"5%");
 
@@ -582,7 +582,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            LEFTTEXTVIEW(ELEMENTS,"Whoever helps break the fast of a fasting person will have the same reward as the one [who fasted] without decreasing anything from the reward of the fasting person.",(ELEMENTSES)=>{
+            LEFTTEXTVIEW(ELEMENTS,"It is neither their meat nor their bread that reaches Allah, but it is piety from you that reaches Him",(ELEMENTSES)=>{
 
                 FONTSIZE(ELEMENTSES,"17px");
 
@@ -641,7 +641,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
 
-            TEXTVIEW(ELEMENTS,"FEED THE FASTING THIS RAMADAN",(ELEMENTSES)=>{
+            TEXTVIEW(ELEMENTS,"WHOEVER BUILDS A MOSQUE,ALLAH BUILDS FOR HIM/HER A HOUSE IN PARADISE",(ELEMENTSES)=>{
 
                 MARGIN(ELEMENTSES,"5%");
 
@@ -651,7 +651,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            LEFTTEXTVIEW(ELEMENTS,"Whoever helps break the fast of a fasting person will have the same reward as the one [who fasted] without decreasing anything from the reward of the fasting person.",(ELEMENTSES)=>{
+            LEFTTEXTVIEW(ELEMENTS,"Join us in building a beacon of faith. Help us construct a comfortable and serene space for our brothers and sisters in villages to perform their daily prayers. Your support is crucial in providing a safe haven for this community.",(ELEMENTSES)=>{
 
                 FONTSIZE(ELEMENTSES,"17px");
 
