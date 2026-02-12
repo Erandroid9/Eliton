@@ -81,7 +81,7 @@ const MOBILEVIEW=()=>{
 
             BUTTON(ELEMENTS,"Mosque Construction",GREEN,"",(ELEMENTS)=>{
 
-                WIDTH(ELEMENTS,"200px");
+                WIDTH(ELEMENTS,"150px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
@@ -141,7 +141,7 @@ const MOBILEVIEW=()=>{
 
             BUTTON(ELEMENTS,"Medical Support",GREEN,"",(ELEMENTS)=>{
 
-                WIDTH(ELEMENTS,"200px");
+                WIDTH(ELEMENTS,"120px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
@@ -152,6 +152,8 @@ const MOBILEVIEW=()=>{
             });
 
         });
+
+        BREAK(ELEMENT);
 
     });
  
