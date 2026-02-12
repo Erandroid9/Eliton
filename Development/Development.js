@@ -279,11 +279,9 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","300px",ORANGE,(ELEMENTS)=>{
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
 
             RADIUS(ELEMENTS,"10px");
-
-            BACKGROUND(ELEMENTS,BLACK);
 
             TABLEVIEW(ELEMENTS,"30%","30px",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
@@ -305,21 +303,35 @@ const MOBILEVIEW=()=>{
 
                 OVERFLOWX(ELEMENTS);
 
-                ICONVIEW(ELEMENTS,WHITEFACEBOOKICON,(ELEMENTS)=>{
+                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
 
                 });
 
-                ICONVIEW(ELEMENTS,WHITEINSTAGRAMICON,(ELEMENTS)=>{
+                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
 
                 });
 
-                
-                ICONVIEW(ELEMENTS,WHITETIKTOKICON,(ELEMENTS)=>{
+                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
 
                 });
 
-                
-                ICONVIEW(ELEMENTS,WHITEXICON,(ELEMENTS)=>{
+                ICONVIEW(ELEMENTS,BLACKXICON,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
 
                 });
 
@@ -337,6 +349,8 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
+                    COLOR(ELEMENTSES,BLACK);
+
                 });
 
             });
@@ -351,6 +365,8 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
+                    COLOR(ELEMENTSES,BLACK);
+
                 });
 
             });
@@ -364,6 +380,8 @@ const MOBILEVIEW=()=>{
                     MARGINTOP(ELEMENTSES,"5%");
 
                     FONTSIZE(ELEMENTSES,"15px");
+
+                    COLOR(ELEMENTSES,BLACK);
 
                 });
 
@@ -379,6 +397,8 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
+                    COLOR(ELEMENTSES,BLACK);
+
                 });
 
             });
@@ -393,6 +413,8 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
+                    COLOR(ELEMENTSES,BLACK);
+
                 });
 
             });
@@ -406,6 +428,8 @@ const MOBILEVIEW=()=>{
                     MARGINTOP(ELEMENTSES,"5%");
 
                     FONTSIZE(ELEMENTSES,"15px");
+
+                    COLOR(ELEMENTSES,BLACK);
 
                 });
 
@@ -421,6 +445,8 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
+                    COLOR(ELEMENTSES,BLACK);
+
                 });
 
             });
@@ -435,6 +461,8 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
+                    COLOR(ELEMENTSES,BLACK);
+
                 });
 
             });
@@ -448,6 +476,8 @@ const MOBILEVIEW=()=>{
                     MARGINTOP(ELEMENTSES,"5%");
 
                     FONTSIZE(ELEMENTSES,"15px");
+
+                    COLOR(ELEMENTSES,BLACK);
 
                 });
 

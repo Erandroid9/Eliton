@@ -4,6 +4,10 @@ import { BLACKHAMBURGICON } from "../DataBase/BlackIcons/Hamberg/Hamberg.js";
 import { BLACKLOCATIONICON } from "../DataBase/BlackIcons/Location/Location.js";
 import { BLACKMENUICON } from "../DataBase/BlackIcons/MenuIcon/MenuIcon.js";
 import { BLACKSUNICON } from "../DataBase/BlackIcons/Sun/Sun.js";
+import { BLACKXICON } from "../DataBase/BlackIcons/XIcon/Xicon.js";
+import { COLOREDFACEBOOKICON } from "../DataBase/ColoredIcons/Facebook/Facebook.js";
+import { COLOREDINSTAGRAM } from "../DataBase/ColoredIcons/Instagram/Instagram.js";
+import { COLOREDTIKTOKICON } from "../DataBase/ColoredIcons/Tiktok/Tiktok.js";
 import { GREENMENUICON } from "../DataBase/GreenIcons/Menu/Menu.js";
 import { ASCOLOGO } from "../DataBase/Logos/ASCO/ASCO.js";
 import { ERANDIXLOGO } from "../DataBase/Logos/Erandix/Erandix.js";
@@ -240,10 +244,14 @@ const GREENMENUICON="${GREENMENUICON}";
 const ERANDIXLOGO="${ERANDIXLOGO}";
 const ASCOLOGO="${ASCOLOGO}";
 const BLACKMENUICON="${BLACKMENUICON}";
+const COLOREDFACEBOOKICON="${COLOREDFACEBOOKICON}";
+const COLOREDINSTAGRAM="${COLOREDINSTAGRAM}";
+const BLACKXICON="${BLACKXICON}";
+const COLOREDTIKTOKICON="${COLOREDTIKTOKICON}";
 `; 
 localStorage.setItem('ASSETS',DATA);
 };
 
 `
-const BLACKMENUICON="${BLACKMENUICON}";
+const COLOREDTIKTOKICON="${COLOREDTIKTOKICON}";
 `
