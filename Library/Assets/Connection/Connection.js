@@ -2,8 +2,10 @@ import { BLACKBACKICON } from "../DataBase/BlackIcons/Back/Back.js";
 import { BLACKGRIDICON } from "../DataBase/BlackIcons/Grid/Grid.js";
 import { BLACKHAMBURGICON } from "../DataBase/BlackIcons/Hamberg/Hamberg.js";
 import { BLACKLOCATIONICON } from "../DataBase/BlackIcons/Location/Location.js";
+import { BLACKMENUICON } from "../DataBase/BlackIcons/MenuIcon/MenuIcon.js";
 import { BLACKSUNICON } from "../DataBase/BlackIcons/Sun/Sun.js";
 import { GREENMENUICON } from "../DataBase/GreenIcons/Menu/Menu.js";
+import { ASCOLOGO } from "../DataBase/Logos/ASCO/ASCO.js";
 import { ERANDIXLOGO } from "../DataBase/Logos/Erandix/Erandix.js";
 import { MTNICON } from "../DataBase/Logos/Mtn/Mtn.js";
 import { WHITEADDICON } from "../DataBase/WhiteIcons/Add/Add.js";
@@ -236,10 +238,12 @@ const BLACKGRIDICON="${BLACKGRIDICON}";
 const BLACKHAMBURGICON="${BLACKHAMBURGICON}";
 const GREENMENUICON="${GREENMENUICON}";
 const ERANDIXLOGO="${ERANDIXLOGO}";
+const ASCOLOGO="${ASCOLOGO}";
+const BLACKMENUICON="${BLACKMENUICON}";
 `; 
 localStorage.setItem('ASSETS',DATA);
 };
 
 `
-const ERANDIXLOGO="${ERANDIXLOGO}";
+const BLACKMENUICON="${BLACKMENUICON}";
 `
