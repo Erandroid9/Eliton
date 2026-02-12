@@ -423,6 +423,12 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
+        DIVVIEW(ELEMENT,"95%","200px",ORANGE,(ELEMENTS)=>{
+
+        });
+        
+        BREAK(ELEMENT);
+
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
             OVERFLOWX(ELEMENTS);
@@ -463,6 +469,12 @@ const MOBILEVIEW=()=>{
                 });
 
             });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","200px",ORANGE,(ELEMENTS)=>{
 
         });
 
@@ -513,6 +525,12 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
+        DIVVIEW(ELEMENT,"95%","200px",ORANGE,(ELEMENTS)=>{
+
+        });
+
+        BREAK(ELEMENT);
+
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
             OVERFLOWX(ELEMENTS);
@@ -553,6 +571,12 @@ const MOBILEVIEW=()=>{
                 });
 
             });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","200px",ORANGE,(ELEMENTS)=>{
 
         });
 
