@@ -79,9 +79,9 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Mosque Construction",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Ramadan",GREEN,"",(ELEMENTS)=>{
 
-                WIDTH(ELEMENTS,"150px");
+                WIDTH(ELEMENTS,"70px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
@@ -91,9 +91,9 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Ramadan",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Mosque Construction",GREEN,"",(ELEMENTS)=>{
 
-                WIDTH(ELEMENTS,"70px");
+                WIDTH(ELEMENTS,"150px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
