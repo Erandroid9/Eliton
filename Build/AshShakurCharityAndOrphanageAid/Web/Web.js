@@ -427,9 +427,9 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Child Fund",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Water Well Construction",TEAL,"",(ELEMENTS)=>{
 
-                WIDTH(ELEMENTS,"100px");
+                WIDTH(ELEMENTS,"200px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
@@ -439,7 +439,18 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","400px",ORANGE,(ELEMENTS)=>{
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/Asco/waterwell.jpeg",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                    POSITIONABSOLUTE(ELEMENTSES);
+                    LEFT(ELEMENTSES,"");
+    
+                });
+
+            });
 
             RADIUS(ELEMENTS,"10px");
 
@@ -461,7 +472,7 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Mosque Construction",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Qurban",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"150px");
                 HEIGHT(ELEMENTS,"40px");
@@ -473,7 +484,18 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","400px",ORANGE,(ELEMENTS)=>{
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/Asco/waterwell.jpeg",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                    POSITIONABSOLUTE(ELEMENTSES);
+                    LEFT(ELEMENTSES,"");
+    
+                });
+
+            });
 
             RADIUS(ELEMENTS,"10px");
 
