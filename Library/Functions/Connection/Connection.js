@@ -73,6 +73,7 @@ import { RANDOMCODEGENERATOR } from "../DataBase/RandomCodeGenerator/RandomCodeG
 import { SERVERASSETS } from "../DataBase/ServerAssets/ServerAssets.js";
 import { GETEMAILS } from "../DataBase/GetEmails/GetEmails.js";
 import { TIKTOK } from "../DataBase/Tiktok/Tiktok.js";
+import { X } from "../DataBase/X/X.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
