@@ -486,7 +486,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("Images/Asco/waterwell.jpeg",(DATA)=>{
+            SERVERCOMPONENTS("Images/Asco/qurban.jpeg",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
 
