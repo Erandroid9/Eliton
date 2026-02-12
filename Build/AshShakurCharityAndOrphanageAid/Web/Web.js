@@ -81,7 +81,7 @@ const MOBILEVIEW=()=>{
 
             BUTTON(ELEMENTS,"Mosque Construction",GREEN,"",(ELEMENTS)=>{
 
-                WIDTH(ELEMENTS,"200px");
+                WIDTH(ELEMENTS,"150px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
@@ -141,13 +141,69 @@ const MOBILEVIEW=()=>{
 
             BUTTON(ELEMENTS,"Medical Support",GREEN,"",(ELEMENTS)=>{
 
-                WIDTH(ELEMENTS,"200px");
+                WIDTH(ELEMENTS,"120px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
                 MARGINLEFT(ELEMENTS,"2%");
 
                 FLEXSHRINK(ELEMENTS);
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","400px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            OVERFLOWX(ELEMENTS);
+
+            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+
+                OVERFLOWX(ELEMENTIS);
+
+                MARGIN(ELEMENTIS,"2%");
+
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
+
+            });
+
+            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+
+                OVERFLOWX(ELEMENTIS);
+
+                MARGIN(ELEMENTIS,"2%");
+
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
+
+            });
+
+            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+
+                OVERFLOWX(ELEMENTIS);
+
+                MARGIN(ELEMENTIS,"2%");
+
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
+
+            });
+
+            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+
+                OVERFLOWX(ELEMENTIS);
+
+                MARGIN(ELEMENTIS,"2%");
+
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
 
             });
 

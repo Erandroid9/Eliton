@@ -155,6 +155,60 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
+        INLINEVIEW(ELEMENT,"95%","400px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            OVERFLOWX(ELEMENTS);
+
+            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+
+                OVERFLOWX(ELEMENTIS);
+
+                MARGIN(ELEMENTIS,"2%");
+
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
+
+            });
+
+            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+
+                OVERFLOWX(ELEMENTIS);
+
+                MARGIN(ELEMENTIS,"2%");
+
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
+
+            });
+
+            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+
+                OVERFLOWX(ELEMENTIS);
+
+                MARGIN(ELEMENTIS,"2%");
+
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
+
+            });
+
+            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+
+                OVERFLOWX(ELEMENTIS);
+
+                MARGIN(ELEMENTIS,"2%");
+
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
+
+            });
+
+        });
+
     });
  
 };
