@@ -502,7 +502,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
 
-            TEXTVIEW(ELEMENTS,"FEED THE FASTING THIS RAMADAN",(ELEMENTSES)=>{
+            TEXTVIEW(ELEMENTS,"BLESSINGS OF PROVIDING WATER",(ELEMENTSES)=>{
 
                 MARGIN(ELEMENTSES,"5%");
 
@@ -512,7 +512,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            LEFTTEXTVIEW(ELEMENTS,"Whoever helps break the fast of a fasting person will have the same reward as the one [who fasted] without decreasing anything from the reward of the fasting person.",(ELEMENTSES)=>{
+            LEFTTEXTVIEW(ELEMENTS,"The Prophet Muhammad (peace be upon him) said, \"The best charity is providing water.\" (Ibn Majah) Your contribution will not only bring physical relief but also spiritual rewards",(ELEMENTSES)=>{
 
                 FONTSIZE(ELEMENTSES,"17px");
 
@@ -569,9 +569,9 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-                DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
 
-            TEXTVIEW(ELEMENTS,"FEED THE FASTING THIS RAMADAN",(ELEMENTSES)=>{
+            TEXTVIEW(ELEMENTS,"THE BLESSINGS OF PROVIDING WATER",(ELEMENTSES)=>{
 
                 MARGIN(ELEMENTSES,"5%");
 
