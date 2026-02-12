@@ -159,7 +159,7 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
                 OVERFLOWX(ELEMENTIS);
 
@@ -168,10 +168,63 @@ const MOBILEVIEW=()=>{
                 FLEXSHRINK(ELEMENTIS);
 
                 RADIUS(ELEMENTIS,"10px");
+
+                SERVERCOMPONENTS("Images/Asco/QurbanImageChild.jpeg",(DATA)=>{
+
+                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                        POSITIONABSOLUTE(ELEMENTSES);
+    
+                    });
+
+                });
+
+                TEXTVIEW(ELEMENTIS,"RAMANDAN",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    PADDING(ELEMENTSES,"5%");
+
+                    RADIUS(ELEMENTSES,"10px");
+
+                    HEIGHT(ELEMENTSES,"20px");
+
+                    COLOR(ELEMENTSES,TEAL);
+
+                    BACKGROUND(ELEMENTSES,BLACK);
+
+                });
+
+                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
+
+                    BOTTOM(ELIS,"20px");
+
+                    LEFT(ELIS,"2%");
+
+                    POSITIONABSOLUTE(ELIS);
+
+                    TEXTVIEW(ELIS,"Randam A month to share and repent your wrong doings to Allah.",(ELEMENTSES)=>{
+
+                        MARGIN(ELEMENTSES,"5%");
+
+                    });
+
+                });
+
+                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    WIDTH(ELEMENTS,"30%");
+                    LEFT(ELEMENTS,"40%");
+                    HEIGHT(ELEMENTS,"40px");
+                    RADIUS(ELEMENTS,"5px");
+                    BOTTOM(ELEMENTS,"50px");
+
+                });
 
             });
 
-            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
                 OVERFLOWX(ELEMENTIS);
 
@@ -180,10 +233,63 @@ const MOBILEVIEW=()=>{
                 FLEXSHRINK(ELEMENTIS);
 
                 RADIUS(ELEMENTIS,"10px");
+
+                SERVERCOMPONENTS("Images/Asco/QurbanImageChild.jpeg",(DATA)=>{
+
+                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                        POSITIONABSOLUTE(ELEMENTSES);
+    
+                    });
+
+                });
+
+                TEXTVIEW(ELEMENTIS,"RAMANDAN",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    PADDING(ELEMENTSES,"5%");
+
+                    RADIUS(ELEMENTSES,"10px");
+
+                    HEIGHT(ELEMENTSES,"20px");
+
+                    COLOR(ELEMENTSES,TEAL);
+
+                    BACKGROUND(ELEMENTSES,BLACK);
+
+                });
+
+                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
+
+                    BOTTOM(ELIS,"20px");
+
+                    LEFT(ELIS,"2%");
+
+                    POSITIONABSOLUTE(ELIS);
+
+                    TEXTVIEW(ELIS,"Randam A month to share and repent your wrong doings to Allah.",(ELEMENTSES)=>{
+
+                        MARGIN(ELEMENTSES,"5%");
+
+                    });
+
+                });
+
+                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    WIDTH(ELEMENTS,"30%");
+                    LEFT(ELEMENTS,"40%");
+                    HEIGHT(ELEMENTS,"40px");
+                    RADIUS(ELEMENTS,"5px");
+                    BOTTOM(ELEMENTS,"50px");
+
+                });
 
             });
 
-            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
                 OVERFLOWX(ELEMENTIS);
 
@@ -192,10 +298,63 @@ const MOBILEVIEW=()=>{
                 FLEXSHRINK(ELEMENTIS);
 
                 RADIUS(ELEMENTIS,"10px");
+
+                SERVERCOMPONENTS("Images/Asco/QurbanImageChild.jpeg",(DATA)=>{
+
+                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                        POSITIONABSOLUTE(ELEMENTSES);
+    
+                    });
+
+                });
+
+                TEXTVIEW(ELEMENTIS,"RAMANDAN",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    PADDING(ELEMENTSES,"5%");
+
+                    RADIUS(ELEMENTSES,"10px");
+
+                    HEIGHT(ELEMENTSES,"20px");
+
+                    COLOR(ELEMENTSES,TEAL);
+
+                    BACKGROUND(ELEMENTSES,BLACK);
+
+                });
+
+                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
+
+                    BOTTOM(ELIS,"20px");
+
+                    LEFT(ELIS,"2%");
+
+                    POSITIONABSOLUTE(ELIS);
+
+                    TEXTVIEW(ELIS,"Randam A month to share and repent your wrong doings to Allah.",(ELEMENTSES)=>{
+
+                        MARGIN(ELEMENTSES,"5%");
+
+                    });
+
+                });
+
+                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    WIDTH(ELEMENTS,"30%");
+                    LEFT(ELEMENTS,"40%");
+                    HEIGHT(ELEMENTS,"40px");
+                    RADIUS(ELEMENTS,"5px");
+                    BOTTOM(ELEMENTS,"50px");
+
+                });
 
             });
 
-            INLINEVIEW(ELEMENTS,"80%","95%",ORANGE,"2%",(ELEMENTIS)=>{
+            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
                 OVERFLOWX(ELEMENTIS);
 
@@ -204,6 +363,59 @@ const MOBILEVIEW=()=>{
                 FLEXSHRINK(ELEMENTIS);
 
                 RADIUS(ELEMENTIS,"10px");
+
+                SERVERCOMPONENTS("Images/Asco/QurbanImageChild.jpeg",(DATA)=>{
+
+                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                        POSITIONABSOLUTE(ELEMENTSES);
+    
+                    });
+
+                });
+
+                TEXTVIEW(ELEMENTIS,"RAMANDAN",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    PADDING(ELEMENTSES,"5%");
+
+                    RADIUS(ELEMENTSES,"10px");
+
+                    HEIGHT(ELEMENTSES,"20px");
+
+                    COLOR(ELEMENTSES,TEAL);
+
+                    BACKGROUND(ELEMENTSES,BLACK);
+
+                });
+
+                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
+
+                    BOTTOM(ELIS,"20px");
+
+                    LEFT(ELIS,"2%");
+
+                    POSITIONABSOLUTE(ELIS);
+
+                    TEXTVIEW(ELIS,"Randam A month to share and repent your wrong doings to Allah.",(ELEMENTSES)=>{
+
+                        MARGIN(ELEMENTSES,"5%");
+
+                    });
+
+                });
+
+                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    WIDTH(ELEMENTS,"30%");
+                    LEFT(ELEMENTS,"40%");
+                    HEIGHT(ELEMENTS,"40px");
+                    RADIUS(ELEMENTS,"5px");
+                    BOTTOM(ELEMENTS,"50px");
+
+                });
 
             });
 

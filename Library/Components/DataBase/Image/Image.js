@@ -11,6 +11,8 @@ export const IMAGE=(HOLDER,WIDE,TALL,SOURCE,APPEARANCE,callBack)=>{
         BACKGROUND(ELEMENT,APPEARANCE||TRANSPARENT);
         RADIUS(ELEMENT,"0");
 
+        COVEROBJECTFIT(ELEMENT);
+
         callBack(ELEMENT);
 
     });
