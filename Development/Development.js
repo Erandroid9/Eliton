@@ -1143,6 +1143,26 @@ const CONTACTUSPAGE=()=>{
 
             DIVVIEW(ELEMENT,"100%","80%",TRANSPARENT,(ELEMENTIS)=>{
 
+                ARRAYJSONCONVERTOR(localStorage.getItem("SavedChatMessages"),(Data)=>{
+
+                    REDUX(Data,(Element)=>{
+
+                        DIVVIEW(ELEMENTIS,"80%","auto",TRANSPARENT,(ELEMENTIS)=>{
+
+                            MARGINRIGHT(ELEMENTIS,"1%");
+
+                            MARGINTOP(ELEMENTIS,"10px");
+
+                            RIGHTTEXTVIEW(ELEMENTIS,Element.message,()=>{
+
+                            });
+
+                        });
+
+                    });
+
+                });
+
                 DIVVIEW(ELEMENT,"100%","auto",TRANSPARENT,(ELEMENTS)=>{
 
                     POSITIONABSOLUTE(ELEMENTS);

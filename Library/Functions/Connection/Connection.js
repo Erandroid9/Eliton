@@ -74,6 +74,7 @@ import { GETEMAILS } from "../DataBase/GetEmails/GetEmails.js";
 import { TIKTOK } from "../DataBase/Tiktok/Tiktok.js";
 import { X } from "../DataBase/X/X.js";
 import { INSTAGRAM } from "../DataBase/Instagram/Instagram.js";
+import { ARRAYJSONCONVERTOR } from "../DataBase/ArrayJsonConvertor/ArrayJsonConvertor.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -153,6 +154,7 @@ const SERVERASSETS=${SERVERASSETS};
 const GETEMAILS=${GETEMAILS};
 const TIKTOK=${TIKTOK};
 const X=${X};
+const ARRAYJSONCONVERTOR=${ARRAYJSONCONVERTOR};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -160,5 +162,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const X=${X};
+const ARRAYJSONCONVERTOR=${ARRAYJSONCONVERTOR};
 `
