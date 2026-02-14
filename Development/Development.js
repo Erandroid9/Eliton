@@ -1,199 +1,749 @@
 const ERANDES=()=>{
 
-    VIEWCONTROLLER();
+    SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();});
 
+};
+
+const DESKTOPVIEW=()=>{
+
+        HEADERVIEW((ELEMENT)=>{
+
+        LEFTTEXTVIEW(ELEMENT,"Doctor Mjomba Ali",()=>{
+
+        });
+
+        RIGHTICONVIEW(ELEMENT,WHITEYOUTUBEICON,(ELEMENTSS)=>{
+
+            CLICK(ELEMENTSS,()=>{
+
+                ROUTE(" ",VIDEOPAGES,MOBILEVIEW);
+
+            });
+
+        });
+
+        RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                WHATSAPP("+254748352113");
+
+            });
+
+        });
+
+    },(ELEMENT)=>{
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Family Problems");
+
+                    DATASTORE("","SectorID","Family");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Business",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Business Problems");
+
+                    DATASTORE("","SectorID","Business");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Health Problems");
+
+                    DATASTORE("","SectorID","Health");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Jobs",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Jobs Problems");
+
+                    DATASTORE("","SectorID","Jobs");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+        });
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+
+                });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"FAMILY PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                BACKGROUND(ELEMENTSS,BLACK);
+
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        SMS("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+
+                });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"BUSINESS PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"Always Failing In Business,let Doctor Mjomba Ali get you the solution so as you never get stack in making money.lets make it rain even in dry season as your neighbours husttle.Work Smart not Hard with Doctor Mjomba Ali",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                BACKGROUND(ELEMENTSS,BLACK);
+
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        SMS("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+
+                });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"MARRIAGE PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"Are You Known in the neighbour hood for Fights with Your Loved Ones,Parthner and Kids.<br>Come Let Us Make Your Marriage a living example of peace and success without chaores in the community.Contact Us Via Our Resources.",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                BACKGROUND(ELEMENTSS,BLACK);
+
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        SMS("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+
+                });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"HEALTH PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"Are You Well Known In the Hospitals,Month In and Month Out Your Never Leaving The Hospital ,Either YourSelf Or A Loved One<br>Let Doctor Mjomba Ali Solve That issue For You ,You Will Never Visit a Hospital Again.",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                BACKGROUND(ELEMENTSS,BLACK);
+
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        SMS("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
+
+                });
+
+            });
+
+        });
+        
+        BREAK(ELEMENT);
+
+        TEXTVIEW(ELEMENT,"All Problems Below",(ELEMENTS)=>{
+
+            COLOR(ELEMENTS,ORANGE);
+
+        });
+
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
+
+            TEXTVIEW(ELEMENTS,"Marriage",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Marriage Problems");
+
+                    DATASTORE("","SectorID","Marriage");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Lost Items",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Lost Items Problems");
+
+                    DATASTORE("","SectorID","ItemLoss");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Jobs",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Jobs Problems");
+
+                    DATASTORE("","SectorID","Jobs");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+        });
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
+
+            TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Family Problems");
+
+                    DATASTORE("","SectorID","Family");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Witch Craft",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Witch Craft Problems");
+
+                    DATASTORE("","SectorID","WitchCraft");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Business",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Business Problems");
+
+                    DATASTORE("","SectorID","Business");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+        });
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
+
+            TEXTVIEW(ELEMENTS,"Demon Attacks",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Demon Attacks Problems");
+
+                    DATASTORE("","SectorID","DemonAttacks");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Relationship",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Relationship Problems");
+
+                    DATASTORE("","SectorID","Relationship");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Health Problems");
+
+                    DATASTORE("","SectorID","Health");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+        });
+        
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
+
+            TEXTVIEW(ELEMENTS,"Email",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    ROUTE(" ",EMAILPAGES,"MOBILEVIEW");
+
+                })
+
+            });
+
+            TEXTVIEW(ELEMENTS,"App",(ELEMENTSS)=>{
+
+                COLOR(ELEMENTSS,FORESTGREEN);
+
+                CLICK(ELEMENTSS,()=>{
+
+                    SERVERCOMPONENTS("Apps/Android/DoctorMjombaAli.apk",(Data)=>{
+                        
+                        WEBSITE(Data);
+
+                    })
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Policies",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    ROUTE(" ",POLICIESPAGES,MOBILEVIEW);
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+    });
+    
 };
 
 const MOBILEVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTICONVIEW(ELEMENT,ASCOLOGO,(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"50px");
-            HEIGHT(ELEMENTS,"45px");
+        LEFTTEXTVIEW(ELEMENT,"Doctor Mjomba Ali",()=>{
 
         });
 
-        LEFTTEXTVIEW(ELEMENT,"ASCOA",(ELEMENTS)=>{
+        RIGHTICONVIEW(ELEMENT,WHITEYOUTUBEICON,(ELEMENTSS)=>{
 
-            COLOR(ELEMENTS,GREEN);
+            CLICK(ELEMENTSS,()=>{
 
-        });
+                ROUTE(" ",VIDEOPAGES,MOBILEVIEW);
 
-        BUTTON(ELEMENT,"Donate",GREEN,"",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"70px");
-            HEIGHT(ELEMENTS,"40px");
-            RADIUS(ELEMENTS,"5px");
+            });
 
         });
 
-        RIGHTICONVIEW(ELEMENT,BLACKMENUICON,(ELEMENTS)=>{
+        RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                WHATSAPP("+254748352113");
+
+            });
 
         });
 
     },(ELEMENT)=>{
 
-        BREAK(ELEMENT);
-
-        TEXTVIEW(ELEMENT,"ASH SHAKUR CHARITY AND ORPHANAGE AID",(ELEMENTS)=>{
-
-            FONTSIZE(ELEMENTS,"15px");
-            COLOR(ELEMENTS,GREEN);
-
-        });
-
-        TEXTVIEW(ELEMENT,'"Helping The Poor Orphans and  the Needy People"',(ELEMENTS)=>{
-
-            FONTSIZE(ELEMENTS,"13px");
-            COLOR(ELEMENTS,BLACK);
-
-        });
-
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
-            OVERFLOWX(ELEMENTS);
+            TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
 
-            BUTTON(ELEMENTS,"Child Fund",TEAL,"",(ELEMENTS)=>{
+                CLICK(ELEMENTSS,()=>{
 
-                WIDTH(ELEMENTS,"100px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
+                    DATASTORE("","Sector","Family Problems");
 
-                MARGINLEFT(ELEMENTS,"2%");
+                    DATASTORE("","SectorID","Family");
 
-                FLEXSHRINK(ELEMENTS);
-
-                CLICK(ELEMENTS,()=>{
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
                 });
 
             });
 
-            BUTTON(ELEMENTS,"Food Aid",TEAL,"",(ELEMENTS)=>{
+            TEXTVIEW(ELEMENTS,"Business",(ELEMENTSS)=>{
 
-                WIDTH(ELEMENTS,"70px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
+                CLICK(ELEMENTSS,()=>{
 
-                MARGINLEFT(ELEMENTS,"2%");
+                    DATASTORE("","Sector","Business Problems");
 
-                FLEXSHRINK(ELEMENTS);
+                    DATASTORE("","SectorID","Business");
 
-                CLICK(ELEMENTS,()=>{
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
                 });
 
             });
 
-            BUTTON(ELEMENTS,"Ramadan",TEAL,"",(ELEMENTS)=>{
+            TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
 
-                WIDTH(ELEMENTS,"70px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
+                CLICK(ELEMENTSS,()=>{
 
-                MARGINLEFT(ELEMENTS,"2%");
+                    DATASTORE("","Sector","Health Problems");
 
-                FLEXSHRINK(ELEMENTS);
+                    DATASTORE("","SectorID","Health");
 
-                CLICK(ELEMENTS,()=>{
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
                 });
 
             });
 
-            BUTTON(ELEMENTS,"Mosque Construction",TEAL,"",(ELEMENTS)=>{
+            TEXTVIEW(ELEMENTS,"Jobs",(ELEMENTSS)=>{
 
-                WIDTH(ELEMENTS,"150px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
+                CLICK(ELEMENTSS,()=>{
 
-                MARGINLEFT(ELEMENTS,"2%");
+                    DATASTORE("","Sector","Jobs Problems");
 
-                FLEXSHRINK(ELEMENTS);
+                    DATASTORE("","SectorID","Jobs");
 
-                CLICK(ELEMENTS,()=>{
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
                 });
 
             });
 
-            BUTTON(ELEMENTS,"Qurban",TEAL,"",(ELEMENTS)=>{
+        });
 
-                WIDTH(ELEMENTS,"70px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-                MARGINLEFT(ELEMENTS,"2%");
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
 
-                FLEXSHRINK(ELEMENTS);
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
-                CLICK(ELEMENTS,()=>{
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
 
                 });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"FAMILY PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
 
             });
 
-            BUTTON(ELEMENTS,"Water Well",TEAL,"",(ELEMENTS)=>{
+            BREAK(ELEMENTS);
 
-                WIDTH(ELEMENTS,"100px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
+            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
 
-                MARGINLEFT(ELEMENTS,"2%");
-
-                FLEXSHRINK(ELEMENTS);
-
-                CLICK(ELEMENTS,()=>{
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                });
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
 
             });
 
-            BUTTON(ELEMENTS,"Aqeeqah",TEAL,"",(ELEMENTS)=>{
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
 
-                WIDTH(ELEMENTS,"70px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
+                BACKGROUND(ELEMENTSS,BLACK);
 
-                MARGINLEFT(ELEMENTS,"2%");
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
 
-                FLEXSHRINK(ELEMENTS);
+                    CLICK(ELEMENTSS,()=>{
 
-                CLICK(ELEMENTS,()=>{
+                        CALL("+254794094414");
 
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+                    });
 
                 });
 
-            });
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
 
-            BUTTON(ELEMENTS,"Medical Support",TEAL,"",(ELEMENTS)=>{
+                    CLICK(ELEMENTSS,()=>{
 
-                WIDTH(ELEMENTS,"120px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
+                        SMS("+254794094414");
 
-                MARGINLEFT(ELEMENTS,"2%");
+                    });
 
-                FLEXSHRINK(ELEMENTS);
+                });
 
-                CLICK(ELEMENTS,()=>{
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
 
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
 
                 });
 
@@ -203,273 +753,72 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        INLINEVIEW(ELEMENT,"95%","400px",TRANSPARENT,"2%",(ELEMENTS)=>{
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            OVERFLOWX(ELEMENTS);
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
 
-            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                OVERFLOWX(ELEMENTIS);
-
-                MARGIN(ELEMENTIS,"2%");
-
-                FLEXSHRINK(ELEMENTIS);
-
-                RADIUS(ELEMENTIS,"10px");
-
-                SERVERCOMPONENTS("Images/Asco/QurbanImageChild.jpeg",(DATA)=>{
-
-                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                        POSITIONABSOLUTE(ELEMENTSES);
-    
-                    });
-
-                });
-
-                TEXTVIEW(ELEMENTIS,"RAMADAN IFTAR 2026/1447H",(ELEMENTSES)=>{
-
-                    PADDING(ELEMENTSES,"5%");
-
-                    HEIGHT(ELEMENTSES,"50px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                    BACKGROUND(ELEMENTSES,WHITE);
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-
-                    TOP(ELEMENTSES,"0");
-
-                });
-
-                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
-
-                    BOTTOM(ELIS,"20px");
-
-                    LEFT(ELIS,"2%");
-
-                    POSITIONABSOLUTE(ELIS);
-
-                    TEXTVIEW(ELIS,"This year, we will once again come together to share the blessings of Ramadan with millions of people in need who await it with hope.",(ELEMENTSES)=>{
-
-                        MARGIN(ELEMENTSES,"5%");
-
-                        FONTSIZE(ELEMENTSES,"17px");
-
-                    });
-
-                });
-
-                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
                     POSITIONABSOLUTE(ELEMENTS);
-                    WIDTH(ELEMENTS,"30%");
-                    LEFT(ELEMENTS,"40%");
-                    HEIGHT(ELEMENTS,"40px");
-                    RADIUS(ELEMENTS,"5px");
-                    BOTTOM(ELEMENTS,"50px");
+                    LEFT(ELEMENTS);
 
                 });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"BUSINESS PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
 
             });
 
-            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
+            BREAK(ELEMENTS);
 
-                OVERFLOWX(ELEMENTIS);
+            TEXTVIEW(ELEMENTS,"Always Failing In Business,let Doctor Mjomba Ali get you the solution so as you never get stack in making money.lets make it rain even in dry season as your neighbours husttle.Work Smart not Hard with Doctor Mjomba Ali",(ELEMENTSIS)=>{
 
-                MARGIN(ELEMENTIS,"2%");
-
-                FLEXSHRINK(ELEMENTIS);
-
-                RADIUS(ELEMENTIS,"10px");
-
-                SERVERCOMPONENTS("Images/Asco/FoodPackDistribution.jpeg",(DATA)=>{
-
-                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                        POSITIONABSOLUTE(ELEMENTSES);
-    
-                    });
-
-                });
-
-                TEXTVIEW(ELEMENTIS,"RAMADAN FOOD PACK 2026/1447H",(ELEMENTSES)=>{
-
-                    PADDING(ELEMENTSES,"5%");
-
-                    HEIGHT(ELEMENTSES,"50px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                    BACKGROUND(ELEMENTSES,WHITE);
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-
-                    TOP(ELEMENTSES,"0");
-
-                });
-
-                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
-
-                    BOTTOM(ELIS,"20px");
-
-                    LEFT(ELIS,"2%");
-
-                    POSITIONABSOLUTE(ELIS);
-
-                    TEXTVIEW(ELIS,"We are preparing food packages to turn into cheerful Ramadan tables for the families in need during Ramadan.",(ELEMENTSES)=>{
-
-                        MARGIN(ELEMENTSES,"5%");
-
-                        FONTSIZE(ELEMENTSES,"17px");
-
-                    });
-
-                });
-
-                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    WIDTH(ELEMENTS,"30%");
-                    LEFT(ELEMENTS,"40%");
-                    HEIGHT(ELEMENTS,"40px");
-                    RADIUS(ELEMENTS,"5px");
-                    BOTTOM(ELEMENTS,"50px");
-
-                });
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
 
             });
 
-            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
 
-                OVERFLOWX(ELEMENTIS);
+                BACKGROUND(ELEMENTSS,BLACK);
 
-                (ELEMENTIS,"2%");
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
 
-                FLEXSHRINK(ELEMENTIS);
+                    CLICK(ELEMENTSS,()=>{
 
-                RADIUS(ELEMENTIS,"10px");
-
-                SERVERCOMPONENTS("Images/Asco/Zakat.jpeg",(DATA)=>{
-
-                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                        POSITIONABSOLUTE(ELEMENTSES);
-    
-                    });
-
-                });
-
-                TEXTVIEW(ELEMENTIS,"ZAKAT AL-FITIR 2026/1447H",(ELEMENTSES)=>{
-
-                    PADDING(ELEMENTSES,"5%");
-
-                    HEIGHT(ELEMENTSES,"50px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                    BACKGROUND(ELEMENTSES,"#FFFFFF70");
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-
-                    TOP(ELEMENTSES,"0");
-
-                });
-
-                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
-
-                    BOTTOM(ELIS,"20px");
-
-                    LEFT(ELIS,"2%");
-
-                    POSITIONABSOLUTE(ELIS);
-
-                    TEXTVIEW(ELIS,"Zakat involves giving of 2.5% of our annual wealth to charity. It is one of the five pillars of Islam and compulsory for all eligible Muslims.",(ELEMENTSES)=>{
-
-                        MARGIN(ELEMENTSES,"5%");
-
-                        FONTSIZE(ELEMENTSES,"17px");
+                        CALL("+254794094414");
 
                     });
 
                 });
 
-                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
 
-                    POSITIONABSOLUTE(ELEMENTS);
-                    WIDTH(ELEMENTS,"30%");
-                    LEFT(ELEMENTS,"40%");
-                    HEIGHT(ELEMENTS,"40px");
-                    RADIUS(ELEMENTS,"5px");
-                    BOTTOM(ELEMENTS,"50px");
+                    CLICK(ELEMENTSS,()=>{
 
-                });
-
-            });
-
-            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                OVERFLOWX(ELEMENTIS);
-
-                MARGIN(ELEMENTIS,"2%");
-
-                FLEXSHRINK(ELEMENTIS);
-
-                RADIUS(ELEMENTIS,"10px");
-
-                SERVERCOMPONENTS("Images/Asco/FoodPack.jpeg",(DATA)=>{
-
-                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                        POSITIONABSOLUTE(ELEMENTSES);
-    
-                    });
-
-                });
-
-                TEXTVIEW(ELEMENTIS,"SHARE HOPE 2026/1447H",(ELEMENTSES)=>{
-
-                    PADDING(ELEMENTSES,"5%");
-
-                    HEIGHT(ELEMENTSES,"50px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                    BACKGROUND(ELEMENTSES,WHITE);
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-
-                    TOP(ELEMENTSES,"0");
-
-                });
-
-                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
-
-                    BOTTOM(ELIS,"20px");
-
-                    LEFT(ELIS,"2%");
-
-                    POSITIONABSOLUTE(ELIS);
-
-                    TEXTVIEW(ELIS,"Randam A month to share and repent your wrong doings to Allah.",(ELEMENTSES)=>{
-
-                        MARGIN(ELEMENTSES,"5%");
-
-                        FONTSIZE(ELEMENTSES,"17px");
+                        SMS("+254794094414");
 
                     });
 
                 });
 
-                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
 
-                    POSITIONABSOLUTE(ELEMENTS);
-                    WIDTH(ELEMENTS,"30%");
-                    LEFT(ELEMENTS,"40%");
-                    HEIGHT(ELEMENTS,"40px");
-                    RADIUS(ELEMENTS,"5px");
-                    BOTTOM(ELEMENTS,"50px");
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
 
                 });
 
@@ -479,23 +828,149 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            TEXTVIEW(ELEMENTS,"FEED THE FASTING THIS RAMADAN",(ELEMENTSES)=>{
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
 
-                MARGIN(ELEMENTSES,"5%");
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
-                FONTSIZE(ELEMENTSES,"17px");
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
 
-                COLOR(ELEMENTSES,TEAL);
+                });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"MARRIAGE PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
 
             });
 
-            LEFTTEXTVIEW(ELEMENTS,"Whoever helps break the fast of a fasting person will have the same reward as the one [who fasted] without decreasing anything from the reward of the fasting person.",(ELEMENTSES)=>{
+            BREAK(ELEMENTS);
 
-                FONTSIZE(ELEMENTSES,"17px");
+            TEXTVIEW(ELEMENTS,"Are You Known in the neighbour hood for Fights with Your Loved Ones,Parthner and Kids.<br>Come Let Us Make Your Marriage a living example of peace and success without chaores in the community.Contact Us Via Our Resources.",(ELEMENTSIS)=>{
 
-                COLOR(ELEMENTSES,BLACK);
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                BACKGROUND(ELEMENTSS,BLACK);
+
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        SMS("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+
+                });
+                
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"HEALTH PROBLEMS",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,WHITE);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"Are You Well Known In the Hospitals,Month In and Month Out Your Never Leaving The Hospital ,Either YourSelf Or A Loved One<br>Let Doctor Mjomba Ali Solve That issue For You ,You Will Never Visit a Hospital Again.",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,BLACK);
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                BACKGROUND(ELEMENTSS,BLACK);
+
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        CALL("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        SMS("+254794094414");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        WHATSAPP("+254748352113");
+
+                    });
+
+                });
 
             });
 
@@ -503,111 +978,53 @@ const MOBILEVIEW=()=>{
         
         BREAK(ELEMENT);
 
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+        TEXTVIEW(ELEMENT,"All Problems Below",(ELEMENTS)=>{
 
-            OVERFLOWX(ELEMENTS);
+            COLOR(ELEMENTS,ORANGE);
 
-            BUTTON(ELEMENTS,"Water Well Construction",TEAL,"",(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"200px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-            });       
-           
         });
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
 
-            SERVERCOMPONENTS("Images/Asco/waterwell.jpeg",(DATA)=>{
+            TEXTVIEW(ELEMENTS,"Marriage",(ELEMENTSS)=>{
 
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+                CLICK(ELEMENTSS,()=>{
 
-                    POSITIONABSOLUTE(ELEMENTSES);
-                    LEFT(ELEMENTSES,"");
-    
-                });
+                    DATASTORE("","Sector","Marriage Problems");
 
-            });
+                    DATASTORE("","SectorID","Marriage");
 
-            RADIUS(ELEMENTS,"10px");
-
-            FOOTER(ELEMENTS,(ELS)=>{
-
-                BACKGROUND(ELS,GREEN);
-
-                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
                 });
 
             });
 
-        });
+            TEXTVIEW(ELEMENTS,"Lost Items",(ELEMENTSS)=>{
 
-        BREAK(ELEMENT);
+                CLICK(ELEMENTSS,()=>{
 
-        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+                    DATASTORE("","Sector","Lost Items Problems");
 
-            TEXTVIEW(ELEMENTS,"BLESSINGS OF PROVIDING WATER",(ELEMENTSES)=>{
+                    DATASTORE("","SectorID","ItemLoss");
 
-                MARGIN(ELEMENTSES,"5%");
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
-                FONTSIZE(ELEMENTSES,"17px");
-
-                COLOR(ELEMENTSES,TEAL);
-
-            });
-
-            LEFTTEXTVIEW(ELEMENTS,"The Prophet Muhammad (peace be upon him) said, \"The best charity is providing water.\" (Ibn Majah) Your contribution will not only bring physical relief but also spiritual rewards",(ELEMENTSES)=>{
-
-                FONTSIZE(ELEMENTSES,"17px");
-
-                COLOR(ELEMENTSES,BLACK);
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            OVERFLOWX(ELEMENTS);
-
-            BUTTON(ELEMENTS,"Qurban",TEAL,"",(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"150px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-            });       
-           
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/Asco/qurban.jpeg",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-                    LEFT(ELEMENTSES,"");
-    
                 });
 
             });
 
-            RADIUS(ELEMENTS,"10px");
+            TEXTVIEW(ELEMENTS,"Jobs",(ELEMENTSS)=>{
 
-            FOOTER(ELEMENTS,(ELS)=>{
+                CLICK(ELEMENTSS,()=>{
 
-                BACKGROUND(ELS,GREEN);
+                    DATASTORE("","Sector","Jobs Problems");
 
-                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+                    DATASTORE("","SectorID","Jobs");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
                 });
 
@@ -615,69 +1032,45 @@ const MOBILEVIEW=()=>{
 
         });
 
-        BREAK(ELEMENT);
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
 
-        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+            TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
 
-            TEXTVIEW(ELEMENTS,"QURABAN SACRIFICE 2026/1447H PRE-ORDER NOW!",(ELEMENTSES)=>{
+                CLICK(ELEMENTSS,()=>{
 
-                MARGIN(ELEMENTSES,"5%");
+                    DATASTORE("","Sector","Family Problems");
 
-                FONTSIZE(ELEMENTSES,"17px");
+                    DATASTORE("","SectorID","Family");
 
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
-                COLOR(ELEMENTSES,TEAL);
-
-            });
-
-            LEFTTEXTVIEW(ELEMENTS,"It is neither their meat nor their bread that reaches Allah, but it is piety from you that reaches Him",(ELEMENTSES)=>{
-
-                FONTSIZE(ELEMENTSES,"17px");
-
-                COLOR(ELEMENTSES,BLACK);
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            OVERFLOWX(ELEMENTS);
-
-            BUTTON(ELEMENTS,"Mosque Construction",TEAL,"",(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"150px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-            });       
-           
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/Asco/mosque.jpeg",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-                    LEFT(ELEMENTSES,"");
-    
                 });
 
             });
 
-            RADIUS(ELEMENTS,"10px");
+            TEXTVIEW(ELEMENTS,"Witch Craft",(ELEMENTSS)=>{
 
-            FOOTER(ELEMENTS,(ELS)=>{
+                CLICK(ELEMENTSS,()=>{
 
-                BACKGROUND(ELS,GREEN);
+                    DATASTORE("","Sector","Witch Craft Problems");
 
-                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+                    DATASTORE("","SectorID","WitchCraft");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Business",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Business Problems");
+
+                    DATASTORE("","SectorID","Business");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
                 });
 
@@ -685,305 +1078,107 @@ const MOBILEVIEW=()=>{
 
         });
 
-        BREAK(ELEMENT);
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
 
-        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+            TEXTVIEW(ELEMENTS,"Demon Attacks",(ELEMENTSS)=>{
 
-            TEXTVIEW(ELEMENTS,"WHOEVER BUILDS A MOSQUE,ALLAH BUILDS FOR HIM/HER A HOUSE IN PARADISE",(ELEMENTSES)=>{
+                CLICK(ELEMENTSS,()=>{
 
-                MARGIN(ELEMENTSES,"5%");
+                    DATASTORE("","Sector","Demon Attacks Problems");
 
-                FONTSIZE(ELEMENTSES,"17px");
+                    DATASTORE("","SectorID","DemonAttacks");
 
-                COLOR(ELEMENTSES,TEAL);
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
 
             });
 
-            LEFTTEXTVIEW(ELEMENTS,"Join us in building a beacon of faith. Help us construct a comfortable and serene space for our brothers and sisters in villages to perform their daily prayers. Your support is crucial in providing a safe haven for this community.",(ELEMENTSES)=>{
+            TEXTVIEW(ELEMENTS,"Relationship",(ELEMENTSS)=>{
 
-                FONTSIZE(ELEMENTSES,"17px");
+                CLICK(ELEMENTSS,()=>{
 
-                COLOR(ELEMENTSES,BLACK);
+                    DATASTORE("","Sector","Relationship Problems");
+
+                    DATASTORE("","SectorID","Relationship");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Health Problems");
+
+                    DATASTORE("","SectorID","Health");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
+        });
+        
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
+
+            TEXTVIEW(ELEMENTS,"Email",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    ROUTE(" ",EMAILPAGES,"MOBILEVIEW");
+
+                })
+
+            });
+
+            TEXTVIEW(ELEMENTS,"App",(ELEMENTSS)=>{
+
+                COLOR(ELEMENTSS,FORESTGREEN);
+
+                CLICK(ELEMENTSS,()=>{
+
+                    SERVERCOMPONENTS("Apps/Android/DoctorMjombaAli.apk",(Data)=>{
+                        
+                        WEBSITE(Data);
+
+                    })
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Policies",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    ROUTE(" ",POLICIESPAGES,MOBILEVIEW);
+
+                });
 
             });
 
         });
 
         BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
-
-            RADIUS(ELEMENTS,"10px");
-
-            TABLEVIEW(ELEMENTS,"50%","30px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Social Media",(ELEMENTSES)=>{
-
-                    MARGIN(ELEMENTSES,"5%");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            BREAK(ELEMENT);
-
-            INLINEVIEW(ELEMENTS,"95%","100px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-                OVERFLOWX(ELEMENTS);
-
-                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        WEBSITE("https://www.facebook.com/share/188Uyj5rGJ/");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        INSTAGRAM("ash_shakur_charity_");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        TIKTOK("ashshakurcharity1");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,BLACKXICON,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        X("AshShakur41402");
-
-                    });
-
-                });
-
-            });
-
-            BREAK(ELEMENT);
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            BREAK(ELEMENTS);
-
-            BREAK(ELEMENTS);
-            
-            BREAK(ELEMENTS);
-
-        });
 
     });
 
-    BUTTON(""," ",FORESTGREEN,"",(ELEMENTS)=>{
-
-        POSITIONFIXED(ELEMENTS);
-        RIGHT(ELEMENTS,"2%");
-        BOTTOM(ELEMENTS,"5px");
-        
-        WIDTH(ELEMENTS,"70px");
-        HEIGHT(ELEMENTS,"70px");
-        RADIUS(ELEMENTS,"100%");
-
-        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"30px");
-
-            HEIGHT(ELEMENTS,"30px");
-
-        });
-
-        CLICK(ELEMENTS,()=>{
-
-            WHATSAPP("+256789467876");
-
-        });
-
-    });   
- 
 };
 
-const SUBJECTSECTION=()=>{
+const HEADERPAGES=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTICONVIEW(ELEMENT,BLACKBACKICON,(ELEMENTS)=>{
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
 
-            CLICK(ELEMENTS,()=>{
+            CLICK(ELEMENT,()=>{
 
                 ROUTE("",MOBILEVIEW,"MOBILEVIEW");
 
@@ -991,297 +1186,187 @@ const SUBJECTSECTION=()=>{
 
         });
 
-        LEFTICONVIEW(ELEMENT,ASCOLOGO,(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"50px");
-            HEIGHT(ELEMENTS,"45px");
-
-        });
-
-        LEFTTEXTVIEW(ELEMENT,"ASCOA",(ELEMENTS)=>{
-
-            COLOR(ELEMENTS,GREEN);
-
-        });
-
-        BUTTON(ELEMENT,"Donate",GREEN,"",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"70px");
-            HEIGHT(ELEMENTS,"40px");
-            RADIUS(ELEMENTS,"5px");
+        RIGHTTEXTVIEW(ELEMENT,sessionStorage.getItem("Sector"),()=>{
 
         });
 
     },(ELEMENT)=>{
 
-        BREAK(ELEMENT);
+        TEXTVIEW(ELEMENT,"...Please Wait..",()=>{
 
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+        });
 
-            RADIUS(ELEMENTS,"10px");
+        GETDATA(DOCTORMJOMBAALICONNECTIONLINK,sessionStorage.getItem("SectorID"),(Data)=>{
 
-            TABLEVIEW(ELEMENTS,"50%","30px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+            CLEAR(ELEMENT);
 
-                RADIUS(ELEMENTIS,"5px");
+            REDUX(Data,(element)=>{
 
-                TEXTVIEW(ELEMENTIS,"Social Media",(ELEMENTSES)=>{
+                BREAK(ELEMENT);
 
-                    MARGIN(ELEMENTSES,"5%");
+                DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-                    COLOR(ELEMENTSES,BLACK);
+                    IMAGE(ELEMENTS,"","",element.Image,TRANSPARENT,(ELEMENTS)=>{
 
-                });
+                        POSITIONABSOLUTE(ELEMENTS);
+                        LEFT(ELEMENTS);
 
-            });
+                    });
 
-            BREAK(ELEMENT);
+                    BREAK(ELEMENTS);
 
-            INLINEVIEW(ELEMENTS,"95%","100px",TRANSPARENT,"2%",(ELEMENTS)=>{
+                    TEXTVIEW(ELEMENTS,element.Name,(ELEMENTSIS)=>{
 
-                OVERFLOWX(ELEMENTS);
+                        COLOR(ELEMENTSIS,BLACK);
+                        BACKGROUND(ELEMENTSIS,WHITE);
+                        PADDING(ELEMENTSIS,"2%");
+                        WIDTH(ELEMENTSIS,"90%");
 
-                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,(ELEMENTS)=>{
+                    });
 
-                    WIDTH(ELEMENTS,"50px");
+                    BREAK(ELEMENTS);
 
-                    HEIGHT(ELEMENTS,"50px");
+                    TEXTVIEW(ELEMENTS,element.Story,(ELEMENTSIS)=>{
 
-                    CLICK(ELEMENTS,()=>{
+                        COLOR(ELEMENTSIS,WHITE);
+                        BACKGROUND(ELEMENTSIS,BLACK);
+                        PADDING(ELEMENTSIS,"2%");
+                        WIDTH(ELEMENTSIS,"90%");
 
-                        WEBSITE("https://www.facebook.com/share/188Uyj5rGJ/");
+                    });
+
+                    FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                        BACKGROUND(ELEMENTSS,BLACK);
+
+                        ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                            CLICK(ELEMENTSS,()=>{
+
+                                CALL("+254794094414");
+
+                            });
+
+                        });
+
+                        ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                            CLICK(ELEMENTSS,()=>{
+
+                                SMS("+254794094414");
+
+                            });
+
+                        });
+
+                        ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                            CLICK(ELEMENTSS,()=>{
+
+                                WHATSAPP("+254748352113");
+
+                            });
+
+                        });
 
                     });
 
                 });
 
-                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        INSTAGRAM("ash_shakur_charity_");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        TIKTOK("ashshakurcharity1");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,BLACKXICON,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        X("AshShakur41402");
-
-                    });
-
-                });
+                BREAK(ELEMENT);
 
             });
-
-            BREAK(ELEMENT);
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            BREAK(ELEMENTS);
-
-            BREAK(ELEMENTS);
-            
-            BREAK(ELEMENTS);
 
         });
 
     });
 
-    BUTTON(""," ",FORESTGREEN,"",(ELEMENTS)=>{
-
-        POSITIONFIXED(ELEMENTS);
-        RIGHT(ELEMENTS,"2%");
-        BOTTOM(ELEMENTS,"5px");
-        
-        WIDTH(ELEMENTS,"70px");
-        HEIGHT(ELEMENTS,"70px");
-        RADIUS(ELEMENTS,"100%");
-
-        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"30px");
-
-            HEIGHT(ELEMENTS,"30px");
-
-        });
-
-        CLICK(ELEMENTS,()=>{
-
-            WHATSAPP("+256789467876");
-
-        });
-
-    });  
-   
 };
 
-const DESKTOPVIEW=()=>{
+const EMAILPAGES=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Email Us Page",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        TEXTVIEW(ELEMENT,"Under Development",()=>{
+
+        });
+
+    });
+
+};
+
+const POLICIESPAGES=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Terms and Conditions",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        TEXTVIEW(ELEMENT,"Under Development",()=>{
+
+        });
+
+    });
+
+};
+
+const VIDEOPAGES=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"About Us",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        SERVERCOMPONENTS("Videos/MjombaAli.mp4",(PATH)=>{
+
+            VIDEO(ELEMENT,PATH,()=>{
+
+            });
+
+        });
+
+    });
 
 };

@@ -1,0 +1,6 @@
+export const BODYCOLOR=(BGCOLOR,TEXTCOLOR)=>{
+
+    BACKGROUND(BODY,BGCOLOR);
+    
+
+}
