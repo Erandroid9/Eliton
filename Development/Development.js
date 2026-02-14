@@ -584,91 +584,80 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/First.jpeg",(DATA)=>{
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/Lucky.jpg",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
                     POSITIONABSOLUTE(ELEMENTS);
                     LEFT(ELEMENTS);
-                    WIDTH(ELEMENTS,"50%");
-
+        
                 });
                 
             });
 
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/Second.jpeg",(DATA)=>{
+            BREAK(ELEMENTS);
 
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+            TEXTVIEW(ELEMENTS,"TRADITIONAL AFRICAN <br><br>African Rennounced Herbal Doctor,Lets Get Your Problems Solved WithOut Hustle.<br><br>With Years Of experience in African chemistry,<br><br>Come Become Financially Rich With Doctor Mjomba Ali.",(ELEMENTSIS)=>{
 
-                    POSITIONABSOLUTE(ELEMENTS);
-                    RIGHT(ELEMENTS);
-                    WIDTH(ELEMENTS,"50%");
-
-                });
-                
-            });
-
-        });
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Family Problems");
-
-                    DATASTORE("","SectorID","Family");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Business",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Business Problems");
-
-                    DATASTORE("","SectorID","Business");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Health Problems");
-
-                    DATASTORE("","SectorID","Health");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Jobs",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Jobs Problems");
-
-                    DATASTORE("","SectorID","Jobs");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,"#00000090");
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
 
             });
 
         });
+
+        BREAK(ELEMENT);
+
+        TEXTVIEW(ELEMENT,"OUR SERVICES",(ELEMENTSIS)=>{
+
+        });
+
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+            LOADERVIEW(ELEMENTS,(LOAD)=>{
+
+                REDUXEDDATA(MJOMBAALIDATABASELINK,"Catergory",(Data)=>{
+
+                    DISPLAYHIDDEN(LOAD);
+
+                    TABLEVIEW(ELEMENTS,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
+
+                        IMAGE(ELES,"","",Data.Image,TRANSPARENT,(ELEMENTS)=>{
+
+                            POSITIONABSOLUTE(ELEMENTS);
+                            LEFT(ELEMENTS);
+
+                        });
+
+                        TEXTVIEW(ELES,Data.Name,(ELEMENTSIS)=>{
+
+                            COLOR(ELEMENTSIS,WHITE);
+                            BACKGROUND(ELEMENTSIS,"#FFFFFF50");
+                            PADDING(ELEMENTSIS,"2%");
+                            WIDTH(ELEMENTSIS,"90%");
+                            TOP(ELEMENTSIS,"30%");
+
+                        });
+
+                        CLICK(ELES,()=>{
+
+                            DATASTORE("","Sector",Data.Name);
+
+                            ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                        });
+
+                    });
+
+                });
+
+            });
+            
+        });
+ 
+        BREAK(ELEMENT);
 
         DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
@@ -933,6 +922,47 @@ const MOBILEVIEW=()=>{
         TEXTVIEW(ELEMENT,"All Problems Below",(ELEMENTS)=>{
 
             COLOR(ELEMENTS,ORANGE);
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/First.jpeg",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+                    WIDTH(ELEMENTS,"50%");
+
+                });
+                
+            });
+
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/Second.jpeg",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    RIGHT(ELEMENTS);
+                    WIDTH(ELEMENTS,"50%");
+
+                });
+                
+            });
+            
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"PERSONAL ISSUES<br><br>Doctor Mjomba Ali Works On People With All Issues,Starting From Those with Ghost Attacks Up to those with generational curses. <br><br>Whats Wrong With You Being Broke All The Time,Come Taste Money In Your Life.",(ELEMENTSIS)=>{
+
+                COLOR(ELEMENTSIS,WHITE);
+                BACKGROUND(ELEMENTSIS,"#00000090");
+                PADDING(ELEMENTSIS,"2%");
+                WIDTH(ELEMENTSIS,"90%");
+
+            });
 
         });
 
@@ -1304,78 +1334,80 @@ const HEADERPAGES=()=>{
 
     },(ELEMENT)=>{
 
-        TEXTVIEW(ELEMENT,"...Please Wait..",()=>{
+        LOADERVIEW(ELEMENT,(LOAD)=>{
 
-        });
+            GETDATA(DOCTORMJOMBAALICONNECTIONLINK,sessionStorage.getItem("SectorID"),(Data)=>{
 
-        GETDATA(DOCTORMJOMBAALICONNECTIONLINK,sessionStorage.getItem("SectorID"),(Data)=>{
+                DISPLAYHIDDEN(LOAD);
 
-            CLEAR(ELEMENT);
+                CLEAR(ELEMENT);
 
-            REDUX(Data,(element)=>{
+                REDUX(Data,(element)=>{
 
-                BREAK(ELEMENT);
+                    BREAK(ELEMENT);
 
-                DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+                    DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-                    IMAGE(ELEMENTS,"","",element.Image,TRANSPARENT,(ELEMENTS)=>{
+                        IMAGE(ELEMENTS,"","",element.Image,TRANSPARENT,(ELEMENTS)=>{
 
-                        POSITIONABSOLUTE(ELEMENTS);
-                        LEFT(ELEMENTS);
+                            POSITIONABSOLUTE(ELEMENTS);
+                            LEFT(ELEMENTS);
 
-                    });
+                        });
 
-                    BREAK(ELEMENTS);
+                        BREAK(ELEMENTS);
 
-                    TEXTVIEW(ELEMENTS,element.Name,(ELEMENTSIS)=>{
+                        TEXTVIEW(ELEMENTS,element.Name,(ELEMENTSIS)=>{
 
-                        COLOR(ELEMENTSIS,BLACK);
-                        BACKGROUND(ELEMENTSIS,WHITE);
-                        PADDING(ELEMENTSIS,"2%");
-                        WIDTH(ELEMENTSIS,"90%");
+                            COLOR(ELEMENTSIS,BLACK);
+                            BACKGROUND(ELEMENTSIS,WHITE);
+                            PADDING(ELEMENTSIS,"2%");
+                            WIDTH(ELEMENTSIS,"90%");
 
-                    });
+                        });
 
-                    BREAK(ELEMENTS);
+                        BREAK(ELEMENTS);
 
-                    TEXTVIEW(ELEMENTS,element.Story,(ELEMENTSIS)=>{
+                        TEXTVIEW(ELEMENTS,element.Story,(ELEMENTSIS)=>{
 
-                        COLOR(ELEMENTSIS,WHITE);
-                        BACKGROUND(ELEMENTSIS,BLACK);
-                        PADDING(ELEMENTSIS,"2%");
-                        WIDTH(ELEMENTSIS,"90%");
+                            COLOR(ELEMENTSIS,WHITE);
+                            BACKGROUND(ELEMENTSIS,BLACK);
+                            PADDING(ELEMENTSIS,"2%");
+                            WIDTH(ELEMENTSIS,"90%");
 
-                    });
+                        });
 
-                    FOOTER(ELEMENTS,(ELEMENTSS)=>{
+                        FOOTER(ELEMENTS,(ELEMENTSS)=>{
 
-                        BACKGROUND(ELEMENTSS,BLACK);
+                            BACKGROUND(ELEMENTSS,BLACK);
 
-                        ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+                            ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
 
-                            CLICK(ELEMENTSS,()=>{
+                                CLICK(ELEMENTSS,()=>{
 
-                                CALL("+254794094414");
+                                    CALL("+254794094414");
+
+                                });
+
+                            });
+
+                            ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                                CLICK(ELEMENTSS,()=>{
+
+                                    WHATSAPP("+254748352113");
+
+                                });
 
                             });
 
                         });
 
-                        ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
-
-                            CLICK(ELEMENTSS,()=>{
-
-                                WHATSAPP("+254748352113");
-
-                            });
-
-                        });
-
                     });
+
+                    BREAK(ELEMENT);
 
                 });
-
-                BREAK(ELEMENT);
 
             });
 
