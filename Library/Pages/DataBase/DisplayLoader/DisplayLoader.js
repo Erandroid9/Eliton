@@ -18,6 +18,7 @@ export const DISPLAYLOADER=(AMOUNT)=>{
             font-size:20px;
             background:transparent;
             left:0;
+            top:0px;
         }
 
         .DataHolder{
@@ -58,7 +59,6 @@ export const DISPLAYLOADER=(AMOUNT)=>{
             width:100%;
             border:none;
             overflow:hidden;
-            object-fit:fill;
         }
 
         img{
