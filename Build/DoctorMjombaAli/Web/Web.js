@@ -699,7 +699,7 @@ const MOBILEVIEW=()=>{
             TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
 
                 COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,"#00000090");
                 PADDING(ELEMENTSIS,"2%");
                 WIDTH(ELEMENTSIS,"90%");
 
@@ -737,7 +737,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/Third.jpeg",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
@@ -764,7 +764,7 @@ const MOBILEVIEW=()=>{
             TEXTVIEW(ELEMENTS,"Always Failing In Business,let Doctor Mjomba Ali get you the solution so as you never get stack in making money.lets make it rain even in dry season as your neighbours husttle.Work Smart not Hard with Doctor Mjomba Ali",(ELEMENTSIS)=>{
 
                 COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,"#00000090");
                 PADDING(ELEMENTSIS,"2%");
                 WIDTH(ELEMENTSIS,"90%");
 
@@ -802,7 +802,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/mmarraige.jpeg",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
@@ -829,7 +829,7 @@ const MOBILEVIEW=()=>{
             TEXTVIEW(ELEMENTS,"Are You Known in the neighbour hood for Fights with Your Loved Ones,Parthner and Kids.<br>Come Let Us Make Your Marriage a living example of peace and success without chaores in the community.Contact Us Via Our Resources.",(ELEMENTSIS)=>{
 
                 COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,"#00000090");
                 PADDING(ELEMENTSIS,"2%");
                 WIDTH(ELEMENTSIS,"90%");
 
@@ -867,7 +867,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/health.jpeg",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
@@ -894,7 +894,7 @@ const MOBILEVIEW=()=>{
             TEXTVIEW(ELEMENTS,"Are You Well Known In the Hospitals,Month In and Month Out Your Never Leaving The Hospital ,Either YourSelf Or A Loved One<br>Let Doctor Mjomba Ali Solve That issue For You ,You Will Never Visit a Hospital Again.",(ELEMENTSIS)=>{
 
                 COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,BLACK);
+                BACKGROUND(ELEMENTSIS,"#00000090");
                 PADDING(ELEMENTSIS,"2%");
                 WIDTH(ELEMENTSIS,"90%");
 
