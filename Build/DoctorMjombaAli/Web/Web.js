@@ -672,7 +672,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/fproblems.jpeg",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
