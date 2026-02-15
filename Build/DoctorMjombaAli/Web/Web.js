@@ -6,7 +6,7 @@ const ERANDES=()=>{
 
 const DESKTOPVIEW=()=>{
 
-        HEADERVIEW((ELEMENT)=>{
+    HEADERVIEW((ELEMENT)=>{
 
         LEFTTEXTVIEW(ELEMENT,"Doctor Mjomba Ali",()=>{
 
@@ -556,7 +556,13 @@ const MOBILEVIEW=()=>{
 
         });
 
-        RIGHTICONVIEW(ELEMENT,WHITEYOUTUBEICON,(ELEMENTSS)=>{
+        ICONVIEW(ELEMENT,WHITESUNICON,BLACKMOONICON,(ELEMENTSS)=>{
+
+            CHANGEMODE(ELEMENTSS);
+
+        });
+
+        RIGHTICONVIEW(ELEMENT,WHITEYOUTUBEICON,BLACKYOUTUBEICON,(ELEMENTSS)=>{
 
             CLICK(ELEMENTSS,()=>{
 
@@ -566,7 +572,7 @@ const MOBILEVIEW=()=>{
 
         });
 
-        RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,(ELEMENT)=>{
+        RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENT)=>{
 
             CLICK(ELEMENT,()=>{
 
@@ -631,8 +637,7 @@ const MOBILEVIEW=()=>{
 
                         TEXTVIEW(ELES,Data.Name,(ELEMENTSIS)=>{
 
-                            COLOR(ELEMENTSIS,WHITE);
-                            BACKGROUND(ELEMENTSIS,"#FFFFFF50");
+                            ELEMENTEDBACKGROUND(ELEMENTSIS);
                             PADDING(ELEMENTSIS,"2%");
                             WIDTH(ELEMENTSIS,"90%");
                             TOP(ELEMENTSIS,"30%");
@@ -696,9 +701,9 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELEMENTSS)=>{
 
-                BACKGROUND(ELEMENTSS,BLACK);
+                ELEMENTEDBACKGROUND(ELEMENTSS);
 
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,BLACKPHONEICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
 
@@ -708,7 +713,7 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
 
@@ -761,9 +766,9 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELEMENTSS)=>{
 
-                BACKGROUND(ELEMENTSS,BLACK);
+                ELEMENTEDBACKGROUND(ELEMENTSS);
 
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,BLACKPHONEICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
 
@@ -773,7 +778,7 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
 
@@ -826,9 +831,9 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELEMENTSS)=>{
 
-                BACKGROUND(ELEMENTSS,BLACK);
+                ELEMENTEDBACKGROUND(ELEMENTSS);
 
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,BLACKPHONEICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
 
@@ -838,7 +843,7 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
 
@@ -891,9 +896,9 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELEMENTSS)=>{
 
-                BACKGROUND(ELEMENTSS,BLACK);
+                ELEMENTEDBACKGROUND(ELEMENTSS);
 
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+                ICONVIEW(ELEMENTSS,WHITEPHONEICON,BLACKPHONEICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
 
@@ -903,7 +908,7 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
 
@@ -1163,6 +1168,8 @@ const MOBILEVIEW=()=>{
         RIGHT(ELEMENT,"2%");
         RADIUS(ELEMENT,"10px");
 
+        COLOR(ELEMENT,WHITE);
+
         CLICK(ELEMENT,()=>{
 
             ROUTE(" ",CONTACTUSPAGE,"MOBILEVIEW");
@@ -1180,7 +1187,7 @@ const CONTACTUSPAGE=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTSS)=>{
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENTSS)=>{
 
             CLICK(ELEMENTSS,()=>{
 
@@ -1244,7 +1251,7 @@ const CONTACTUSPAGE=()=>{
 
                     });
                     
-                    LEFTICONVIEW(ELEMENTS,WHITESENDICON,(ELEMENTSS)=>{
+                    LEFTICONVIEW(ELEMENTS,WHITESENDICON,BLACKSENDICON,(ELEMENTSS)=>{
 
                         CLICK(ELEMENTSS,()=>{
 
@@ -1319,7 +1326,7 @@ const HEADERPAGES=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENT)=>{
 
             CLICK(ELEMENT,()=>{
 
@@ -1360,7 +1367,6 @@ const HEADERPAGES=()=>{
 
                         TEXTVIEW(ELEMENTS,element.Name,(ELEMENTSIS)=>{
 
-                            COLOR(ELEMENTSIS,BLACK);
                             BACKGROUND(ELEMENTSIS,WHITE);
                             PADDING(ELEMENTSIS,"2%");
                             WIDTH(ELEMENTSIS,"90%");
@@ -1371,8 +1377,6 @@ const HEADERPAGES=()=>{
 
                         TEXTVIEW(ELEMENTS,element.Story,(ELEMENTSIS)=>{
 
-                            COLOR(ELEMENTSIS,WHITE);
-                            BACKGROUND(ELEMENTSIS,BLACK);
                             PADDING(ELEMENTSIS,"2%");
                             WIDTH(ELEMENTSIS,"90%");
 
@@ -1380,9 +1384,9 @@ const HEADERPAGES=()=>{
 
                         FOOTER(ELEMENTS,(ELEMENTSS)=>{
 
-                            BACKGROUND(ELEMENTSS,BLACK);
+                            ELEMENTEDBACKGROUND(ELEMENTSS);
 
-                            ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+                            ICONVIEW(ELEMENTSS,WHITEPHONEICON,BLACKPHONEICON,(ELEMENTSS)=>{
 
                                 CLICK(ELEMENTSS,()=>{
 
@@ -1392,7 +1396,7 @@ const HEADERPAGES=()=>{
 
                             });
 
-                            ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+                            ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
 
                                 CLICK(ELEMENTSS,()=>{
 
@@ -1478,7 +1482,7 @@ const VIDEOPAGES=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENT)=>{
 
             CLICK(ELEMENT,()=>{
 
