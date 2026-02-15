@@ -20,12 +20,21 @@ export const INPUT=(HOLDER,TYPES,MESSAGE,STORAGE,CallBack)=>{
 
         PLACEHOLDER(ELEMENT,MESSAGE);
 
+        CONDITION(localStorage.getItem("BODYCOLOR") === "#000000" ,()=>{
+
+            BORDER(ELEMENT,WHITE);
+
+        },()=>{
+
+            BORDER(ELEMENT,BLACK);
+
+        });
+
         POSITIONRELATIVE(ELEMENT);
         WIDTH(ELEMENT,"95%");
         HEIGHT(ELEMENT,"32px");
         MARGIN(ELEMENT,"");
         DISPLAYBLOCK(ELEMENT);
-        BORDER(ELEMENT,TRANSPARENT);
         BORDERBOTTOM(ELEMENT,WHITE);
         OUTLINE(ELEMENT);
         OVERFLOWHIDDEN(ELEMENT);

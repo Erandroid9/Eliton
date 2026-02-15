@@ -3,8 +3,7 @@ export const ROUNDINPUTVIEW=(HOLDER,TYPE,MESSAGE,STORAGE,callBack)=>{
     INPUT(HOLDER,TYPE,MESSAGE,STORAGE,(ELEMENT)=>{
 
         RADIUS(ELEMENT,"10px");
-        BORDER(ELEMENT,WHITE);
-    
+
         callBack(ELEMENT);
 
     });
