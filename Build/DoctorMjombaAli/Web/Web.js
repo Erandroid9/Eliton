@@ -2,7 +2,7 @@ const ERANDES=()=>{
 
     BODYCOLOR(BLACK,WHITE);
 
-    SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();});
+    VIEWCONTROLLER();
 
 };
 
@@ -1150,6 +1150,7 @@ const MOBILEVIEW=()=>{
 
         });
 
+        BREAK(ELEMENT);
         BREAK(ELEMENT);
         BREAK(ELEMENT);
         BREAK(ELEMENT);
