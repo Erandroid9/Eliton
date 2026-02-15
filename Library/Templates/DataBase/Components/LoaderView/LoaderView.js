@@ -1,44 +1,92 @@
 export const LOADERVIEW = (ELEMENT, CALLBACK) => {
+    
+    CONDITION(localStorage.getItem("BODYCOLOR") === "#000000" ,()=>{
 
-    ICONVIEW(ELEMENT,WHITERETRYICON,(ELS) => {
+        ICONVIEW(ELEMENT,WHITERETRYICON,(ELS) => {
 
-        WIDTH(ELS, "30px");
-        
-        HEIGHT(ELS, "30px");
+            WIDTH(ELS, "30px");
+            
+            HEIGHT(ELS, "30px");
 
-        let rotation = 0;
+            let rotation = 0;
 
-        let spinning = true;
+            let spinning = true;
 
-        const spin = () => {
+            const spin = () => {
 
-            if (!spinning) return;
+                if (!spinning) return;
 
-            rotation += 100;
+                rotation += 100;
 
-            ELS.style.transform = `rotate(${rotation}deg)`;
+                ELS.style.transform = `rotate(${rotation}deg)`;
 
-            requestAnimationFrame(spin);
+                requestAnimationFrame(spin);
 
-        };
+            };
 
-        spin();
+            spin();
 
-        ELS.stopSpin = () => spinning = false;
+            ELS.stopSpin = () => spinning = false;
 
-        ELS.startSpin = () => {
+            ELS.startSpin = () => {
 
-            if (!spinning) {
+                if (!spinning) {
 
-                spinning = true;
+                    spinning = true;
 
-                spin();
+                    spin();
 
-            }
+                }
 
-        };
+            };
 
-        CALLBACK(ELS);
+            CALLBACK(ELS);
+
+        });
+
+    },()=>{
+
+        ICONVIEW(ELEMENT,WHITERETRYICON,(ELS) => {
+
+            WIDTH(ELS, "30px");
+            
+            HEIGHT(ELS, "30px");
+
+            let rotation = 0;
+
+            let spinning = true;
+
+            const spin = () => {
+
+                if (!spinning) return;
+
+                rotation += 100;
+
+                ELS.style.transform = `rotate(${rotation}deg)`;
+
+                requestAnimationFrame(spin);
+
+            };
+
+            spin();
+
+            ELS.stopSpin = () => spinning = false;
+
+            ELS.startSpin = () => {
+
+                if (!spinning) {
+
+                    spinning = true;
+
+                    spin();
+
+                }
+
+            };
+
+            CALLBACK(ELS);
+
+        });
 
     });
 

@@ -1,5 +1,9 @@
 const ERANDES=()=>{
 
+    VIEWCONTROLLER();
+
+    APPMODE();
+
     SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();})
 
 };
@@ -8,7 +12,7 @@ const MOBILEVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        TEXT(ELEMENT,"h1","Image Convertor","",()=>{
+        TEXT(ELEMENT,"h1","Image Convertor",()=>{
 
         });
 
@@ -24,7 +28,7 @@ const MOBILEVIEW=()=>{
 
                     HEIGHT(ELEMS,"30%");
 
-                    BUTTON(ELEMENTS,"Change",TEAL,"",(ELEMSA)=>{
+                    BUTTON(ELEMENTS,"Change",TEAL,(ELEMSA)=>{
 
                         WIDTH(ELEMSA,"20%");
 
@@ -54,7 +58,7 @@ const MOBILEVIEW=()=>{
 
                     });
 
-                    BUTTON(ELEMENTS,"Delete",RED,"",(ELEMSA)=>{
+                    BUTTON(ELEMENTS,"Delete",RED,(ELEMSA)=>{
 
                         WIDTH(ELEMSA,"20%");
 
@@ -77,10 +81,10 @@ const MOBILEVIEW=()=>{
 };
 
 const DESKTOPVIEW=()=>{
-
+    
     HEADERVIEW((ELEMENT)=>{
 
-        TEXT(ELEMENT,"h1","Image Convertor","",()=>{
+        TEXT(ELEMENT,"h1","Image Convertor",()=>{
 
         });
 
@@ -96,7 +100,7 @@ const DESKTOPVIEW=()=>{
 
                     HEIGHT(ELEMS,"30%");
 
-                    BUTTON(ELEMENTS,"Change",TEAL,"",(ELEMSA)=>{
+                    BUTTON(ELEMENTS,"Change",TEAL,(ELEMSA)=>{
 
                         WIDTH(ELEMSA,"20%");
 
@@ -126,7 +130,7 @@ const DESKTOPVIEW=()=>{
 
                     });
 
-                    BUTTON(ELEMENTS,"Delete",RED,"",(ELEMSA)=>{
+                    BUTTON(ELEMENTS,"Delete",RED,(ELEMSA)=>{
 
                         WIDTH(ELEMSA,"20%");
 

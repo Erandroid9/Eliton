@@ -1102,6 +1102,10 @@ const SUBJECTSECTION=()=>{
 
         BREAK(ELEMENT);
 
+        LOADERVIEW(ELEMENT,(LOAD)=>{
+
+        });
+
         DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
 
             RADIUS(ELEMENTS,"10px");
