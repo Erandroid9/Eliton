@@ -3,9 +3,13 @@ import { BLACKGRIDICON } from "../DataBase/BlackIcons/Grid/Grid.js";
 import { BLACKHAMBURGICON } from "../DataBase/BlackIcons/Hamberg/Hamberg.js";
 import { BLACKLOCATIONICON } from "../DataBase/BlackIcons/Location/Location.js";
 import { BLACKMENUICON } from "../DataBase/BlackIcons/MenuIcon/MenuIcon.js";
+import { BLACKMOONICON } from "../DataBase/BlackIcons/Moon/Moon.js";
+import { BLACKPHONEICON } from "../DataBase/BlackIcons/Phone/Phone.js";
 import { BLACKRETRYICON } from "../DataBase/BlackIcons/RetryIcon/RetryIcon.js";
 import { BLACKSUNICON } from "../DataBase/BlackIcons/Sun/Sun.js";
+import { BLACKWHATSAPPICON } from "../DataBase/BlackIcons/WhatsApp/WhatsApp.js";
 import { BLACKXICON } from "../DataBase/BlackIcons/XIcon/Xicon.js";
+import { BLACKYOUTUBEICON } from "../DataBase/BlackIcons/YouTubeIcon/YouTubeIcon.js";
 import { COLOREDFACEBOOKICON } from "../DataBase/ColoredIcons/Facebook/Facebook.js";
 import { COLOREDINSTAGRAM } from "../DataBase/ColoredIcons/Instagram/Instagram.js";
 import { COLOREDTIKTOKICON } from "../DataBase/ColoredIcons/Tiktok/Tiktok.js";
@@ -250,10 +254,14 @@ const COLOREDINSTAGRAM="${COLOREDINSTAGRAM}";
 const BLACKXICON="${BLACKXICON}";
 const COLOREDTIKTOKICON="${COLOREDTIKTOKICON}";
 const BLACKRETRYICON="${BLACKRETRYICON}";
+const BLACKYOUTUBEICON="${BLACKYOUTUBEICON}";
+const BLACKWHATSAPPICON="${BLACKWHATSAPPICON}";
+const BLACKPHONEICON="${BLACKPHONEICON}";
+const BLACKMOONICON="${BLACKMOONICON}";
 `; 
 localStorage.setItem('ASSETS',DATA);
 };
 
 `
-const BLACKRETRYICON="${BLACKRETRYICON}";
+const BLACKMOONICON="${BLACKMOONICON}";
 `

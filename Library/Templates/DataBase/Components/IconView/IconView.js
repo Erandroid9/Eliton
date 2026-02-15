@@ -1,8 +1,20 @@
-export const ICONVIEW=(HOLDER,SOURCE,callBack)=>{
+export const ICONVIEW=(HOLDER,WHITESOURCE,DARKSOURCE,callBack)=>{
 
-    IMAGE(HOLDER,"20px","20px",SOURCE,"",(ELEMENTS)=>{
+    CONDITION(localStorage.getItem("BODYCOLOR") === "#000000" ,()=>{
 
-        callBack(ELEMENTS);
+        IMAGE(HOLDER,"20px","20px",WHITESOURCE,"",(ELEMENTS)=>{
+
+            callBack(ELEMENTS);
+
+        });
+
+    },()=>{
+
+        IMAGE(HOLDER,"20px","20px",DARKSOURCE,"",(ELEMENTS)=>{
+
+            callBack(ELEMENTS);
+
+        });
 
     });
 
