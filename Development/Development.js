@@ -66,177 +66,33 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Child Fund",TEAL,(ELEMENTS)=>{
+            LOADERVIEW(ELEMENTS,(LOAD)=>{
 
-                WIDTH(ELEMENTS,"100px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
+                REDUXEDDATA(ASCODATABASELINK,"Catergory",(Data)=>{
 
-                COLOR(ELEMENTS,WHITE);
+                    DISPLAYHIDDEN(LOAD);
 
-                MARGINLEFT(ELEMENTS,"2%");
+                    BUTTON(ELEMENTS,Data.Name,TEAL,(ELEMENTS)=>{
 
-                FLEXSHRINK(ELEMENTS);
+                        WIDTH(ELEMENTS,"auto");
+                        HEIGHT(ELEMENTS,"40px");
+                        RADIUS(ELEMENTS,"5px");
 
-                CLICK(ELEMENTS,()=>{
+                        COLOR(ELEMENTS,WHITE);
 
-                    DATASTORE("","BaseName","OrphanSupport");
+                        MARGINLEFT(ELEMENTS,"2%");
 
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+                        FLEXSHRINK(ELEMENTS);
 
-                });
+                        CLICK(ELEMENTS,()=>{
 
-            });
+                            DATASTORE("","BaseName",Data.DataBaseName);
 
-            BUTTON(ELEMENTS,"Food Aid",TEAL,(ELEMENTS)=>{
+                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
-                WIDTH(ELEMENTS,"70px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
+                        });
 
-                COLOR(ELEMENTS,WHITE);
-
-                MARGINLEFT(ELEMENTS,"2%");
-
-                FLEXSHRINK(ELEMENTS);
-
-                CLICK(ELEMENTS,()=>{
-
-                    DATASTORE("","BaseName","HotMeal");
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                });
-
-            });
-
-            BUTTON(ELEMENTS,"Ramadan",TEAL,(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"70px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-                COLOR(ELEMENTS,WHITE);
-
-                MARGINLEFT(ELEMENTS,"2%");
-
-                FLEXSHRINK(ELEMENTS);
-
-                CLICK(ELEMENTS,()=>{
-
-                    DATASTORE("","BaseName","Ramadaniftar");
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                });
-
-            });
-
-            BUTTON(ELEMENTS,"Mosque Construction",TEAL,(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"150px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-                COLOR(ELEMENTS,WHITE);
-
-                MARGINLEFT(ELEMENTS,"2%");
-
-                FLEXSHRINK(ELEMENTS);
-
-                CLICK(ELEMENTS,()=>{
-
-                    DATASTORE("","BaseName","MasjidConstruction");
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                });
-
-            });
-
-            BUTTON(ELEMENTS,"Qurban",TEAL,(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"70px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-                MARGINLEFT(ELEMENTS,"2%");
-
-                COLOR(ELEMENTS,WHITE);
-
-                FLEXSHRINK(ELEMENTS);
-
-                CLICK(ELEMENTS,()=>{
-
-                    DATASTORE("","BaseName","Qurban");
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                });
-
-            });
-
-            BUTTON(ELEMENTS,"Water Well",TEAL,(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"100px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-                COLOR(ELEMENTS,WHITE);
-
-                MARGINLEFT(ELEMENTS,"2%");
-
-                FLEXSHRINK(ELEMENTS);
-
-                CLICK(ELEMENTS,()=>{
-
-                    DATASTORE("","BaseName","WaterWellConstruction");
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                });
-
-            });
-
-            BUTTON(ELEMENTS,"Aqeeqah",TEAL,(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"70px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-                COLOR(ELEMENTS,WHITE);
-
-                MARGINLEFT(ELEMENTS,"2%");
-
-                FLEXSHRINK(ELEMENTS);
-
-                CLICK(ELEMENTS,()=>{
-
-                    DATASTORE("","BaseName","Aqeeqah");
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                });
-
-            });
-
-            BUTTON(ELEMENTS,"Medical Support",TEAL,(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"120px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-                COLOR(ELEMENTS,WHITE);
-
-                MARGINLEFT(ELEMENTS,"2%");
-
-                FLEXSHRINK(ELEMENTS);
-
-                CLICK(ELEMENTS,()=>{
-
-                    DATASTORE("","BaseName","Needs");
-
-                    ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+                    });
 
                 });
 
