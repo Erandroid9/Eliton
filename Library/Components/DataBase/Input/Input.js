@@ -31,6 +31,8 @@ export const INPUT=(HOLDER,TYPES,MESSAGE,STORAGE,CallBack)=>{
         OVERFLOWHIDDEN(ELEMENT);
         BACKGROUND(ELEMENT,TRANSPARENT);
 
+        COLOR(ELEMENT,localStorage.getItem("APPCOLOR"));
+
         CallBack(ELEMENT);
 
     });

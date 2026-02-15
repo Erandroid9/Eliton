@@ -12,6 +12,8 @@ export const BUTTON=(HOLDER,WORDS,APPEARANCE,callBack)=>{
         BORDER(ELEMENT,TRANSPARENT);
         BACKGROUND(ELEMENT,APPEARANCE);
 
+        COLOR(ELEMENT,localStorage.getItem("APPCOLOR"));
+
         callBack(ELEMENT);
 
     });

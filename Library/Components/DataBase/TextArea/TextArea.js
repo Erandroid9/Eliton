@@ -27,6 +27,8 @@ export const TEXTAREA=(HOLDER,MESSAGE,STORAGE,callBack)=>{
         OUTLINE(ELEMENT);
         BACKGROUND(ELEMENT,TRANSPARENT);
 
+        COLOR(ELEMENT,localStorage.getItem("APPCOLOR"));
+
         callBack(ELEMENT);
 
     });
