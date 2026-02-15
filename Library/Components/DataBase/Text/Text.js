@@ -1,4 +1,4 @@
-export const TEXT=(HOLDER,TYPE,WORD,APPEARANCE,callBack)=>{
+export const TEXT=(HOLDER,TYPE,WORD,callBack)=>{
 
     ELEMENTED(HOLDER,TYPE||"p",(ELEMENT)=>{
 
@@ -6,7 +6,6 @@ export const TEXT=(HOLDER,TYPE,WORD,APPEARANCE,callBack)=>{
 
         POSITIONRELATIVE(ELEMENT);
         MARGIN(ELEMENT,"");
-        COLOR(ELEMENT,APPEARANCE);
         FONTSIZE(ELEMENT,""); 
 
         callBack(ELEMENT);

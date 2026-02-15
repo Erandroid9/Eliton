@@ -28,6 +28,16 @@ const ERANDES=()=>{
 
 const MOBILEVIEW=()=>{
 
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTTEXTVIEW(ELEMENT,"Qel",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+    });
+
 };
 
 const DESKTOPVIEW=()=>{

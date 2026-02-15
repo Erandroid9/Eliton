@@ -26,7 +26,6 @@ export const TEXTAREA=(HOLDER,MESSAGE,STORAGE,callBack)=>{
         BORDER(ELEMENT,WHITE);
         OUTLINE(ELEMENT);
         BACKGROUND(ELEMENT,TRANSPARENT);
-        COLOR(ELEMENT,WHITE);
 
         callBack(ELEMENT);
 
