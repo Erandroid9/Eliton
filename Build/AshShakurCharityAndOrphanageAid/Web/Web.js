@@ -8,7 +8,7 @@ const MOBILEVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTICONVIEW(ELEMENT,ASCOLOGO,(ELEMENTS)=>{
+        LEFTICONVIEW(ELEMENT,ASCOLOGO,ASCOLOGO,(ELEMENTS)=>{
 
             WIDTH(ELEMENTS,"50px");
             HEIGHT(ELEMENTS,"45px");
@@ -31,17 +31,7 @@ const MOBILEVIEW=()=>{
 
         });
 
-        CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
-
-            RIGHTICONVIEW(ELEMENT,WHITEMENUICON,(ELEMENTS)=>{
-
-            });
-
-        },()=>{
-
-            RIGHTICONVIEW(ELEMENT,BLACKMENUICON,(ELEMENTS)=>{
-
-            });
+        RIGHTICONVIEW(ELEMENT,WHITEMENUICON,BLACKMENUICON,(ELEMENTS)=>{
 
         });
 
@@ -651,7 +641,7 @@ const MOBILEVIEW=()=>{
 
                 OVERFLOWX(ELEMENTS);
 
-                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,(ELEMENTS)=>{
+                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,COLOREDFACEBOOKICON,(ELEMENTS)=>{
 
                     WIDTH(ELEMENTS,"50px");
 
@@ -665,7 +655,7 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,(ELEMENTS)=>{
+                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTS)=>{
 
                     WIDTH(ELEMENTS,"50px");
 
@@ -679,7 +669,7 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,(ELEMENTS)=>{
+                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,COLOREDTIKTOKICON,(ELEMENTS)=>{
 
                     WIDTH(ELEMENTS,"50px");
 
@@ -693,35 +683,15 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
+                ICONVIEW(ELEMENTS,WHITEXICON,BLACKXICON,(ELEMENTS)=>{
 
-                    ICONVIEW(ELEMENTS,WHITEXICON,(ELEMENTS)=>{
+                    WIDTH(ELEMENTS,"50px");
 
-                        WIDTH(ELEMENTS,"50px");
+                    HEIGHT(ELEMENTS,"50px");
 
-                        HEIGHT(ELEMENTS,"50px");
+                    CLICK(ELEMENTS,()=>{
 
-                        CLICK(ELEMENTS,()=>{
-
-                            X("AshShakur41402");
-
-                        });
-
-                    });
-
-                },()=>{
-
-                    ICONVIEW(ELEMENTS,BLACKXICON,(ELEMENTS)=>{
-
-                        WIDTH(ELEMENTS,"50px");
-
-                        HEIGHT(ELEMENTS,"50px");
-
-                        CLICK(ELEMENTS,()=>{
-
-                            X("AshShakur41402");
-
-                        });
+                        X("AshShakur41402");
 
                     });
 
@@ -741,23 +711,7 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
-                    CLICK(ELEMENTSES,()=>{
-
-                        CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
-
-                            DATASTORE(" ","BODYCOLOR","#FFFFFF");
-
-                            ERANDES();
-
-                        },()=>{
-
-                            DATASTORE(" ","BODYCOLOR","#000000");
-
-                            ERANDES();
-
-                        });
-
-                    });
+                    CHANGEMODE(ELEMENTSES);
 
                 });
 
@@ -897,7 +851,7 @@ const MOBILEVIEW=()=>{
 
         COLOR(ELEMENTS,WHITE);
 
-        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,(ELEMENTS)=>{
+        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,WHITEWHATSAPPICON,(ELEMENTS)=>{
 
             WIDTH(ELEMENTS,"30px");
 
@@ -919,33 +873,17 @@ const SUBJECTSECTION=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENTS)=>{
 
-            LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+            CLICK(ELEMENTS,()=>{
 
-                CLICK(ELEMENTS,()=>{
-
-                    ROUTE("",MOBILEVIEW,"MOBILEVIEW");
-
-                });
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
 
             });
 
-        },()=>{
+        });;
 
-            LEFTICONVIEW(ELEMENT,BLACKBACKICON,(ELEMENTS)=>{
-
-                CLICK(ELEMENTS,()=>{
-
-                    ROUTE("",MOBILEVIEW,"MOBILEVIEW");
-
-                });
-
-            });
-
-        });
-
-        LEFTICONVIEW(ELEMENT,ASCOLOGO,(ELEMENTS)=>{
+        LEFTICONVIEW(ELEMENT,ASCOLOGO,ASCOLOGO,(ELEMENTS)=>{
 
             WIDTH(ELEMENTS,"50px");
             HEIGHT(ELEMENTS,"45px");
@@ -1096,7 +1034,7 @@ const SUBJECTSECTION=()=>{
 
                 OVERFLOWX(ELEMENTS);
 
-                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,(ELEMENTS)=>{
+                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,COLOREDFACEBOOKICON,(ELEMENTS)=>{
 
                     WIDTH(ELEMENTS,"50px");
 
@@ -1110,7 +1048,7 @@ const SUBJECTSECTION=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,(ELEMENTS)=>{
+                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTS)=>{
 
                     WIDTH(ELEMENTS,"50px");
 
@@ -1124,7 +1062,7 @@ const SUBJECTSECTION=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,(ELEMENTS)=>{
+                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,COLOREDTIKTOKICON,(ELEMENTS)=>{
 
                     WIDTH(ELEMENTS,"50px");
 
@@ -1138,35 +1076,15 @@ const SUBJECTSECTION=()=>{
 
                 });
 
-                CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
+                ICONVIEW(ELEMENTS,WHITEXICON,BLACKXICON,(ELEMENTS)=>{
 
-                    ICONVIEW(ELEMENTS,WHITEXICON,(ELEMENTS)=>{
+                    WIDTH(ELEMENTS,"50px");
 
-                        WIDTH(ELEMENTS,"50px");
+                    HEIGHT(ELEMENTS,"50px");
 
-                        HEIGHT(ELEMENTS,"50px");
+                    CLICK(ELEMENTS,()=>{
 
-                        CLICK(ELEMENTS,()=>{
-
-                            X("AshShakur41402");
-
-                        });
-
-                    });
-
-                },()=>{
-
-                    ICONVIEW(ELEMENTS,BLACKXICON,(ELEMENTS)=>{
-
-                        WIDTH(ELEMENTS,"50px");
-
-                        HEIGHT(ELEMENTS,"50px");
-
-                        CLICK(ELEMENTS,()=>{
-
-                            X("AshShakur41402");
-
-                        });
+                        X("AshShakur41402");
 
                     });
 
@@ -1188,7 +1106,7 @@ const SUBJECTSECTION=()=>{
         HEIGHT(ELEMENTS,"70px");
         RADIUS(ELEMENTS,"100%");
 
-        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,(ELEMENTS)=>{
+        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,WHITEWHATSAPPICON,(ELEMENTS)=>{
 
             WIDTH(ELEMENTS,"30px");
 
