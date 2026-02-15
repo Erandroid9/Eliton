@@ -1,6 +1,6 @@
 const ERANDES=()=>{
 
-    BODYCOLOR(WHITE,BLACK);
+    APPMODE();
 
     VIEWCONTROLLER();
 
@@ -33,7 +33,17 @@ const MOBILEVIEW=()=>{
 
         });
 
-        RIGHTICONVIEW(ELEMENT,BLACKMENUICON,(ELEMENTS)=>{
+        CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
+
+            RIGHTICONVIEW(ELEMENT,WHITEMENUICON,(ELEMENTS)=>{
+
+            });
+
+        },()=>{
+
+            RIGHTICONVIEW(ELEMENT,BLACKMENUICON,(ELEMENTS)=>{
+
+            });
 
         });
 
@@ -51,7 +61,6 @@ const MOBILEVIEW=()=>{
         TEXTVIEW(ELEMENT,'"Helping The Poor Orphans and  the Needy People"',(ELEMENTS)=>{
 
             FONTSIZE(ELEMENTS,"13px");
-            COLOR(ELEMENTS,BLACK);
 
         });
 
@@ -253,11 +262,11 @@ const MOBILEVIEW=()=>{
 
                     HEIGHT(ELEMENTSES,"50px");
 
-                    COLOR(ELEMENTSES,BLACK);
-
                     BACKGROUND(ELEMENTSES,WHITE);
 
                     POSITIONABSOLUTE(ELEMENTSES);
+
+                    COLOR(ELEMENTSES,BLACK);
 
                     TOP(ELEMENTSES,"0");
 
@@ -531,8 +540,6 @@ const MOBILEVIEW=()=>{
 
                 FONTSIZE(ELEMENTSES,"17px");
 
-                COLOR(ELEMENTSES,BLACK);
-
             });
 
         });
@@ -604,8 +611,6 @@ const MOBILEVIEW=()=>{
 
                 FONTSIZE(ELEMENTSES,"17px");
 
-                COLOR(ELEMENTSES,BLACK);
-
             });
 
         });
@@ -669,7 +674,6 @@ const MOBILEVIEW=()=>{
 
                 FONTSIZE(ELEMENTSES,"17px");
 
-
                 COLOR(ELEMENTSES,TEAL);
 
             });
@@ -677,8 +681,6 @@ const MOBILEVIEW=()=>{
             LEFTTEXTVIEW(ELEMENTS,"It is neither their meat nor their bread that reaches Allah, but it is piety from you that reaches Him",(ELEMENTSES)=>{
 
                 FONTSIZE(ELEMENTSES,"17px");
-
-                COLOR(ELEMENTSES,BLACK);
 
             });
 
@@ -751,8 +753,6 @@ const MOBILEVIEW=()=>{
 
                 FONTSIZE(ELEMENTSES,"17px");
 
-                COLOR(ELEMENTSES,BLACK);
-
             });
 
         });
@@ -770,8 +770,6 @@ const MOBILEVIEW=()=>{
                 TEXTVIEW(ELEMENTIS,"Social Media",(ELEMENTSES)=>{
 
                     MARGIN(ELEMENTSES,"5%");
-
-                    COLOR(ELEMENTSES,BLACK);
 
                 });
 
@@ -825,15 +823,35 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTS,BLACKXICON,(ELEMENTS)=>{
+                CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
 
-                    WIDTH(ELEMENTS,"50px");
+                    ICONVIEW(ELEMENTS,WHITEXICON,(ELEMENTS)=>{
 
-                    HEIGHT(ELEMENTS,"50px");
+                        WIDTH(ELEMENTS,"50px");
 
-                    CLICK(ELEMENTS,()=>{
+                        HEIGHT(ELEMENTS,"50px");
 
-                        X("AshShakur41402");
+                        CLICK(ELEMENTS,()=>{
+
+                            X("AshShakur41402");
+
+                        });
+
+                    });
+
+                },()=>{
+
+                    ICONVIEW(ELEMENTS,BLACKXICON,(ELEMENTS)=>{
+
+                        WIDTH(ELEMENTS,"50px");
+
+                        HEIGHT(ELEMENTS,"50px");
+
+                        CLICK(ELEMENTS,()=>{
+
+                            X("AshShakur41402");
+
+                        });
 
                     });
 
@@ -847,13 +865,29 @@ const MOBILEVIEW=()=>{
 
                 RADIUS(ELEMENTIS,"5px");
 
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
+                TEXTVIEW(ELEMENTIS,"App Mode",(ELEMENTSES)=>{
 
                     MARGINTOP(ELEMENTSES,"2%");
 
                     FONTSIZE(ELEMENTSES,"15px");
 
-                    COLOR(ELEMENTSES,BLACK);
+                    CLICK(ELEMENTSES,()=>{
+
+                        CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
+
+                            DATASTORE(" ","BODYCOLOR","#FFFFFF");
+
+                            ERANDES();
+
+                        },()=>{
+
+                            DATASTORE(" ","BODYCOLOR","#000000");
+
+                            ERANDES();
+
+                        });
+
+                    });
 
                 });
 
@@ -869,8 +903,6 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
-                    COLOR(ELEMENTSES,BLACK);
-
                 });
 
             });
@@ -884,8 +916,6 @@ const MOBILEVIEW=()=>{
                     MARGINTOP(ELEMENTSES,"5%");
 
                     FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
 
                 });
 
@@ -901,8 +931,6 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
-                    COLOR(ELEMENTSES,BLACK);
-
                 });
 
             });
@@ -917,8 +945,6 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
-                    COLOR(ELEMENTSES,BLACK);
-
                 });
 
             });
@@ -932,8 +958,6 @@ const MOBILEVIEW=()=>{
                     MARGINTOP(ELEMENTSES,"5%");
 
                     FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
 
                 });
 
@@ -949,8 +973,6 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
-                    COLOR(ELEMENTSES,BLACK);
-
                 });
 
             });
@@ -965,8 +987,6 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
-                    COLOR(ELEMENTSES,BLACK);
-
                 });
 
             });
@@ -980,8 +1000,6 @@ const MOBILEVIEW=()=>{
                     MARGINTOP(ELEMENTSES,"5%");
 
                     FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
 
                 });
 
@@ -1031,11 +1049,27 @@ const SUBJECTSECTION=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTICONVIEW(ELEMENT,BLACKBACKICON,(ELEMENTS)=>{
+        CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
 
-            CLICK(ELEMENTS,()=>{
+            LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
 
-                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+                CLICK(ELEMENTS,()=>{
+
+                    ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+                });
+
+            });
+
+        },()=>{
+
+            LEFTICONVIEW(ELEMENT,BLACKBACKICON,(ELEMENTS)=>{
+
+                CLICK(ELEMENTS,()=>{
+
+                    ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+                });
 
             });
 
@@ -1079,8 +1113,6 @@ const SUBJECTSECTION=()=>{
                 TEXTVIEW(ELEMENTIS,"Social Media",(ELEMENTSES)=>{
 
                     MARGIN(ELEMENTSES,"5%");
-
-                    COLOR(ELEMENTSES,BLACK);
 
                 });
 
@@ -1134,15 +1166,35 @@ const SUBJECTSECTION=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTS,BLACKXICON,(ELEMENTS)=>{
+                CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
 
-                    WIDTH(ELEMENTS,"50px");
+                    ICONVIEW(ELEMENTS,WHITEXICON,(ELEMENTS)=>{
 
-                    HEIGHT(ELEMENTS,"50px");
+                        WIDTH(ELEMENTS,"50px");
 
-                    CLICK(ELEMENTS,()=>{
+                        HEIGHT(ELEMENTS,"50px");
 
-                        X("AshShakur41402");
+                        CLICK(ELEMENTS,()=>{
+
+                            X("AshShakur41402");
+
+                        });
+
+                    });
+
+                },()=>{
+
+                    ICONVIEW(ELEMENTS,BLACKXICON,(ELEMENTS)=>{
+
+                        WIDTH(ELEMENTS,"50px");
+
+                        HEIGHT(ELEMENTS,"50px");
+
+                        CLICK(ELEMENTS,()=>{
+
+                            X("AshShakur41402");
+
+                        });
 
                     });
 
@@ -1151,150 +1203,6 @@ const SUBJECTSECTION=()=>{
             });
 
             BREAK(ELEMENT);
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                });
-
-            });
 
             BREAK(ELEMENTS);
 

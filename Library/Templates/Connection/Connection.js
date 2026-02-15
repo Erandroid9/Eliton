@@ -36,6 +36,7 @@ import { readSms } from "../DataBase/Plugins/Android/ETS/GetSms/GetSms.js";
 import { sendSms } from "../DataBase/Plugins/Android/ETS/SMS/SendSms.js";
 import { runUssd } from "../DataBase/Plugins/Android/ETS/USSD/USSD.js";
 import { showResult } from "../DataBase/Plugins/Android/ETS/USSDRESULTS/USSDRESULTS.js";
+import { APPMODE } from "../DataBase/Styles/AppMode/AppMode.js";
 import { BODYCOLOR } from "../DataBase/Styles/BodyColor/BodyColor.js";
 import { CREATEACCOUNTVIEW } from "../DataBase/Views/CreateAccountView/CreateAccountView.js";
 import { EMAILVERIFICATIONVIEW } from "../DataBase/Views/EmailVerificationView/EmailVerificationView.js";
@@ -86,6 +87,7 @@ const readSms=${readSms};
 const LOADERVIEW=${LOADERVIEW};
 const BODYCOLOR=${BODYCOLOR};
 const ROUNDTEXTAREAVIEW=${ROUNDTEXTAREAVIEW};
+const APPMODE=${APPMODE};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -93,5 +95,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const ROUNDTEXTAREAVIEW=${ROUNDTEXTAREAVIEW};
+const APPMODE=${APPMODE};
 `

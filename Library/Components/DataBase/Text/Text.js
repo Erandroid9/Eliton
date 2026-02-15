@@ -8,6 +8,8 @@ export const TEXT=(HOLDER,TYPE,WORD,callBack)=>{
         MARGIN(ELEMENT,"");
         FONTSIZE(ELEMENT,""); 
 
+        COLOR(ELEMENT,localStorage.getItem("APPCOLOR"));
+
         callBack(ELEMENT);
 
     });
