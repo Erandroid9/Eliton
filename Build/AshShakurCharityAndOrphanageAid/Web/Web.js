@@ -1,6 +1,14 @@
 const ERANDES=()=>{
 
-  VIEWCONTROLLER();  
+    DOWNLOADSAVEINDEX(ASCODATABASELINK,"Catergory",()=>{
+
+    },()=>{
+
+        VIEWCONTROLLER();  
+
+    });
+
+    VIEWCONTROLLER();  
 
 };
 
@@ -58,7 +66,7 @@ const MOBILEVIEW=()=>{
 
             LOADERVIEW(ELEMENTS,(LOAD)=>{
 
-                REDUXEDDATA(ASCODATABASELINK,"Catergory",(Data)=>{
+                GETSAVEDINDEX("Catergory",(Data)=>{
 
                     DISPLAYHIDDEN(LOAD);
 
@@ -914,7 +922,7 @@ const SUBJECTSECTION=()=>{
 
             LOADERVIEW(ELEMENTS,(LOAD)=>{
 
-                REDUXEDDATA(ASCODATABASELINK,"Catergory",(Data)=>{
+                GETSAVEDINDEX("Catergory",(Data)=>{
 
                     DISPLAYHIDDEN(LOAD);
 
