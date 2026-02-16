@@ -1,6 +1,4 @@
 const ERANDES=()=>{
-
-    APPMODE();
     
     VIEWCONTROLLER();
 
@@ -14,21 +12,9 @@ const MOBILEVIEW=()=>{
 
         });
 
-        CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
+        RIGHTICONVIEW(ELEMENT,WHITERETRYICON,BLACKRETRYICON,(ELEMENTS)=>{
 
-            RIGHTICONVIEW(ELEMENT,WHITERETRYICON,(ELEMENTS)=>{
-
-                CHANGEMODE(ELEMENTS);
-
-            });
-
-        },()=>{
-
-            RIGHTICONVIEW(ELEMENT,BLACKRETRYICON,(ELEMENTS)=>{
-
-                CHANGEMODE(ELEMENTS);
-                
-            });
+            CHANGEMODE(ELEMENTS);
 
         });
 
