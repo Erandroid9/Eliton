@@ -12,6 +12,12 @@ const MOBILEVIEW=()=>{
 
         });
 
+        ICONVIEW(ELEMENT,WHITESUNICON,BLACKMOONICON,(ELEMENTSS)=>{
+
+            CHANGEMODE(ELEMENTSS);
+
+        });
+
         RIGHTICONVIEW(ELEMENT,WHITEMENUICON,BLACKMENUICON,()=>{
 
         });
