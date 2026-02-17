@@ -6,7 +6,6 @@ export const OPERATINGSYSTEM = () => {
     let deviceType = "Unknown Device";
     let deviceName = "Unknown Device";
 
-    // ===== OS Detection =====
     if (/windows phone/i.test(userAgent)) {
         os = "Windows Phone";
         deviceType = "Mobile";
@@ -19,7 +18,6 @@ export const OPERATINGSYSTEM = () => {
         os = "Android";
         deviceType = /mobile/i.test(userAgent) ? "Mobile" : "Tablet";
 
-        // Try detecting common Android brands
         if (/samsung/i.test(userAgent)) deviceName = "Samsung Device";
         else if (/huawei/i.test(userAgent)) deviceName = "Huawei Device";
         else if (/xiaomi/i.test(userAgent)) deviceName = "Xiaomi Device";
