@@ -928,21 +928,13 @@ const SUBJECTSECTION=()=>{
 
                     CHECKER(Data.DataBaseName === sessionStorage.getItem("BaseName"),()=>{
 
-                        TEXTVIEW(ELEMENTS,Data.Name,(ELEMENTSI)=>{
-
-                            COLOR(ELEMENTSI,GREEN);
-
-                            FONTSIZE(ELEMENTSI,"23px");
-
-                        });
-
                         BREAK(ELEMENTS);
 
                         DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
 
                             OVERFLOWHIDDEN(ELIS);
 
-                            IMAGE(ELIS,"","",Data.Image,TRANSPARENT,()=>{
+                            IMAGE(ELIS,"","",Data.Image||ASCOLOGO,TRANSPARENT,()=>{
 
                             });
 
@@ -950,9 +942,11 @@ const SUBJECTSECTION=()=>{
 
                         BREAK(ELEMENTS);
 
-                        TEXTVIEW(ELEMENTS,Data.SubTitle,(ELEMENTS)=>{
+                        TEXTVIEW(ELEMENTS,Data.Header,(ELEMENTSI)=>{
 
-                            COLOR(ELEMENTS,GREEN);
+                            COLOR(ELEMENTSI,GREEN);
+
+                            FONTSIZE(ELEMENTSI,"23px");
 
                         });
 
@@ -966,13 +960,11 @@ const SUBJECTSECTION=()=>{
 
                         BREAK(ELEMENTS);
 
-                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+                        TEXTVIEW(ELEMENTS,Data.HeaderOne,(ELEMENTSI)=>{
 
-                            OVERFLOWHIDDEN(ELIS);
+                            COLOR(ELEMENTSI,GREEN);
 
-                            IMAGE(ELIS,"","",Data.ImageOne,TRANSPARENT,()=>{
-
-                            });
+                            FONTSIZE(ELEMENTSI,"23px");
 
                         });
 
@@ -982,9 +974,27 @@ const SUBJECTSECTION=()=>{
 
                             OVERFLOWHIDDEN(ELIS);
 
-                            IMAGE(ELIS,"","",Data.ImageTwo,TRANSPARENT,()=>{
+                            IMAGE(ELIS,"","",Data.ImageOne||ASCOLOGO,TRANSPARENT,()=>{
 
                             });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        LEFTTEXTVIEW(ELEMENTS,Data.StoryOne,(ELEMENTSS)=>{
+
+                            TYPE(ELEMENTSS,"p");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        TEXTVIEW(ELEMENTS,Data.HeaderTwo,(ELEMENTSI)=>{
+
+                            COLOR(ELEMENTSI,GREEN);
+
+                            FONTSIZE(ELEMENTSI,"23px");
 
                         });
 
@@ -994,9 +1004,27 @@ const SUBJECTSECTION=()=>{
 
                             OVERFLOWHIDDEN(ELIS);
 
-                            IMAGE(ELIS,"","",Data.ImageThree,TRANSPARENT,()=>{
+                            IMAGE(ELIS,"","",Data.ImageThree||ASCOLOGO,TRANSPARENT,()=>{
 
                             });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        LEFTTEXTVIEW(ELEMENTS,Data.StoryThree,(ELEMENTSS)=>{
+
+                            TYPE(ELEMENTSS,"p");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        TEXTVIEW(ELEMENTS,Data.HeaderFour,(ELEMENTSI)=>{
+
+                            COLOR(ELEMENTSI,GREEN);
+
+                            FONTSIZE(ELEMENTSI,"23px");
 
                         });
 
@@ -1006,11 +1034,51 @@ const SUBJECTSECTION=()=>{
 
                             OVERFLOWHIDDEN(ELIS);
 
-                            IMAGE(ELIS,"","",Data.ImageFour,TRANSPARENT,()=>{
+                            IMAGE(ELIS,"","",Data.ImageFour||ASCOLOGO,TRANSPARENT,()=>{
 
                             });
 
                         });
+
+                        BREAK(ELEMENTS);
+
+                        LEFTTEXTVIEW(ELEMENTS,Data.StoryFour,(ELEMENTSS)=>{
+
+                            TYPE(ELEMENTSS,"p");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        TEXTVIEW(ELEMENTS,Data.HeaderFive,(ELEMENTSI)=>{
+
+                            COLOR(ELEMENTSI,GREEN);
+
+                            FONTSIZE(ELEMENTSI,"23px");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+
+                            OVERFLOWHIDDEN(ELIS);
+
+                            IMAGE(ELIS,"","",Data.ImageFive||ASCOLOGO,TRANSPARENT,()=>{
+
+                            });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        LEFTTEXTVIEW(ELEMENTS,Data.StoryFive,(ELEMENTSS)=>{
+
+                            TYPE(ELEMENTSS,"p");
+
+                        });
+
+                        BREAK(ELEMENTS);
 
                     });
 

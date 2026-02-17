@@ -934,7 +934,7 @@ const SUBJECTSECTION=()=>{
 
                             OVERFLOWHIDDEN(ELIS);
 
-                            IMAGE(ELIS,"","",Data.Image,TRANSPARENT,()=>{
+                            IMAGE(ELIS,"","",Data.Image||ASCOLOGO,TRANSPARENT,()=>{
 
                             });
 
@@ -974,7 +974,7 @@ const SUBJECTSECTION=()=>{
 
                             OVERFLOWHIDDEN(ELIS);
 
-                            IMAGE(ELIS,"","",Data.ImageOne,TRANSPARENT,()=>{
+                            IMAGE(ELIS,"","",Data.ImageOne||ASCOLOGO,TRANSPARENT,()=>{
 
                             });
 
@@ -1004,7 +1004,7 @@ const SUBJECTSECTION=()=>{
 
                             OVERFLOWHIDDEN(ELIS);
 
-                            IMAGE(ELIS,"","",Data.ImageThree,TRANSPARENT,()=>{
+                            IMAGE(ELIS,"","",Data.ImageThree||ASCOLOGO,TRANSPARENT,()=>{
 
                             });
 
@@ -1034,7 +1034,7 @@ const SUBJECTSECTION=()=>{
 
                             OVERFLOWHIDDEN(ELIS);
 
-                            IMAGE(ELIS,"","",Data.ImageFour,TRANSPARENT,()=>{
+                            IMAGE(ELIS,"","",Data.ImageFour||ASCOLOGO,TRANSPARENT,()=>{
 
                             });
 
@@ -1064,7 +1064,7 @@ const SUBJECTSECTION=()=>{
 
                             OVERFLOWHIDDEN(ELIS);
 
-                            IMAGE(ELIS,"","",Data.ImageFive,TRANSPARENT,()=>{
+                            IMAGE(ELIS,"","",Data.ImageFive||ASCOLOGO,TRANSPARENT,()=>{
 
                             });
 
