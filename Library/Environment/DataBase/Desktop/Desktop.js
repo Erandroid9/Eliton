@@ -25,48 +25,61 @@ export const DESKTOPENVIRONMENT=()=>{
 
         if (user) {
 
-            DISPLAYLOADER("95%");
-                            
-            fetch(CLOUD+user.Desktop)
-                            
-            .then(res =>res.text())
-                            
-            .then(data =>{
-                            
-                DISPLAYLOADER("100%");
-                                            
-                if (!localStorage.getItem("Packaged")) {
+            if (user.Approved) {
                 
-                    localStorage.setItem("PROJECT",data);
-                
-                    localStorage.setItem("Packaged",new Date())
-                            
-                    location.reload();
-                                    
-                }else{
-                
-                    if (data === localStorage.getItem("PROJECT") ) {
-                
+                DISPLAYLOADER("95%");
+                                
+                fetch(CLOUD+user.Desktop)
+                                
+                .then(res =>res.text())
+                                
+                .then(data =>{
+                                
+                    DISPLAYLOADER("100%");
+                                
+                    if (!localStorage.getItem("Packaged")) {
+    
                         localStorage.setItem("PROJECT",data);
-                                        
-                    }else{
-                
-                        localStorage.setItem("PROJECT",data);
-                
+    
                         localStorage.setItem("Packaged",new Date())
-                            
-                        location.reload();
                 
+                        location.reload();
+                        
+                    }else{
+    
+                        if (data === localStorage.getItem("PROJECT") ) {
+    
+                            localStorage.setItem("PROJECT",data);
+                            
+                        }else{
+    
+                            localStorage.setItem("PROJECT",data);
+    
+                            localStorage.setItem("Packaged",new Date())
+                
+                            location.reload();
+    
+                        };
+    
                     };
                 
-                };
-            
-            })
-                            
-            .catch(error=>{console.log(error)})
+                })
+                                
+                .catch(error=>{console.log(error)})
+    
+
+            } else {
+
+                localStorage.removeItem("PROJECT");
+
+                localStorage.removeItem("Packaged");
+
+                location.reload();
+                
+            };
 
             return;
-  
+
         };
         
     })

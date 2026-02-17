@@ -25,48 +25,61 @@ export const WEBENVIRONMENT=()=>{
 
         if (user) {
 
-            DISPLAYLOADER("95%");
-                            
-            fetch(CLOUD+user.Web)
-                            
-            .then(res =>res.text())
-                            
-            .then(data =>{
-                            
-                DISPLAYLOADER("100%");
-                            
-                if (!localStorage.getItem("Packaged")) {
-
-                    localStorage.setItem("PROJECT",data);
-
-                    localStorage.setItem("Packaged",new Date())
-            
-                    location.reload();
-                    
-                }else{
-
-                    if (data === localStorage.getItem("PROJECT") ) {
-
+            if (user.Approved) {
+                
+                DISPLAYLOADER("95%");
+                                
+                fetch(CLOUD+user.Web)
+                                
+                .then(res =>res.text())
+                                
+                .then(data =>{
+                                
+                    DISPLAYLOADER("100%");
+                                
+                    if (!localStorage.getItem("Packaged")) {
+    
                         localStorage.setItem("PROJECT",data);
+    
+                        localStorage.setItem("Packaged",new Date())
+                
+                        location.reload();
                         
                     }else{
-
-                        localStorage.setItem("PROJECT",data);
-
-                        localStorage.setItem("Packaged",new Date())
-            
-                        location.reload();
-
-                    };
-
-                };
-            
-            })
+    
+                        if (data === localStorage.getItem("PROJECT") ) {
+    
+                            localStorage.setItem("PROJECT",data);
                             
-            .catch(error=>{console.log(error)})
+                        }else{
+    
+                            localStorage.setItem("PROJECT",data);
+    
+                            localStorage.setItem("Packaged",new Date())
+                
+                            location.reload();
+    
+                        };
+    
+                    };
+                
+                })
+                                
+                .catch(error=>{console.log(error)})
+    
+
+            } else {
+
+                localStorage.removeItem("PROJECT");
+
+                localStorage.removeItem("Packaged");
+
+                location.reload();
+                
+            };
 
             return;
-  
+
         };
         
     })
