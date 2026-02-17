@@ -14,7 +14,7 @@ export const DOMAINNAMECHANGE=()=>{
 
         RELOAD();
 
-        localStorage.setItem('storedUrl', currentUrl)
+        localStorage.setItem('storedUrl', currentUrl);
 
     };
 

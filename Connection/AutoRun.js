@@ -7,6 +7,7 @@ ZOOM();
 VISITORS();
 APPMODE();
 TIMEZONE();
+DOMAINNAMECHANGE();
 `;
     
 localStorage.setItem("RUN",DATA);
